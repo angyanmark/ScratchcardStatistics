@@ -1,9 +1,9 @@
 {
-  "name": "Kiskarácsony 2022",
-  "price": 500,
-  "releaseDate": "2022-11-04",
-  "totalSupply": 5500000,
-  "prizeStructure": {
+  "Name": "Kiskarácsony 2022",
+  "Price": 500,
+  "ReleaseDate": "2022-11-04",
+  "TotalSupply": 5500000,
+  "PrizeStructure": {
     "25000000": 1,
     "1000000": 5,
     "100000": 65,

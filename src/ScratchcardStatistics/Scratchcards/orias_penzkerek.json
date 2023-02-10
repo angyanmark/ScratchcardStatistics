@@ -1,9 +1,9 @@
 {
-  "name": "Óriás Pénzkerék",
-  "price": 2000,
-  "releaseDate": "2021-05-07",
-  "totalSupply": 4000000,
-  "prizeStructure": {
+  "Name": "Óriás Pénzkerék",
+  "Price": 2000,
+  "ReleaseDate": "2021-05-07",
+  "TotalSupply": 4000000,
+  "PrizeStructure": {
     "75000000": 1,
     "10000000": 8,
     "1000000": 25,

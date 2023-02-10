@@ -1,9 +1,9 @@
 {
-  "name": "Fáraók Kincse",
-  "price": 300,
-  "releaseDate": "2011-01-14",
-  "totalSupply": 5000000,
-  "prizeStructure": {
+  "Name": "Fáraók Kincse",
+  "Price": 300,
+  "ReleaseDate": "2011-01-14",
+  "TotalSupply": 5000000,
+  "PrizeStructure": {
     "5000500": 3,
     "5000000": 10,
     "60000": 25,

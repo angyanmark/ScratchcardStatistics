@@ -1,9 +1,9 @@
 {
-  "name": "NEON 1000",
-  "price": 1000,
-  "releaseDate": "2023-02-03",
-  "totalSupply": 4000000,
-  "prizeStructure": {
+  "Name": "NEON 1000",
+  "Price": 1000,
+  "ReleaseDate": "2023-02-03",
+  "TotalSupply": 4000000,
+  "PrizeStructure": {
     "50000000": 1,
     "1000000": 6,
     "150000": 60,

@@ -1,9 +1,9 @@
 {
-  "name": "Kincseskamra",
-  "price": 2000,
-  "releaseDate": "2020-09-04",
-  "totalSupply": 3000000,
-  "prizeStructure": {
+  "Name": "Kincseskamra",
+  "Price": 2000,
+  "ReleaseDate": "2020-09-04",
+  "TotalSupply": 3000000,
+  "PrizeStructure": {
     "75000000": 1,
     "10000000": 5,
     "1000000": 15,

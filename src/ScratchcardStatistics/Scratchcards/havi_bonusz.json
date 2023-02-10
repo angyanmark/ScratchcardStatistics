@@ -1,9 +1,9 @@
 {
-  "name": "Havi Bónusz",
-  "price": 2000,
-  "releaseDate": "2021-01-15",
-  "totalSupply": 3000000,
-  "prizeStructure": {
+  "Name": "Havi Bónusz",
+  "Price": 2000,
+  "ReleaseDate": "2021-01-15",
+  "TotalSupply": 3000000,
+  "PrizeStructure": {
     "75000000": 1,
     "10000000": 15,
     "3000000": 75,

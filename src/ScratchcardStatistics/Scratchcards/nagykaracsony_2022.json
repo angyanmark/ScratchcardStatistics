@@ -1,9 +1,9 @@
 {
-  "name": "Nagykarácsony 2022",
-  "price": 3000,
-  "releaseDate": "2022-11-04",
-  "totalSupply": 2400000,
-  "prizeStructure": {
+  "Name": "Nagykarácsony 2022",
+  "Price": 3000,
+  "ReleaseDate": "2022-11-04",
+  "TotalSupply": 2400000,
+  "PrizeStructure": {
     "100000000": 1,
     "10000000": 30,
     "1000000": 100,

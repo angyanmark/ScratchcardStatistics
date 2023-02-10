@@ -1,9 +1,9 @@
 {
-  "name": "Ökokaland Extra",
-  "price": 2000,
-  "releaseDate": "2022-05-13",
-  "totalSupply": 3000000,
-  "prizeStructure": {
+  "Name": "Ökokaland Extra",
+  "Price": 2000,
+  "ReleaseDate": "2022-05-13",
+  "TotalSupply": 3000000,
+  "PrizeStructure": {
     "75000000": 1,
     "10000000": 5,
     "1000000": 25,

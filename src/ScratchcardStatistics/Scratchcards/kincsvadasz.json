@@ -1,9 +1,9 @@
 {
-  "name": "Kincsvadász",
-  "price": 2000,
-  "releaseDate": "2022-09-09",
-  "totalSupply": 4000000,
-  "prizeStructure": {
+  "Name": "Kincsvadász",
+  "Price": 2000,
+  "ReleaseDate": "2022-09-09",
+  "TotalSupply": 4000000,
+  "PrizeStructure": {
     "75000000": 2,
     "5000000": 10,
     "1000000": 50,

@@ -1,9 +1,9 @@
 {
-  "name": "Black Jack",
-  "price": 300,
-  "releaseDate": "2018-01-05",
-  "totalSupply": 5000000,
-  "prizeStructure": {
+  "Name": "Black Jack",
+  "Price": 300,
+  "ReleaseDate": "2018-01-05",
+  "TotalSupply": 5000000,
+  "PrizeStructure": {
     "15000000": 4,
     "100000": 40,
     "50000": 320,

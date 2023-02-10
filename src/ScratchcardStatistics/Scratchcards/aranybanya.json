@@ -1,9 +1,9 @@
 {
-  "name": "Aranybánya",
-  "price": 1000,
-  "releaseDate": "2019-09-06",
-  "totalSupply": 3000000,
-  "prizeStructure": {
+  "Name": "Aranybánya",
+  "Price": 1000,
+  "ReleaseDate": "2019-09-06",
+  "TotalSupply": 3000000,
+  "PrizeStructure": {
     "50000000": 1,
     "1000000": 6,
     "100000": 100,

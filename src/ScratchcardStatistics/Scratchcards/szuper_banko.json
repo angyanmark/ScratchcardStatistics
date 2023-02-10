@@ -1,9 +1,9 @@
 {
-  "name": "Szuper Bankó",
-  "price": 500,
-  "releaseDate": "2008-11-29",
-  "totalSupply": 2500000,
-  "prizeStructure": {
+  "Name": "Szuper Bankó",
+  "Price": 500,
+  "ReleaseDate": "2008-11-29",
+  "TotalSupply": 2500000,
+  "PrizeStructure": {
     "25000000": 1,
     "5000000": 5,
     "50000": 32,

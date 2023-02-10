@@ -1,9 +1,9 @@
 {
-  "name": "Varázsfőzet",
-  "price": 2000,
-  "releaseDate": "2021-09-10",
-  "totalSupply": 3000000,
-  "prizeStructure": {
+  "Name": "Varázsfőzet",
+  "Price": 2000,
+  "ReleaseDate": "2021-09-10",
+  "TotalSupply": 3000000,
+  "PrizeStructure": {
     "75000000": 2,
     "10000000": 5,
     "1000000": 10,

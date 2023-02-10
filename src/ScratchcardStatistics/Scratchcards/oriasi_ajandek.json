@@ -1,9 +1,9 @@
 {
-  "name": "Óriási Ajándék",
-  "price": 2000,
-  "releaseDate": "2020-03-20",
-  "totalSupply": 3000000,
-  "prizeStructure": {
+  "Name": "Óriási Ajándék",
+  "Price": 2000,
+  "ReleaseDate": "2020-03-20",
+  "TotalSupply": 3000000,
+  "PrizeStructure": {
     "75000000": 1,
     "10000000": 5,
     "1000000": 25,

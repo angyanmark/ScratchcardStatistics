@@ -1,9 +1,9 @@
 {
-  "name": "Nyomkövető",
-  "price": 500,
-  "releaseDate": "2022-07-08",
-  "totalSupply": 5000000,
-  "prizeStructure": {
+  "Name": "Nyomkövető",
+  "Price": 500,
+  "ReleaseDate": "2022-07-08",
+  "TotalSupply": 5000000,
+  "PrizeStructure": {
     "25000000": 1,
     "5000000": 5,
     "100000": 160,

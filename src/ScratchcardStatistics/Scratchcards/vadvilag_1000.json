@@ -1,9 +1,9 @@
 {
-  "name": "Vadvilág 1000",
-  "price": 1000,
-  "releaseDate": "2022-02-04",
-  "totalSupply": 3000000,
-  "prizeStructure": {
+  "Name": "Vadvilág 1000",
+  "Price": 1000,
+  "ReleaseDate": "2022-02-04",
+  "TotalSupply": 3000000,
+  "PrizeStructure": {
     "50000000": 1,
     "5000000": 5,
     "100000": 20,
