@@ -2,6 +2,7 @@
   "Name": "Kincseskamra",
   "Price": 2000,
   "ReleaseDate": "2020-09-04",
+  "EndDate": "2023-02-19",
   "TotalSupply": 3000000,
   "PrizeStructure": {
     "75000000": 1,

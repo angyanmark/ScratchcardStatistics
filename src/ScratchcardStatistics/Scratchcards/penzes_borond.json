@@ -2,6 +2,7 @@
   "Name": "Pénzes bőrönd",
   "Price": 1000,
   "ReleaseDate": "2020-05-08",
+  "EndDate": "2023-02-19",
   "TotalSupply": 3000000,
   "PrizeStructure": {
     "50000000": 1,
