@@ -126,6 +126,7 @@ A [Szerencsejáték Zrt. által kiadott](https://bet.szerencsejatek.hu/sorsjegye
 | Nagykarácsony 2018       | 2018. 11. 03. |   3 000 Ft |      2 100 Ft |       70%       |    1:3,00     |     33,39%      |   ❌    |
 | Nagykarácsony 2019       | 2019. 11. 04. |   3 000 Ft |      2 100 Ft |       70%       |    1:3,00     |     33,39%      |   ❌    |
 | NEON 2000                | 2023. 02. 03. |   2 000 Ft |      1 380 Ft |       69%       |    1:2,89     |     34,62%      |   ✅    |
+| Óriási Ajándék           | 2020. 03. 20. |   2 000 Ft |      1 380 Ft |       69%       |    1:2,97     |     33,68%      |   ✅    |
 | Havi Bónusz              | 2021. 01. 15. |   2 000 Ft |      1 380 Ft |       69%       |    1:2,99     |     33,43%      |   ✅    |
 | Ökokaland Extra          | 2022. 05. 13. |   2 000 Ft |      1 380 Ft |       69%       |    1:2,99     |     33,40%      |   ✅    |
 | Vadvilág 2000            | 2022. 02. 04. |   2 000 Ft |      1 380 Ft |       69%       |    1:3,01     |     33,24%      |   ✅    |
@@ -138,7 +139,6 @@ A [Szerencsejáték Zrt. által kiadott](https://bet.szerencsejatek.hu/sorsjegye
 | Boldog Karácsonyt! 2015  | 2015. 11. 06. |   2 000 Ft |      1 380 Ft |       69%       |    1:3,07     |     32,57%      |   ❌    |
 | Kincsvadász              | 2022. 09. 09. |   2 000 Ft |      1 380 Ft |       69%       |    1:3,08     |     32,43%      |   ✅    |
 | Kincseskamra             | 2020. 09. 04. |   2 000 Ft |      1 380 Ft |       69%       |    1:3,11     |     32,17%      |   ❌    |
-| Óriási Ajándék           | 2020. 03. 20. |   2 000 Ft |      1 380 Ft |       69%       |    1:2,97     |     33,68%      |   ✅    |
 | Boldog Karácsonyt! 2014  | 2014. 11. 07. |   2 000 Ft |      1 360 Ft |       68%       |    1:3,24     |     30,84%      |   ❌    |
 | NEON 1000                | 2023. 02. 03. |   1 000 Ft |        670 Ft |       67%       |    1:3,00     |     33,34%      |   ✅    |
 | Vadvilág 1000            | 2022. 02. 04. |   1 000 Ft |        670 Ft |       67%       |    1:3,04     |     32,89%      |   ✅    |

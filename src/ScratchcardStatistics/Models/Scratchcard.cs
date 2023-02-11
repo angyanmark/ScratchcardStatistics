@@ -10,9 +10,9 @@ public class Scratchcard
     public Dictionary<int, int> PrizeStructure { get; set; }
 
     public bool IsAvailable => !EndDate.HasValue;
-    public int TopPrize => PrizeStructure.Max(ps => ps.Key);
-    public double ChanceOfWinningToOne => 1 / ChanceOfWinningPercent;
-    public double ChanceOfWinningPercent => (double)PrizeStructure.Sum(ps => ps.Value) / TotalSupply;
-    public double ExpectedValue => PrizeStructure.Sum(ps => (double)(ps.Key * ps.Value) / TotalSupply);
-    public double ExpectedValuePercent => ExpectedValue / Price;
+    public int Jackpot => PrizeStructure.Max(ps => ps.Key);
+    public decimal ChanceOfWinningToOne => 1 / ChanceOfWinningPercent;
+    public decimal ChanceOfWinningPercent => (decimal)PrizeStructure.Sum(ps => ps.Value) / TotalSupply;
+    public decimal ExpectedValue => PrizeStructure.Sum(ps => (long)ps.Key * ps.Value) / TotalSupply;
+    public decimal ExpectedValuePercent => ExpectedValue / Price;
 }
