@@ -1,4 +1,5 @@
-﻿using ScratchcardStatistics.Models;
+﻿using ScratchcardStatistics.Constants;
+using ScratchcardStatistics.Models;
 using System.Text.Json;
 
 namespace ScratchcardStatistics.Services;
@@ -16,6 +17,26 @@ public static class FileService
         return scratchcards;
     }
 
-    public static async Task WriteStatisticsAsync(string statistics) =>
-        await File.WriteAllTextAsync("STATISTICS.md", statistics);
+    public static void DeleteStatistics()
+    {
+        if (Directory.Exists(Folders.RootFolder))
+        {
+            Directory.Delete(Folders.RootFolder, true);
+        }
+    }
+
+    public static async Task WriteStatisticsAsync(string statistics)
+    {
+        Directory.CreateDirectory(Folders.RootFolder);
+        await File.WriteAllTextAsync(@$"{Folders.RootFolder}\STATISTICS.md", statistics);
+    }
+
+    public static async Task WriteScratchcardStatisticsAsync(List<(string name, string statistics)> scratchcardStatistics)
+    {
+        Directory.CreateDirectory(@$"{Folders.RootFolder}\{Folders.SubFolder}");
+        foreach (var scratchcard in scratchcardStatistics)
+        {
+            await File.WriteAllTextAsync(@$"{Folders.RootFolder}\{Folders.SubFolder}\{scratchcard.name.Replace(' ', '_')}.md", scratchcard.statistics);
+        }
+    }
 }
