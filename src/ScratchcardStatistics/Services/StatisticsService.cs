@@ -34,7 +34,7 @@ public static class StatisticsService
     }
 
     private static string ToTableRow(this Scratchcard scratchcard) =>
-        $"[{scratchcard.Name}]({Folders.RootFolder}/{Folders.SubFolder}/{scratchcard.Name.Replace(' ', '_')}.md)|{scratchcard.ReleaseDate.ToString("d", cultureInfo)}|{scratchcard.Price.ToString("C0", cultureInfo)}|" +
+        $"[{scratchcard.Name}]({Folders.SubFolder}/{scratchcard.Name.Replace(' ', '_')}.md)|{scratchcard.ReleaseDate.ToString("d", cultureInfo)}|{scratchcard.Price.ToString("C0", cultureInfo)}|" +
         $"{scratchcard.ExpectedValue.ToString("C0", cultureInfo)}|{scratchcard.ExpectedValuePercent.ToString("P0", cultureInfo)}|"+
         $"1:{scratchcard.ChanceOfWinningToOne.ToString("N2", cultureInfo)}|{scratchcard.ChanceOfWinningPercent.ToString("P2", cultureInfo)}|{(scratchcard.IsAvailable ? "✅" : "❌")}";
 
