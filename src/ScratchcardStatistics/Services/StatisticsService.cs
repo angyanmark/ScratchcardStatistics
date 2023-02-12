@@ -6,7 +6,7 @@ namespace ScratchcardStatistics.Services;
 
 public static class StatisticsService
 {
-    private static readonly CultureInfo cultureInfo = CultureInfo.GetCultureInfo("hu-HU");
+    private static readonly CultureInfo cultureInfo = new("hu-HU");
     private static readonly string tableHeader =
         $"| Név                      |  Megjelenés   |         Ár | Várható érték | Várható érték % | Nyerési esély | Nyerési esély % | Vehető |{Environment.NewLine}"
         +"| ------------------------ | :-----------: | ---------: | ------------: | :-------------: | :-----------: | :-------------: | :----: |";
@@ -35,6 +35,6 @@ public static class StatisticsService
     }
 
     private static string ToTableRow(this Scratchcard scratchcard) =>
-        $"| {scratchcard.Name,-24} | {scratchcard.ReleaseDate:yyyy. MM. dd.} | {scratchcard.Price.ToString("C0", cultureInfo),+10} | {scratchcard.ExpectedValue.ToString("C0", cultureInfo),+13} " +
-        $"|       {scratchcard.ExpectedValuePercent:P0}       |    1:{scratchcard.ChanceOfWinningToOne:N2}     |     {scratchcard.ChanceOfWinningPercent:P2}      |   {(scratchcard.IsAvailable ? "✅" : "❌")}    |";
+        $"| {scratchcard.Name,-24} | {scratchcard.ReleaseDate.ToString("d", cultureInfo)} | {scratchcard.Price.ToString("C0", cultureInfo),+10} | {scratchcard.ExpectedValue.ToString("C0", cultureInfo),+13} " +
+        $"|       {scratchcard.ExpectedValuePercent.ToString("P0", cultureInfo)}       |    1:{scratchcard.ChanceOfWinningToOne.ToString("N2", cultureInfo)}     |     {scratchcard.ChanceOfWinningPercent.ToString("P2", cultureInfo)}      |   {(scratchcard.IsAvailable ? "✅" : "❌")}    |";
 }
