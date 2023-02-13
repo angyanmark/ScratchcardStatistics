@@ -8,14 +8,14 @@ Nyerési esély: **1:3,10**<br/>
 Kibocsátott darabszám: **6 000 000 db**<br/>
 
 ### Nyereménystruktúra:
-Darab|Nyeremény
----:|---:
-3 db|10 000 000 Ft
-6 db|500 000 Ft
-300 db|10 000 Ft
-2 400 db|5 000 Ft
-15 000 db|4 000 Ft
-60 000 db|2 000 Ft
-300 000 db|1 000 Ft
-600 000 db|500 Ft
-960 000 db|300 Ft
+Darab|Nyeremény|Esély
+---:|---:|:---:
+3 db|10 000 000 Ft|1:2 000 000
+6 db|500 000 Ft|1:1 000 000
+300 db|10 000 Ft|1:20 000
+2 400 db|5 000 Ft|1:2 500
+15 000 db|4 000 Ft|1:400
+60 000 db|2 000 Ft|1:100
+300 000 db|1 000 Ft|1:20
+600 000 db|500 Ft|1:10
+960 000 db|300 Ft|1:6,25

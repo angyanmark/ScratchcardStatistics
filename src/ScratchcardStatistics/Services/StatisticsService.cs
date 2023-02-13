@@ -64,20 +64,20 @@ public static class StatisticsService
         sb.AppendLine($"Kibocsátott darabszám: **{scratchcard.TotalSupply.ToString("N0", cultureInfo)} db**<br/>");
         sb.AppendLine();
         sb.AppendLine("### Nyereménystruktúra:");
-        AppendTable(sb, scratchcard.PrizeStructure);
+        AppendTable(sb, scratchcard);
         return sb.ToString();
     }
 
-    private static void AppendTable(StringBuilder sb, IDictionary<int, int> prizeStructure)
+    private static void AppendTable(StringBuilder sb, Scratchcard scratchcard)
     {
-        sb.AppendLine("Darab|Nyeremény");
-        sb.AppendLine("---:|---:");
-        foreach (var structure in prizeStructure)
+        sb.AppendLine("Darab|Nyeremény|Esély");
+        sb.AppendLine("---:|---:|:---:");
+        foreach (var structure in scratchcard.PrizeStructure)
         {
-            sb.AppendLine(structure.ToTableRow());
+            sb.AppendLine(structure.ToTableRow(scratchcard.TotalSupply));
         }
     }
 
-    private static string ToTableRow(this KeyValuePair<int, int> structure) =>
-        $"{structure.Value.ToString("N0", cultureInfo)} db|{structure.Key.ToString("C0", cultureInfo)}";
+    private static string ToTableRow(this KeyValuePair<int, int> structure, int totalSupply) =>
+        $"{structure.Value.ToString("N0", cultureInfo)} db|{structure.Key.ToString("C0", cultureInfo)}|1:{(1 / ((decimal)structure.Value / totalSupply)).ToString("#,##0.##", cultureInfo)}";
 }
