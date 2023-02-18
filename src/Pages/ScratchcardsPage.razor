@@ -1,0 +1,65 @@
+﻿@page "/scratchcards"
+@using ScratchcardStatistics.Models;
+@using ScratchcardStatistics.Services.Scratchcards;
+@inject IScratchcardService ScratchcardService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Kaparós sorsjegyek</PageTitle>
+
+<MudText Typo="Typo.h5" GutterBottom>Kaparós sorsjegyek</MudText>
+
+<MudTable T="Scratchcard" Items="ScratchcardsFiltered" AllowUnsorted="false" Dense Hover Bordered>
+    <HeaderContent>
+        <MudTh>
+            <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Name)">Név</MudTableSortLabel>
+            <MudTextField @bind-Value="@filterName" Margin="Margin.Dense" Variant="Variant.Outlined" TextChanged="FilterChanged" Clearable />
+        </MudTh>
+        <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ReleaseDate)" InitialDirection="SortDirection.Descending">Megjelenés</MudTableSortLabel></MudTh>
+        <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Price)">Ár</MudTableSortLabel></MudTh>
+        <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ExpectedValue)">Várható érték</MudTableSortLabel></MudTh>
+        <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ExpectedValuePercent)">Várható érték %</MudTableSortLabel></MudTh>
+        <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ChanceOfWinningToOne)">Nyerési esély</MudTableSortLabel></MudTh>
+        <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ChanceOfWinningPercent)">Nyerési esély %</MudTableSortLabel></MudTh>
+        <MudTh Style="text-align:center">
+            <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.IsAvailable)">Elérhető</MudTableSortLabel>
+            <MudCheckBox T="bool?" Color="@Color.Primary" CheckedChanged="CheckboxChanged" TriState Label="Elérhető"></MudCheckBox>
+        </MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd><MudLink Typo="Typo.inherit" Href=@($"/scratchcards/{context.Name.Replace(' ', '_')}")>@context.Name</MudLink></MudTd>
+        <MudTd Style="text-align:center">@context.ReleaseDate.ToShortDateString()</MudTd>
+        <MudTd Style="text-align:right">@context.Price.ToString("C0")</MudTd>
+        <MudTd Style="text-align:right">@context.ExpectedValue.ToString("C0")</MudTd>
+        <MudTd Style="text-align:center">@context.ExpectedValuePercent.ToString("P0")</MudTd>
+        <MudTd Style="text-align:center">1:@context.ChanceOfWinningToOne.ToString("N2")</MudTd>
+        <MudTd Style="text-align:center">@context.ChanceOfWinningPercent.ToString("P2")</MudTd>
+        <MudTd Style="text-align:center">@(context.IsAvailable ? "✅" : "❌")</MudTd>
+    </RowTemplate>
+</MudTable>
+
+@code {
+    private string filterName = string.Empty;
+    private bool? filterIsAvailable = null;
+
+    private List<Scratchcard> ScratchcardsAll { get; set; } = new();
+    private List<Scratchcard> ScratchcardsFiltered { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        var scratchcards = ScratchcardService.GetScratchcards();
+        ScratchcardsAll = scratchcards;
+        ScratchcardsFiltered = scratchcards;
+    }
+
+    private void CheckboxChanged(bool? isSelected)
+    {
+        filterIsAvailable = isSelected;
+        FilterChanged();
+    }
+
+    private void FilterChanged() =>
+        ScratchcardsFiltered = ScratchcardsAll
+            .Where(s => s.Name.Contains(filterName, StringComparison.OrdinalIgnoreCase))
+            .Where(s => filterIsAvailable.HasValue ? s.IsAvailable == filterIsAvailable : true)
+            .ToList();
+}

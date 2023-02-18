@@ -1,9 +1,8 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.4.33213.308
+VisualStudioVersion = 17.0.31717.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScratchcardStatistics", "ScratchcardStatistics\ScratchcardStatistics.csproj", "{B6F5154D-30CE-49C9-AB2B-AA772701D848}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ScratchcardStatistics", "ScratchcardStatistics.csproj", "{4E371F0F-09B5-4856-9066-A575E4DBEA8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +10,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B6F5154D-30CE-49C9-AB2B-AA772701D848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B6F5154D-30CE-49C9-AB2B-AA772701D848}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B6F5154D-30CE-49C9-AB2B-AA772701D848}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B6F5154D-30CE-49C9-AB2B-AA772701D848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E371F0F-09B5-4856-9066-A575E4DBEA8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E371F0F-09B5-4856-9066-A575E4DBEA8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E371F0F-09B5-4856-9066-A575E4DBEA8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E371F0F-09B5-4856-9066-A575E4DBEA8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B5AB7772-EA82-4D5A-9A4F-8D0F0849AC7B}
+		SolutionGuid = {BF5FE5C1-5C52-44D6-8282-86B6E3F86F62}
 	EndGlobalSection
 EndGlobal
