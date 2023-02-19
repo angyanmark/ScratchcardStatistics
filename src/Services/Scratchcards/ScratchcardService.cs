@@ -16,12 +16,8 @@ public class ScratchcardService : IScratchcardService
 
     public async Task InitializeAsync()
     {
-        var filePaths = await httpClient.GetFromJsonAsync<string[]>("scratchcards/_list.json");
-        foreach (var filePath in filePaths)
-        {
-            var scratchcard = await httpClient.GetFromJsonAsync<Scratchcard>($"scratchcards/{filePath}");
-            Scratchcards.Add(scratchcard);
-        }
+        var scratchcards = await httpClient.GetFromJsonAsync<List<Scratchcard>>("scratchcards/scratchcards.json");
+        Scratchcards.AddRange(scratchcards.OrderByDescending(s => s.ReleaseDate).ThenByDescending(s => s.Price));
     }
 
     public List<Scratchcard> GetScratchcards() => Scratchcards;
