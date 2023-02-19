@@ -1,0 +1,29 @@
+﻿@using ScratchcardStatistics.Interfaces;
+@inject IServiceProvider ServiceProvider
+
+@if (initialized)
+{
+    @ChildContent
+}
+else
+{
+    <MudProgressCircular Color="Color.Primary" Size="Size.Large" Indeterminate />
+}
+
+
+@code {
+    private bool initialized;
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        foreach (var service in ServiceProvider.GetServices<IInitialize>())
+        {
+            await service.InitializeAsync();
+        }
+
+        initialized = true;
+    }
+}
