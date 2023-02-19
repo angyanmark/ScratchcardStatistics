@@ -26,7 +26,7 @@
         </MudTh>
     </HeaderContent>
     <RowTemplate>
-        <MudTd><MudLink Typo="Typo.inherit" Href=@($"/scratchcards/{context.Name.Replace(' ', '_')}")>@context.Name</MudLink></MudTd>
+        <MudTd><MudLink Typo="Typo.inherit" Href=@($"scratchcards/{context.Name.Replace(' ', '_')}")>@context.Name</MudLink></MudTd>
         <MudTd Style="text-align:center">@context.ReleaseDate.ToShortDateString()</MudTd>
         <MudTd Style="text-align:right">@context.Price.ToString("C0")</MudTd>
         <MudTd Style="text-align:right">@context.ExpectedValue.ToString("C0")</MudTd>
