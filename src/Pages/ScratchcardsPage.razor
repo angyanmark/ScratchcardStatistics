@@ -6,9 +6,7 @@
 
 <PageTitle>Kaparós sorsjegyek</PageTitle>
 
-<MudText Typo="Typo.h5" GutterBottom>Kaparós sorsjegyek</MudText>
-
-<MudTable T="Scratchcard" Items="ScratchcardsFiltered" AllowUnsorted="false" Dense Hover Bordered>
+<MudTable T="Scratchcard" Items="ScratchcardsFiltered" AllowUnsorted="false" Height="calc(100vh - 112px)" Dense Hover Bordered FixedHeader>
     <HeaderContent>
         <MudTh>
             <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Name)">Név</MudTableSortLabel>
@@ -22,7 +20,7 @@
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ChanceOfWinningPercent)">Nyerési esély %</MudTableSortLabel></MudTh>
         <MudTh>
             <div class="d-flex justify-center gap-4">
-                <MudCheckBox T="bool?" Color="@Color.Primary" CheckedChanged="CheckboxChanged" TriState />
+                <MudCheckBox T="bool?" Color="@Color.Primary" CheckedChanged="CheckboxChanged" Checked="filterIsAvailable" TriState />
                 <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.IsAvailable)">Elérhető</MudTableSortLabel>
             </div>
         </MudTh>
@@ -41,7 +39,7 @@
 
 @code {
     private string filterName = string.Empty;
-    private bool? filterIsAvailable = null;
+    private bool? filterIsAvailable = true;
 
     private List<Scratchcard> ScratchcardsAll { get; set; } = new();
     private List<Scratchcard> ScratchcardsFiltered { get; set; } = new();
