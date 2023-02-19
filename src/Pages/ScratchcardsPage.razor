@@ -20,9 +20,11 @@
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ExpectedValuePercent)">Várható érték %</MudTableSortLabel></MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ChanceOfWinningToOne)">Nyerési esély</MudTableSortLabel></MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ChanceOfWinningPercent)">Nyerési esély %</MudTableSortLabel></MudTh>
-        <MudTh Style="text-align:center">
-            <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.IsAvailable)">Elérhető</MudTableSortLabel>
-            <MudCheckBox T="bool?" Color="@Color.Primary" CheckedChanged="CheckboxChanged" TriState Label="Elérhető"></MudCheckBox>
+        <MudTh>
+            <div class="d-flex justify-center gap-4">
+                <MudCheckBox T="bool?" Color="@Color.Primary" CheckedChanged="CheckboxChanged" TriState />
+                <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.IsAvailable)">Elérhető</MudTableSortLabel>
+            </div>
         </MudTh>
     </HeaderContent>
     <RowTemplate>
