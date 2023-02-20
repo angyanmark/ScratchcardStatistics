@@ -4,15 +4,15 @@
 
 <LoadingScreen>
     <MudLayout>
-        <MudAppBar Color="Color.Primary" Elevation="0">
+        <MudAppBar Color="Color.Primary" Elevation="0" Dense>
             <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
                 @if (!drawerOpen)
                 {
-                    <MudText Typo="Typo.h6" Class="ml-3">Kaparós sorsjegyek</MudText>
+                    <MudText Typo="Typo.h6" Class="ml-3">Kaparós sorsjegyek 🍀</MudText>
                 }
         </MudAppBar>
         <MudDrawer @bind-Open="drawerOpen">
-            <MudDrawerHeader Class="justify-center">
+            <MudDrawerHeader Class="justify-center" Dense>
                 <MudText Typo="Typo.h6">Kaparós sorsjegyek</MudText>
             </MudDrawerHeader>
             <NavMenu />

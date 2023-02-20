@@ -33,7 +33,7 @@
         <MudTd Style="text-align:center">@context.ExpectedValuePercent.ToString("P0")</MudTd>
         <MudTd Style="text-align:center">1:@context.ChanceOfWinningToOne.ToString("N2")</MudTd>
         <MudTd Style="text-align:center">@context.ChanceOfWinningPercent.ToString("P2")</MudTd>
-        <MudTd Style="text-align:center">@(context.IsAvailable ? "✅" : "❌")</MudTd>
+        <MudTd Style="text-align:center; color:white">@(context.IsAvailable ? "✅" : "❌")</MudTd>
     </RowTemplate>
 </MudTable>
 
