@@ -46,9 +46,8 @@
 
     protected override void OnInitialized()
     {
-        var scratchcards = ScratchcardService.GetScratchcards();
-        ScratchcardsAll = scratchcards;
-        ScratchcardsFiltered = scratchcards;
+        ScratchcardsAll = ScratchcardService.GetScratchcards();
+        FilterChanged();
     }
 
     private void NameChanged(string name)
