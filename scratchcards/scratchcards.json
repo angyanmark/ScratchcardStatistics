@@ -1,6 +1,6 @@
 [
   {
-    "Name": "Fáraók kincse 200",
+    "Name": "Fáraók Kincse 200",
     "Price": 200,
     "ReleaseDate": "2005-04-30",
     "EndDate": "2011-01-28",
@@ -155,7 +155,7 @@
     }
   },
   {
-    "Name": "Édes élet",
+    "Name": "Édes Élet",
     "Price": 300,
     "ReleaseDate": "2009-11-27",
     "EndDate": "2012-04-27",
@@ -387,7 +387,7 @@
     }
   },
   {
-    "Name": "Boldog Karácsonyt! 2011",
+    "Name": "Boldog karácsonyt! 2011",
     "Price": 500,
     "ReleaseDate": "2011-10-28",
     "EndDate": "2012-01-06",
@@ -425,7 +425,7 @@
     }
   },
   {
-    "Name": "Állati sztárok",
+    "Name": "Állati Sztárok",
     "Price": 200,
     "ReleaseDate": "2012-03-30",
     "EndDate": "2013-02-22",
@@ -457,7 +457,7 @@
     }
   },
   {
-    "Name": "Tengeri kincsek",
+    "Name": "Tengeri Kincsek",
     "Price": 300,
     "ReleaseDate": "2012-08-31",
     "EndDate": "2014-01-31",
@@ -479,7 +479,7 @@
     }
   },
   {
-    "Name": "Boldog Karácsonyt! 2012",
+    "Name": "Boldog karácsonyt! 2012",
     "Price": 500,
     "ReleaseDate": "2012-11-02",
     "EndDate": "2013-01-11",
@@ -540,7 +540,7 @@
     }
   },
   {
-    "Name": "Állati párok",
+    "Name": "Állati Párok",
     "Price": 200,
     "ReleaseDate": "2013-05-31",
     "EndDate": "2014-10-10",
@@ -594,7 +594,7 @@
     }
   },
   {
-    "Name": "Boldog Karácsonyt! 2013",
+    "Name": "Boldog karácsonyt! 2013",
     "Price": 1000,
     "ReleaseDate": "2013-11-06",
     "EndDate": "2014-01-10",
@@ -710,7 +710,7 @@
     }
   },
   {
-    "Name": "Boldog Karácsonyt! 2014",
+    "Name": "Boldog karácsonyt! 2014",
     "Price": 2000,
     "ReleaseDate": "2014-11-07",
     "EndDate": "2015-02-02",
@@ -834,7 +834,7 @@
     }
   },
   {
-    "Name": "Boldog Karácsonyt! 2015",
+    "Name": "Boldog karácsonyt! 2015",
     "Price": 2000,
     "ReleaseDate": "2015-11-06",
     "EndDate": "2016-01-25",
@@ -960,7 +960,7 @@
     }
   },
   {
-    "Name": "Boldog Karácsonyt! 2016",
+    "Name": "Boldog karácsonyt! 2016",
     "Price": 2000,
     "ReleaseDate": "2016-11-04",
     "EndDate": "2017-01-30",
