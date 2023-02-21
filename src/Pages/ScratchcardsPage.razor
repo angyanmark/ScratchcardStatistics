@@ -10,7 +10,7 @@
     <HeaderContent>
         <MudTh>
             <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Name)">Név</MudTableSortLabel>
-            <MudTextField @bind-Value="@filterName" Margin="Margin.Dense" Variant="Variant.Outlined" TextChanged="FilterChanged" Clearable />
+            <MudTextField T="string" Value="filterName" ValueChanged="NameChanged" Margin="Margin.Dense" Variant="Variant.Outlined" Clearable />
         </MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ReleaseDate)" InitialDirection="SortDirection.Descending">Megjelenés</MudTableSortLabel></MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Price)">Ár</MudTableSortLabel></MudTh>
@@ -20,7 +20,7 @@
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ChanceOfWinningPercent)">Nyerési esély %</MudTableSortLabel></MudTh>
         <MudTh>
             <div class="d-flex justify-center gap-4">
-                <MudCheckBox T="bool?" Color="@Color.Primary" CheckedChanged="CheckboxChanged" Checked="filterIsAvailable" TriState />
+                <MudCheckBox T="bool?" Checked="filterIsAvailable" CheckedChanged="IsAvailableChanged" Color="Color.Primary" TriState />
                 <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.IsAvailable)">Elérhető</MudTableSortLabel>
             </div>
         </MudTh>
@@ -37,7 +37,7 @@
     </RowTemplate>
 </MudTable>
 
-@code {
+    @code {
     private string filterName = string.Empty;
     private bool? filterIsAvailable = true;
 
@@ -51,7 +51,13 @@
         ScratchcardsFiltered = scratchcards;
     }
 
-    private void CheckboxChanged(bool? isSelected)
+    private void NameChanged(string name)
+    {
+        filterName = name;
+        FilterChanged();
+    }
+
+    private void IsAvailableChanged(bool? isSelected)
     {
         filterIsAvailable = isSelected;
         FilterChanged();
