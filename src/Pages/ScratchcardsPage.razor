@@ -6,11 +6,11 @@
 
 <PageTitle>Kaparós sorsjegyek</PageTitle>
 
-<MudTable T="Scratchcard" Items="ScratchcardsFiltered" AllowUnsorted="false" Height="calc(100vh - 96px)" Dense Hover Bordered FixedHeader>
+<MudTable T="Scratchcard" Items="_scratchcardsFiltered" AllowUnsorted="false" Height="calc(100vh - 96px)" Dense Hover Bordered FixedHeader>
     <HeaderContent>
         <MudTh>
             <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Name)">Név</MudTableSortLabel>
-            <MudTextField T="string" Value="filterName" ValueChanged="NameChanged" Margin="Margin.Dense" Variant="Variant.Outlined" Clearable />
+            <MudTextField T="string" Value="_filterName" ValueChanged="NameChanged" Margin="Margin.Dense" Variant="Variant.Outlined" Clearable />
         </MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ReleaseDate)" InitialDirection="SortDirection.Descending">Megjelenés</MudTableSortLabel></MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Price)">Ár</MudTableSortLabel></MudTh>
@@ -20,7 +20,7 @@
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ChanceOfWinningPercent)">Nyerési esély %</MudTableSortLabel></MudTh>
         <MudTh>
             <div class="d-flex justify-center gap-4">
-                <MudCheckBox T="bool?" Checked="filterIsAvailable" CheckedChanged="IsAvailableChanged" Color="Color.Primary" TriState />
+                <MudCheckBox T="bool?" Checked="_filterIsAvailable" CheckedChanged="IsAvailableChanged" Color="Color.Primary" TriState />
                 <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.IsAvailable)">Elérhető</MudTableSortLabel>
             </div>
         </MudTh>
@@ -37,34 +37,34 @@
     </RowTemplate>
 </MudTable>
 
-    @code {
-    private string filterName = string.Empty;
-    private bool? filterIsAvailable = true;
+@code {
+    private string _filterName = string.Empty;
+    private bool? _filterIsAvailable = true;
 
-    private List<Scratchcard> ScratchcardsAll { get; set; } = new();
-    private List<Scratchcard> ScratchcardsFiltered { get; set; } = new();
+    private List<Scratchcard> _scratchcardsAll = new();
+    private List<Scratchcard> _scratchcardsFiltered = new();
 
     protected override void OnInitialized()
     {
-        ScratchcardsAll = ScratchcardService.GetScratchcards();
+        _scratchcardsAll = ScratchcardService.GetScratchcards();
         FilterChanged();
     }
 
     private void NameChanged(string name)
     {
-        filterName = name;
+        _filterName = name;
         FilterChanged();
     }
 
     private void IsAvailableChanged(bool? isSelected)
     {
-        filterIsAvailable = isSelected;
+        _filterIsAvailable = isSelected;
         FilterChanged();
     }
 
     private void FilterChanged() =>
-        ScratchcardsFiltered = ScratchcardsAll
-            .Where(s => s.Name.Contains(filterName, StringComparison.OrdinalIgnoreCase))
-            .Where(s => filterIsAvailable.HasValue ? s.IsAvailable == filterIsAvailable : true)
+        _scratchcardsFiltered = _scratchcardsAll
+            .Where(s => s.Name.Contains(_filterName, StringComparison.OrdinalIgnoreCase))
+            .Where(s => _filterIsAvailable.HasValue ? s.IsAvailable == _filterIsAvailable : true)
             .ToList();
 }

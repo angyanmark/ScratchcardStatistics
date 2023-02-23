@@ -1,21 +1,21 @@
-﻿@page "/scratchcards/{EscapedName}"
+﻿@page "/scratchcards/{ModifiedName}"
 @using ScratchcardStatistics.Models;
 @using ScratchcardStatistics.Services.Scratchcards;
 @inject IScratchcardService ScratchcardService
 
-<PageTitle>@Scratchcard.Name</PageTitle>
+<PageTitle>@_scratchcard.Name</PageTitle>
 
-<MudText Typo="Typo.h5" GutterBottom>@Scratchcard.Name</MudText>
+<MudText Typo="Typo.h5" GutterBottom>@_scratchcard.Name</MudText>
 
-<MudText Typo="Typo.body1">Ár: <b>@Scratchcard.Price.ToString("C0")</b></MudText>
-<MudText Typo="Typo.body1">Főnyeremény: <b>@Scratchcard.Jackpot.ToString("C0")</b></MudText>
-<MudText Typo="Typo.body1">Megjelenés: <b>@Scratchcard.ReleaseDate.ToShortDateString()</b></MudText>
-@if (@Scratchcard.EndDate.HasValue)
+<MudText Typo="Typo.body1">Ár: <b>@_scratchcard.Price.ToString("C0")</b></MudText>
+<MudText Typo="Typo.body1">Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></MudText>
+<MudText Typo="Typo.body1">Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></MudText>
+@if (_scratchcard.EndDate.HasValue)
 {
-    <MudText Typo="Typo.body1">Utolsó értékesítés: <b>@Scratchcard.EndDate.Value.ToShortDateString()</b></MudText>
+    <MudText Typo="Typo.body1">Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></MudText>
 }
-<MudText Typo="Typo.body1">Nyerési esély: <b>1:@Scratchcard.ChanceOfWinningToOne.ToString("N2")</b></MudText>
-<MudText Typo="Typo.body1" GutterBottom>Kibocsátott darabszám: <b>@Scratchcard.TotalSupply.ToString("N0") db</b></MudText>
+<MudText Typo="Typo.body1">Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b></MudText>
+<MudText Typo="Typo.body1" GutterBottom>Kibocsátott darabszám: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></MudText>
 
 <MudText Typo="Typo.h6" GutterBottom>Nyereménystruktúra:</MudText>
 <MudSimpleTable Style="max-width:420px" Dense Hover Bordered>
@@ -27,12 +27,12 @@
         </tr>
     </thead>
     <tbody>
-        @foreach (var structure in Scratchcard.PrizeStructure)
+        @foreach (var structure in _scratchcard.PrizeStructure)
         {
             <tr>
                 <td style="text-align:right">@structure.Value.ToString("N0") db</td>
                 <td style="text-align:right">@structure.Key.ToString("C0")</td>
-                <td style="text-align:center">1:@((1 / ((decimal)structure.Value / Scratchcard.TotalSupply)).ToString("#,##0.##"))</td>
+                <td style="text-align:center">1:@((1 / ((decimal)structure.Value / _scratchcard.TotalSupply)).ToString("#,##0.##"))</td>
             </tr>
         }
     </tbody>
@@ -40,10 +40,9 @@
 
 @code {
     [Parameter]
-    public string EscapedName { get; set; }
+    public string ModifiedName { get; set; }
 
-    private Scratchcard Scratchcard { get; set; }
+    private Scratchcard _scratchcard;
 
-    protected override void OnInitialized() =>
-        Scratchcard = ScratchcardService.GetScratchcard(EscapedName);
+    protected override void OnInitialized() => _scratchcard = ScratchcardService.GetScratchcard(ModifiedName);
 }
