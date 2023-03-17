@@ -10,7 +10,7 @@
     <HeaderContent>
         <MudTh>
             <MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Name)">Név</MudTableSortLabel>
-            <MudTextField T="string" Value="_filterName" ValueChanged="NameChanged" Margin="Margin.Dense" Variant="Variant.Outlined" Clearable />
+            <MudTextField T="string" Value="_filterName" ValueChanged="NameChanged" Margin="Margin.Dense" Variant="Variant.Outlined" Clearable Immediate />
         </MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.ReleaseDate)" InitialDirection="SortDirection.Descending">Megjelenés</MudTableSortLabel></MudTh>
         <MudTh Style="text-align:center"><MudTableSortLabel SortBy="new Func<Scratchcard, object>(s => s.Price)">Ár</MudTableSortLabel></MudTh>
