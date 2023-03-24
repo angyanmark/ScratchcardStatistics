@@ -4,8 +4,8 @@ public class Scratchcard
 {
     public string Name { get; set; }
     public int Price { get; set; }
-    public DateTime ReleaseDate { get; set; }
-    public DateTime? EndDate { get; set; }
+    public DateOnly ReleaseDate { get; set; }
+    public DateOnly? EndDate { get; set; }
     public int TotalSupply { get; set; }
     public Dictionary<int, int> PrizeStructure { get; set; }
 
