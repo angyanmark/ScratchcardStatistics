@@ -2390,7 +2390,7 @@
   {
     "Name": "Kis Meglepetés",
     "Price": 500,
-    "ReleaseDate": "9999-12-31",
+    "ReleaseDate": "2023-05-12",
     "TotalSupply": 5000000,
     "PrizeStructure": {
       "25000000": 1,
@@ -2413,7 +2413,7 @@
   {
     "Name": "Nagy Meglepetés",
     "Price": 1000,
-    "ReleaseDate": "9999-12-31",
+    "ReleaseDate": "2023-05-12",
     "TotalSupply": 4000000,
     "PrizeStructure": {
       "50000000": 1,
@@ -2435,7 +2435,7 @@
   {
     "Name": "Óriási Meglepetés",
     "Price": 2000,
-    "ReleaseDate": "9999-12-31",
+    "ReleaseDate": "2023-05-12",
     "TotalSupply": 2500000,
     "PrizeStructure": {
       "75000000": 1,
