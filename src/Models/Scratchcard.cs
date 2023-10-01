@@ -2,12 +2,12 @@
 
 public class Scratchcard
 {
-    public string Name { get; set; }
-    public int Price { get; set; }
-    public DateOnly ReleaseDate { get; set; }
-    public DateOnly? EndDate { get; set; }
-    public int TotalSupply { get; set; }
-    public Dictionary<int, int> PrizeStructure { get; set; }
+    public required string Name { get; init; }
+    public required int Price { get; init; }
+    public required DateOnly ReleaseDate { get; init; }
+    public DateOnly? EndDate { get; init; }
+    public required int TotalSupply { get; init; }
+    public required Dictionary<int, int> PrizeStructure { get; init; }
 
     public bool IsAvailable => !EndDate.HasValue;
     public int Jackpot => PrizeStructure.Max(ps => ps.Key);

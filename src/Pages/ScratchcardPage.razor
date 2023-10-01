@@ -40,9 +40,9 @@
 
 @code {
     [Parameter]
-    public string ModifiedName { get; set; }
+    public required string ModifiedName { get; init; }
 
-    private Scratchcard _scratchcard;
+    private Scratchcard _scratchcard = null!;
 
     protected override void OnInitialized() => _scratchcard = ScratchcardService.GetScratchcard(ModifiedName);
 }
