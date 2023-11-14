@@ -3,17 +3,15 @@ using System.Net.Http.Json;
 
 namespace ScratchcardStatistics.Services.Scratchcards;
 
-public class ScratchcardService : IScratchcardService
+public class ScratchcardService(HttpClient httpClient) : IScratchcardService
 {
-    private List<Scratchcard> _scratchcards = new();
-    private readonly HttpClient _httpClient;
-
-    public ScratchcardService(HttpClient httpClient) => _httpClient = httpClient;
+    private List<Scratchcard> _scratchcards = [];
+    private readonly HttpClient _httpClient = httpClient;
 
     public async Task InitializeAsync()
     {
         var scratchcards = await _httpClient.GetFromJsonAsync<List<Scratchcard>>("scratchcards/scratchcards.json");
-        _scratchcards = scratchcards!.OrderByDescending(s => s.ReleaseDate).ThenByDescending(s => s.Price).ToList();
+        _scratchcards = [.. scratchcards!.OrderByDescending(s => s.ReleaseDate).ThenByDescending(s => s.Price)];
     }
 
     public List<Scratchcard> GetScratchcards() => _scratchcards;

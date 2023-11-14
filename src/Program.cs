@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using ScratchcardStatistics;
 using MudBlazor.Services;
-using ScratchcardStatistics.Services.Scratchcards;
+using ScratchcardStatistics;
 using ScratchcardStatistics.Interfaces;
+using ScratchcardStatistics.Services.Scratchcards;
 using System.Globalization;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
