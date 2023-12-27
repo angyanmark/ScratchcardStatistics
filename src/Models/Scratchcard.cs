@@ -9,7 +9,7 @@ public class Scratchcard
     public required int TotalSupply { get; init; }
     public required Dictionary<int, int> PrizeStructure { get; init; }
 
-    public bool IsAvailable => !EndDate.HasValue;
+    public bool IsAvailable => !EndDate.HasValue || EndDate.Value > DateOnly.FromDateTime(DateTime.Now);
     public int Jackpot => PrizeStructure.Max(ps => ps.Key);
     public decimal ChanceOfWinningToOne => 1 / ChanceOfWinningPercent;
     public decimal ChanceOfWinningPercent => (decimal)PrizeStructure.Sum(ps => ps.Value) / TotalSupply;
