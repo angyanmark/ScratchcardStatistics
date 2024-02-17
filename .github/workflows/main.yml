@@ -21,7 +21,7 @@ jobs:
 
     # Install workloads
     - name: Install workloads
-      run: dotnet workload restore
+      run: dotnet workload restore src/ScratchcardStatistics.csproj
 
     # Publish the Blazor project to the release folder
     - name: Publish Blazor project
