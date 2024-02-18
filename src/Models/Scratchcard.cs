@@ -1,14 +1,13 @@
 ﻿namespace ScratchcardStatistics.Models;
 
-public class Scratchcard
+public record Scratchcard(
+    string Name,
+    int Price,
+    DateOnly ReleaseDate,
+    DateOnly? EndDate,
+    int TotalSupply,
+    Dictionary<int, int> PrizeStructure)
 {
-    public required string Name { get; init; }
-    public required int Price { get; init; }
-    public required DateOnly ReleaseDate { get; init; }
-    public DateOnly? EndDate { get; init; }
-    public required int TotalSupply { get; init; }
-    public required Dictionary<int, int> PrizeStructure { get; init; }
-
     public bool IsAvailable => !EndDate.HasValue || EndDate.Value > DateOnly.FromDateTime(DateTime.Now);
     public int Jackpot => PrizeStructure.Max(ps => ps.Key);
     public decimal ChanceOfWinningToOne => 1 / ChanceOfWinningPercent;
