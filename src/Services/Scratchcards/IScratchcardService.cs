@@ -5,6 +5,6 @@ namespace ScratchcardStatistics.Services.Scratchcards;
 
 public interface IScratchcardService : IInitialize
 {
-    List<Scratchcard> GetScratchcards();
+    Scratchcard[] GetScratchcards();
     Scratchcard GetScratchcard(string modifiedName);
 }

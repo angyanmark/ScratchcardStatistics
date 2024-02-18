@@ -1,8 +1,7 @@
 ﻿@page "/scratchcards"
-@using ScratchcardStatistics.Models;
-@using ScratchcardStatistics.Services.Scratchcards;
+@using ScratchcardStatistics.Models
+@using ScratchcardStatistics.Services.Scratchcards
 @inject IScratchcardService ScratchcardService
-@inject NavigationManager NavigationManager
 
 <PageTitle>Kaparós sorsjegyek</PageTitle>
 
@@ -41,8 +40,8 @@
     private string _filterName = string.Empty;
     private bool? _filterIsAvailable = true;
 
-    private List<Scratchcard> _scratchcardsAll = new();
-    private List<Scratchcard> _scratchcardsFiltered = new();
+    private Scratchcard[] _scratchcardsAll = [];
+    private Scratchcard[] _scratchcardsFiltered = [];
 
     protected override void OnInitialized()
     {
@@ -66,5 +65,5 @@
         _scratchcardsFiltered = _scratchcardsAll
             .Where(s => s.Name.Contains(_filterName, StringComparison.OrdinalIgnoreCase))
             .Where(s => _filterIsAvailable.HasValue ? s.IsAvailable == _filterIsAvailable : true)
-            .ToList();
+            .ToArray();
 }
