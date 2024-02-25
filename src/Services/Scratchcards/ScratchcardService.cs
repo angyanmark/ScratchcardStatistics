@@ -1,12 +1,12 @@
-﻿using ScratchcardStatistics.Models;
-using System.Net.Http.Json;
+﻿using System.Net.Http.Json;
+
+using ScratchcardStatistics.Models;
 
 namespace ScratchcardStatistics.Services.Scratchcards;
 
-public class ScratchcardService(HttpClient httpClient) : IScratchcardService
+public class ScratchcardService(HttpClient _httpClient) : IScratchcardService
 {
     private Scratchcard[] _scratchcards = [];
-    private readonly HttpClient _httpClient = httpClient;
 
     public async Task InitializeAsync()
     {

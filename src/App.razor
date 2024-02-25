@@ -5,6 +5,8 @@
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
     </Found>
     <NotFound>
-        @{ NavigationManager.NavigateTo("scratchcards"); }
+        @{
+            NavigationManager.NavigateTo("scratchcards");
+        }
     </NotFound>
 </Router>

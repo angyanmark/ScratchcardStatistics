@@ -1,10 +1,13 @@
+using System.Globalization;
+
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+
 using MudBlazor.Services;
+
 using ScratchcardStatistics;
 using ScratchcardStatistics.Interfaces;
 using ScratchcardStatistics.Services.Scratchcards;
-using System.Globalization;
 
 var culture = new CultureInfo("hu-HU");
 CultureInfo.DefaultThreadCurrentCulture = culture;
