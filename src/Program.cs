@@ -6,8 +6,7 @@ using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using MudBlazor.Services;
 
 using ScratchcardStatistics;
-using ScratchcardStatistics.Interfaces;
-using ScratchcardStatistics.Services.Scratchcards;
+using ScratchcardStatistics.Services;
 
 var culture = new CultureInfo("hu-HU");
 CultureInfo.DefaultThreadCurrentCulture = culture;
@@ -19,8 +18,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services
     .AddSingleton(sp => new HttpClient { BaseAddress = new(builder.HostEnvironment.BaseAddress) })
-    .AddSingleton<IInitialize>(sp => sp.GetRequiredService<IScratchcardService>())
-    .AddSingleton<IScratchcardService, ScratchcardService>()
+    .AddSingleton<ScratchcardService>()
     .AddMudServices();
 
 await builder.Build().RunAsync();
