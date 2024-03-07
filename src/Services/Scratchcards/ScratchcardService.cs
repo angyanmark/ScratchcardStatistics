@@ -10,8 +10,8 @@ public class ScratchcardService(HttpClient _httpClient) : IScratchcardService
 
     public async Task InitializeAsync()
     {
-        var scratchcards = await _httpClient.GetFromJsonAsync<Scratchcard[]>("scratchcards/scratchcards.json");
-        _scratchcards = [.. scratchcards!.OrderByDescending(s => s.ReleaseDate).ThenByDescending(s => s.Price)];
+        var scratchcards = await _httpClient.GetFromJsonAsync<Scratchcard[]>("scratchcards/scratchcards.json") ?? [];
+        _scratchcards = [.. scratchcards.OrderByDescending(s => s.ReleaseDate).ThenByDescending(s => s.Price)];
     }
 
     public Scratchcard[] GetScratchcards() => _scratchcards;

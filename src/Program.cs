@@ -18,9 +18,9 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services
-    .AddSingleton(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) })
-    .AddSingleton<IScratchcardService, ScratchcardService>()
+    .AddSingleton(sp => new HttpClient { BaseAddress = new(builder.HostEnvironment.BaseAddress) })
     .AddSingleton<IInitialize>(sp => sp.GetRequiredService<IScratchcardService>())
+    .AddSingleton<IScratchcardService, ScratchcardService>()
     .AddMudServices();
 
 await builder.Build().RunAsync();
