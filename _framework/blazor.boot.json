@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ScratchcardStatistics",
   "resources": {
-    "hash": "sha256-OC5bgEcqmndQYm0EPU9u7UGODWHPmLFULFM3Udm+IYg=",
+    "hash": "sha256-BcVLamMFYYuo3oStRFRLzuLiza4fHZ/kSZDehjYk+T8=",
     "jsModuleNative": {
       "dotnet.native.9.0.0-preview.3.24172.9.j16omvyt1w.js": "sha256-dyNuz4nnrSBw2JtQzvw5YiXquSryc7X0xHpvAbDLxUM="
     },
@@ -9,7 +9,7 @@
       "dotnet.runtime.9.0.0-preview.3.24172.9.az2syf4aaz.js": "sha256-vhiQVQgEZw5ke0FRWuxCzLwC5uvYkuuQgIZ3CDngLLQ="
     },
     "wasmNative": {
-      "dotnet.native.wasm": "sha256-xsKU691y0Y5ltOZ9zD/VKlWh0/fev2nWrmrw+qooReI="
+      "dotnet.native.wasm": "sha256-K3KL4aF20s84mtDqWcEmWmS7zuWIfXuLx3rHx95LGHI="
     },
     "icu": {
       "icudt.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4="
@@ -33,7 +33,7 @@
       "Microsoft.JSInterop.wasm": "sha256-yWRQ1XCJLIaGFWeNUwy+5GGfIFzU07Hql+WwL1635Q8=",
       "Microsoft.JSInterop.WebAssembly.wasm": "sha256-E9mR6DoPIx3llzoXH973h3Y7Pcp/nKSc3RfCxCnFGbg=",
       "MudBlazor.wasm": "sha256-qwG7Fu41IdlibnHRcYkWsGzVDM7kN/H8wOHDKjpkPfE=",
-      "ScratchcardStatistics.wasm": "sha256-6YUbBsrCMKxYZgh0lcqCXMCGICAYHKhh3/ZLKy5rWSo=",
+      "ScratchcardStatistics.wasm": "sha256-el2XE2+dni+uZ8rnZRYbQBCi36n6tGIj9TPuKCdS03o=",
       "System.Collections.Concurrent.wasm": "sha256-fEvPwDTnehh014cV9azqspQxdOvR490Y/Qc1SsArrF0=",
       "System.Collections.Immutable.wasm": "sha256-kiI7oSYR8jK8AB6o9r7qvZ0yIphsl1mAxMFciVU1+D0=",
       "System.Collections.wasm": "sha256-I3twYs90bU0bubI3A7Whv9L6hB4ywH51pkm1PVc4hWg=",
