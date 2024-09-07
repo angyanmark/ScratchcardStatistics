@@ -5,8 +5,8 @@
 		<BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-		<RunAOTCompilation>true</RunAOTCompilation>
-		<WasmStripILAfterAOT>true</WasmStripILAfterAOT>
+		<RunAOTCompilation>false</RunAOTCompilation>
+		<WasmStripILAfterAOT>false</WasmStripILAfterAOT>
 	</PropertyGroup>
 
 	<ItemGroup>
