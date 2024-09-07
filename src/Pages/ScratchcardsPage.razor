@@ -9,7 +9,7 @@
 @if (_scratchcardsFiltered is not null)
 {
     <FluentDataGrid Items="@_scratchcardsFiltered" OnRowFocus="HandleRowFocus" TGridItem="Scratchcard" ShowHover>
-        <PropertyColumn Property="@(s => s.Name)" Title="Név" Sortable=true Filtered="!string.IsNullOrWhiteSpace(_filterName)">
+        <PropertyColumn Property="@(s => s.Name)" Title="Név" Sortable=true Filtered="!string.IsNullOrEmpty(_filterName)">
             <ColumnOptions>
                 <FluentSearch Autofocus=true @bind-Value=_filterName @oninput="NameChanged" @bind-Value:after="NameCleared" Label="Szűrés" Placeholder="Név" />
             </ColumnOptions>
