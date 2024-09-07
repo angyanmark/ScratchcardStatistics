@@ -2,8 +2,7 @@ using System.Globalization;
 
 using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-
-using MudBlazor.Services;
+using Microsoft.FluentUI.AspNetCore.Components;
 
 using ScratchcardStatistics;
 using ScratchcardStatistics.Services;
@@ -19,6 +18,6 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 builder.Services
     .AddSingleton(sp => new HttpClient { BaseAddress = new(builder.HostEnvironment.BaseAddress) })
     .AddSingleton<ScratchcardService>()
-    .AddMudServices();
+    .AddFluentUIComponents();
 
 await builder.Build().RunAsync();

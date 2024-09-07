@@ -7,38 +7,35 @@
 {
     <PageTitle>@_scratchcard.Name</PageTitle>
 
-    <MudText Typo="Typo.h5" GutterBottom>@_scratchcard.Name</MudText>
+    <FluentLabel Typo="Typography.H3" Style="margin-bottom:16px">@_scratchcard.Name</FluentLabel>
 
-    <MudText Typo="Typo.body1">Ár: <b>@_scratchcard.Price.ToString("C0")</b></MudText>
-    <MudText Typo="Typo.body1">Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></MudText>
-    <MudText Typo="Typo.body1">Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></MudText>
+    <FluentLabel Typo="Typography.Body">Ár: <b>@_scratchcard.Price.ToString("C0")</b></FluentLabel>
+    <FluentLabel Typo="Typography.Body">Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></FluentLabel>
+    <FluentLabel Typo="Typography.Body">Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></FluentLabel>
     @if (_scratchcard.EndDate.HasValue)
     {
-        <MudText Typo="Typo.body1">Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></MudText>
+        <FluentLabel Typo="Typography.Body">Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></FluentLabel>
     }
-    <MudText Typo="Typo.body1">Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b></MudText>
-    <MudText Typo="Typo.body1" GutterBottom>Kibocsátott darabszám: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></MudText>
+    <FluentLabel Typo="Typography.Body">Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b></FluentLabel>
+    <FluentLabel Typo="Typography.Body">Kibocsátott darabszám: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></FluentLabel>
 
-    <MudText Typo="Typo.h6" GutterBottom>Nyereménystruktúra:</MudText>
-    <MudSimpleTable Style="max-width:420px" Dense Hover Bordered>
-        <thead>
-            <tr>
-                <th style="text-align:center">Darab</th>
-                <th style="text-align:center">Nyeremény</th>
-                <th style="text-align:center">Esély</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var structure in _scratchcard.PrizeStructure)
-            {
-                <tr>
-                    <td style="text-align:right">@structure.Value.ToString("N0") db</td>
-                    <td style="text-align:right">@structure.Key.ToString("C0")</td>
-                    <td style="text-align:center">1:@((1 / ((decimal)structure.Value / _scratchcard.TotalSupply)).ToString("#,##0.##"))</td>
-                </tr>
-            }
-        </tbody>
-    </MudSimpleTable>
+    <FluentLabel Typo="Typography.H4" Style="margin-top:12px">Nyereménystruktúra:</FluentLabel>
+
+    <FluentDataGrid GenerateHeader=GenerateHeaderOption.None Style="max-width:420px" TGridItem="string" ShowHover>
+        <FluentDataGridRow RowType="DataGridRowType.Header">
+            <FluentDataGridCell Style="text-align:center"><b>Darab</b></FluentDataGridCell>
+            <FluentDataGridCell Style="text-align:center"><b>Nyeremény</b></FluentDataGridCell>
+            <FluentDataGridCell Style="text-align:center"><b>Esély</b></FluentDataGridCell>
+        </FluentDataGridRow>
+        @foreach (var structure in _scratchcard.PrizeStructure)
+        {
+            <FluentDataGridRow>
+                <FluentDataGridCell Style="text-align:right">@structure.Value.ToString("N0") db</FluentDataGridCell>
+                <FluentDataGridCell Style="text-align:right">@structure.Key.ToString("C0")</FluentDataGridCell>
+                <FluentDataGridCell Style="text-align:center">1:@((1 / ((decimal)structure.Value / _scratchcard.TotalSupply)).ToString("#,##0.##"))</FluentDataGridCell>
+            </FluentDataGridRow>
+        }
+    </FluentDataGrid>
 }
 
 @code {

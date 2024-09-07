@@ -1,39 +1,26 @@
 ﻿@inherits LayoutComponentBase
 
-<MudThemeProvider IsDarkMode Theme="_theme" />
-<MudPopoverProvider />
-
-<MudLayout>
-    <MudAppBar Color="Color.Primary" Elevation="0" Dense>
-        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="DrawerToggle" />
-        @if (!_drawerOpen)
-        {
-            <MudText Typo="Typo.h6" Class="ml-3">Kaparós sorsjegyek</MudText>
-        }
-    </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen">
-        <MudDrawerHeader Class="justify-center" Dense>
-            <MudText Typo="Typo.h6">Kaparós sorsjegyek</MudText>
-        </MudDrawerHeader>
-        <NavMenu />
-    </MudDrawer>
-    <MudMainContent>
-        <MudContainer MaxWidth="MaxWidth.ExtraExtraLarge" Class="my-6">
-            @Body
-        </MudContainer>
-    </MudMainContent>
-</MudLayout>
-
-@code {
-    private MudTheme _theme = new()
-    {
-        PaletteDark = new PaletteDark()
-        {
-            Primary = Colors.Green.Default,
-        },
-    };
-
-    private bool _drawerOpen;
-
-    private void DrawerToggle() => _drawerOpen = !_drawerOpen;
-}
+<FluentLayout>
+    <FluentHeader>
+        <a href="scratchcards" style="color:rgb(39, 39, 39); text-decoration:none;">Kaparós sorsjegyek</a>
+    </FluentHeader>
+    <FluentStack Class="main" Orientation="Orientation.Horizontal" Width="100%">
+        <FluentBodyContent Class="body-content">
+            <ErrorBoundary>
+                <ChildContent>
+                    <div class="content">
+                        @Body
+                    </div>
+                </ChildContent>
+                <ErrorContent Context="ex">
+                    <div class="blazor-error-boundary">@ex.Message</div>
+                </ErrorContent>
+            </ErrorBoundary>
+        </FluentBodyContent>
+    </FluentStack>
+    <FluentFooter>
+        <a href="https://bet.szerencsejatek.hu/sorsjegyek" target="_blank">Szerencsejáték Zrt.</a>
+        <FluentSpacer />
+        <a href="https://github.com/angyanmark/ScratchcardStatistics" target="_blank">Forráskód</a>
+    </FluentFooter>
+</FluentLayout>
