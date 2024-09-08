@@ -1,8 +1,8 @@
 ﻿@page "/scratchcards"
+@using System.Collections.Frozen
 @using ScratchcardStatistics.Models
 @using ScratchcardStatistics.Services
 @inject NavigationManager NavigationManager
-@inject ScratchcardService ScratchcardService
 
 <PageTitle>Kaparós sorsjegyek</PageTitle>
 
@@ -35,17 +35,13 @@
     private string _filterName = string.Empty;
     private bool? _filterIsAvailable = true;
 
-    private Scratchcard[]? _scratchcardsAll;
     private IQueryable<Scratchcard>? _scratchcardsFiltered;
 
-    GridSort<Scratchcard> chanceOfWinningToOneSort = GridSort<Scratchcard>.ByAscending(x => x.ChanceOfWinningToOne);
-    GridSort<Scratchcard> isAvailableSort = GridSort<Scratchcard>.ByAscending(x => x.IsAvailable);
+    private GridSort<Scratchcard> chanceOfWinningToOneSort = GridSort<Scratchcard>.ByAscending(x => x.ChanceOfWinningToOne);
+    private GridSort<Scratchcard> isAvailableSort = GridSort<Scratchcard>.ByAscending(x => x.IsAvailable);
 
-    protected override async Task OnInitializedAsync()
-    {
-        _scratchcardsAll = await ScratchcardService.GetScratchcardsAsync();
+    protected override void OnInitialized() =>
         FilterChanged();
-    }
 
     private void NameChanged(ChangeEventArgs args)
     {
@@ -72,13 +68,11 @@
     }
 
     private void FilterChanged() =>
-        _scratchcardsFiltered = _scratchcardsAll!
+        _scratchcardsFiltered = ScratchcardService.Scratchcards
             .Where(s => s.Name.Contains(_filterName, StringComparison.OrdinalIgnoreCase))
             .Where(s => _filterIsAvailable.HasValue ? s.IsAvailable == _filterIsAvailable : true)
             .AsQueryable();
 
-    private void HandleRowFocus(FluentDataGridRow<Scratchcard> row)
-    {
-        NavigationManager.NavigateTo($"scratchcards/{row.Item!.Name.Replace(' ', '_')}");
-    }
+    private void HandleRowFocus(FluentDataGridRow<Scratchcard> row) =>
+        NavigationManager.NavigateTo($"scratchcards/{row.Item!.PathName}");
 }

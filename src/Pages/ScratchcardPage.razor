@@ -1,7 +1,6 @@
-﻿@page "/scratchcards/{ModifiedName}"
+﻿@page "/scratchcards/{PathName}"
 @using ScratchcardStatistics.Models
 @using ScratchcardStatistics.Services
-@inject ScratchcardService ScratchcardService
 
 @if (_scratchcard is not null)
 {
@@ -40,9 +39,10 @@
 
 @code {
     [Parameter]
-    public required string ModifiedName { get; init; }
+    public required string PathName { get; init; }
 
     private Scratchcard? _scratchcard;
 
-    protected override async Task OnInitializedAsync() => _scratchcard = await ScratchcardService.GetScratchcardAsync(ModifiedName);
+    protected override void OnInitialized() =>
+        _scratchcard = ScratchcardService.Scratchcards.Single(s => string.Equals(s.PathName, PathName));
 }

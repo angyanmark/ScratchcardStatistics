@@ -14,4 +14,5 @@ public record Scratchcard(
     public decimal ChanceOfWinningPercent => (decimal)PrizeStructure.Sum(ps => ps.Value) / TotalSupply;
     public decimal ExpectedValue => PrizeStructure.Sum(ps => (long)ps.Key * ps.Value) / TotalSupply;
     public decimal ExpectedValuePercent => ExpectedValue / Price;
+    public string PathName => Name.Replace(' ', '_');
 }
