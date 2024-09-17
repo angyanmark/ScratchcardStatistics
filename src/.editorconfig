@@ -13,8 +13,8 @@ tab_width = 2
 end_of_line = lf
 insert_final_newline = true
 
-# C# files
-[*.cs]
+# C# and Razor files
+[*.{cs,razor}]
 
 #### Core EditorConfig Options ####
 

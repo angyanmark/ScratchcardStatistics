@@ -83,10 +83,6 @@ footer a:hover {
   color: white;
 }
 
-.blazor-error-boundary::before {
-  content: "Hiba történt. "
-}
-
 .loading-progress {
   position: relative;
   display: block;
