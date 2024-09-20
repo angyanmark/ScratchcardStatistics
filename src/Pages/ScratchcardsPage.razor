@@ -8,13 +8,13 @@
 
 @if (_scratchcardsFiltered is not null)
 {
-    <FluentDataGrid Items="@_scratchcardsFiltered" OnRowFocus="HandleRowFocus" TGridItem="Scratchcard" ShowHover>
+    <FluentDataGrid Items="@_scratchcardsFiltered" OnRowClick="HandleRowClick" TGridItem="Scratchcard" ShowHover>
         <PropertyColumn Property="@(s => s.Name)" Title="Név" Sortable=true Filtered="!string.IsNullOrEmpty(_filterName)">
             <ColumnOptions>
                 <FluentSearch Autofocus=true @bind-Value=_filterName @oninput="NameChanged" @bind-Value:after="NameCleared" Label="Szűrés" Placeholder="Név" />
             </ColumnOptions>
         </PropertyColumn>
-        <PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection=SortDirection.Descending IsDefaultSortColumn=true Title="Megjelenés" Align=Align.Center Sortable=true  />
+        <PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection=SortDirection.Descending IsDefaultSortColumn=true Title="Megjelenés" Align=Align.Center Sortable=true />
         <PropertyColumn Property="@(s => s.Price)" Format="C0" Title="Ár" Align=Align.End Sortable=true />
         <PropertyColumn Property="@(s => s.ExpectedValue)" Format="C0" Title="Várható érték" Align=Align.End Sortable=true />
         <PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align=Align.Center Sortable=true />
@@ -24,18 +24,18 @@
             <ColumnOptions>
                 <FluentCheckbox ThreeState=true CheckState=_filterIsAvailable CheckStateChanged=IsAvailableChanged Label="Elérhető" />
             </ColumnOptions>
-			<ChildContent>
-				@if (context.IsAvailable)
-				{
-					<FluentEmoji Value="@(new Emojis.Symbols.Flat.Default.CheckMarkButton())" Width="16px" />
-				}
-				else
-				{
-					<FluentEmoji Value="@(new Emojis.Symbols.Flat.Default.CrossMark())" Width="16px" />
-				}
-			</ChildContent>
-		</TemplateColumn>
-	</FluentDataGrid>
+            <ChildContent>
+                @if (context.IsAvailable)
+                {
+                    <FluentEmoji Value="@(new Emojis.Symbols.Flat.Default.CheckMarkButton())" Width="16px" />
+                }
+                else
+                {
+                    <FluentEmoji Value="@(new Emojis.Symbols.Flat.Default.CrossMark())" Width="16px" />
+                }
+            </ChildContent>
+        </TemplateColumn>
+    </FluentDataGrid>
 }
 
 @code {
@@ -78,10 +78,10 @@
         _scratchcardsFiltered = ScratchcardService.Scratchcards
             .Where(s => s.Name.Contains(_filterName, StringComparison.OrdinalIgnoreCase))
             .Where(s => _filterIsAvailable.HasValue ? s.IsAvailable == _filterIsAvailable : true)
-			.OrderByDescending(s => s.ReleaseDate)
-			.ThenByDescending(s => s.Price)
+            .OrderByDescending(s => s.ReleaseDate)
+            .ThenByDescending(s => s.Price)
             .AsQueryable();
 
-    private void HandleRowFocus(FluentDataGridRow<Scratchcard> row) =>
+    private void HandleRowClick(FluentDataGridRow<Scratchcard> row) =>
         NavigationManager.NavigateTo($"scratchcards/{row.Item!.PathName}");
 }
