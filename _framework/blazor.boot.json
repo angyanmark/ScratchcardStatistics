@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ScratchcardStatistics",
   "resources": {
-    "hash": "sha256-wD9GM/0hYPAx8BFlQTZoVk/D4nJP9uusL6GpkcwwZIc=",
+    "hash": "sha256-roGpIXvuJvXUJNQaSq6v0Gas0EyUwjfPLyN8nWkEmCI=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.Forms.k0kdpkyi7d.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.gvuszc0at8.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -20,7 +20,7 @@
       "Microsoft.FluentUI.AspNetCore.Components.4lghy9ccwe.wasm": "Microsoft.FluentUI.AspNetCore.Components.wasm",
       "Microsoft.JSInterop.h7oya6ymng.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.lqrqdcga09.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
-      "ScratchcardStatistics.0h95q0vyhu.wasm": "ScratchcardStatistics.wasm",
+      "ScratchcardStatistics.ubpb1uyiiw.wasm": "ScratchcardStatistics.wasm",
       "System.Collections.Concurrent.tocirpq0px.wasm": "System.Collections.Concurrent.wasm",
       "System.Collections.Immutable.9jtitchgb0.wasm": "System.Collections.Immutable.wasm",
       "System.Collections.3dhgwfeiwq.wasm": "System.Collections.wasm",
@@ -49,7 +49,7 @@
       "System.Text.RegularExpressions.m4y8bapngi.wasm": "System.Text.RegularExpressions.wasm",
       "System.6wfu8d6vsg.wasm": "System.wasm",
       "dotnet.native.f6do1a86lz.js": "dotnet.native.js",
-      "dotnet.native.5o8ew10ykj.wasm": "dotnet.native.wasm",
+      "dotnet.native.bgx6cot4n6.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.runtime.26xtx0erx2.js": "dotnet.runtime.js",
       "icudt.oh1zvcfom8.dat": "icudt.dat"
@@ -61,7 +61,7 @@
       "dotnet.runtime.26xtx0erx2.js": "sha256-1lGQC47gePi9fLGPDXRbA//I7x1RZ2FrSoAwS/Piloo="
     },
     "wasmNative": {
-      "dotnet.native.5o8ew10ykj.wasm": "sha256-m5jSqkjn5/rTMTQQRZqnws98TsiXb+5MK0CfTclaTEQ="
+      "dotnet.native.bgx6cot4n6.wasm": "sha256-JVUbIr15TWLYV3ZHN9vOv/SLCDA3vC9mM3965tm6kBY="
     },
     "icu": {
       "icudt.oh1zvcfom8.dat": "sha256-tO5O5YzMTVSaKBboxAqezOQL9ewmupzV2JrB5Rkc8a4="
@@ -84,7 +84,7 @@
       "Microsoft.FluentUI.AspNetCore.Components.4lghy9ccwe.wasm": "sha256-OFRr7zju5L8OAqNyPSl9UHnTXHbzXSNRCUQoBYHX8F0=",
       "Microsoft.JSInterop.h7oya6ymng.wasm": "sha256-84523AwaxDOVZqfSiyfucayWpzQJDAk6zXRQZYK7boM=",
       "Microsoft.JSInterop.WebAssembly.lqrqdcga09.wasm": "sha256-7WtjYQMbGWwUn9g+l5J/EwBeIysEUj1NQmwD/6JVHi8=",
-      "ScratchcardStatistics.0h95q0vyhu.wasm": "sha256-NIle69xsyMMi+AIKdlE71at6BwDrdrWBkB27jbOkdVs=",
+      "ScratchcardStatistics.ubpb1uyiiw.wasm": "sha256-+s2z00blpro0b4dkvRrD8I3D06ZLNilqyTcbppI+Z94=",
       "System.Collections.Concurrent.tocirpq0px.wasm": "sha256-Q1CQocAtH67vVacmIUlaWpVRY+nCL9ALPrSBeZpQcnU=",
       "System.Collections.Immutable.9jtitchgb0.wasm": "sha256-BWOD6lmguacBaGsspvpNQaGGV6ylaf4/DOo4Bb4R7QU=",
       "System.Collections.3dhgwfeiwq.wasm": "sha256-GSj1SvNZ3irvkg+LyGCoMepdEIxjHMY43iqro+vCV30=",
