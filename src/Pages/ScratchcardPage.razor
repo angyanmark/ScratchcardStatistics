@@ -4,45 +4,45 @@
 
 @if (_scratchcard is not null)
 {
-    <PageTitle>@_scratchcard.Name</PageTitle>
+	<PageTitle>@_scratchcard.Name</PageTitle>
 
-    <FluentLabel Typo="Typography.H3" Style="margin-bottom:16px">@_scratchcard.Name</FluentLabel>
+	<FluentLabel Typo="Typography.H3" Style="margin-bottom:16px">@_scratchcard.Name</FluentLabel>
 
-    <FluentLabel Typo="Typography.Body">Ár: <b>@_scratchcard.Price.ToString("C0")</b></FluentLabel>
-    <FluentLabel Typo="Typography.Body">Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></FluentLabel>
-    <FluentLabel Typo="Typography.Body">Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></FluentLabel>
-    @if (_scratchcard.EndDate.HasValue)
-    {
-        <FluentLabel Typo="Typography.Body">Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></FluentLabel>
-    }
-    <FluentLabel Typo="Typography.Body">Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b></FluentLabel>
-    <FluentLabel Typo="Typography.Body">Kibocsátott darabszám: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></FluentLabel>
+	<FluentLabel Typo="Typography.Body">Ár: <b>@_scratchcard.Price.ToString("C0")</b></FluentLabel>
+	<FluentLabel Typo="Typography.Body">Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></FluentLabel>
+	<FluentLabel Typo="Typography.Body">Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></FluentLabel>
+	@if (_scratchcard.EndDate.HasValue)
+	{
+		<FluentLabel Typo="Typography.Body">Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></FluentLabel>
+	}
+	<FluentLabel Typo="Typography.Body">Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b></FluentLabel>
+	<FluentLabel Typo="Typography.Body">Kibocsátott darabszám: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></FluentLabel>
 
-    <FluentLabel Typo="Typography.H4" Style="margin-top:12px">Nyereménystruktúra:</FluentLabel>
+	<FluentLabel Typo="Typography.H4" Style="margin-top:12px">Nyereménystruktúra:</FluentLabel>
 
-    <FluentDataGrid GenerateHeader=GenerateHeaderOption.None Style="max-width:420px" TGridItem="string" ShowHover>
-        <FluentDataGridRow RowType="DataGridRowType.Header">
-            <FluentDataGridCell Style="text-align:center"><b>Darab</b></FluentDataGridCell>
-            <FluentDataGridCell Style="text-align:center"><b>Nyeremény</b></FluentDataGridCell>
-            <FluentDataGridCell Style="text-align:center"><b>Esély</b></FluentDataGridCell>
-        </FluentDataGridRow>
-        @foreach (var structure in _scratchcard.PrizeStructure)
-        {
-            <FluentDataGridRow>
-                <FluentDataGridCell Style="text-align:right">@structure.Value.ToString("N0") db</FluentDataGridCell>
-                <FluentDataGridCell Style="text-align:right">@structure.Key.ToString("C0")</FluentDataGridCell>
-                <FluentDataGridCell Style="text-align:center">1:@((1 / ((decimal)structure.Value / _scratchcard.TotalSupply)).ToString("#,##0.##"))</FluentDataGridCell>
-            </FluentDataGridRow>
-        }
-    </FluentDataGrid>
+	<FluentDataGrid GenerateHeader=GenerateHeaderOption.None Style="max-width:420px" TGridItem="string" ShowHover>
+		<FluentDataGridRow RowType="DataGridRowType.Header">
+			<FluentDataGridCell Style="text-align:center"><b>Darab</b></FluentDataGridCell>
+			<FluentDataGridCell Style="text-align:center"><b>Nyeremény</b></FluentDataGridCell>
+			<FluentDataGridCell Style="text-align:center"><b>Esély</b></FluentDataGridCell>
+		</FluentDataGridRow>
+		@foreach (var structure in _scratchcard.PrizeStructure)
+		{
+			<FluentDataGridRow>
+				<FluentDataGridCell Style="text-align:right">@structure.Value.ToString("N0") db</FluentDataGridCell>
+				<FluentDataGridCell Style="text-align:right">@structure.Key.ToString("C0")</FluentDataGridCell>
+				<FluentDataGridCell Style="text-align:center">1:@((1 / ((decimal)structure.Value / _scratchcard.TotalSupply)).ToString("#,##0.##"))</FluentDataGridCell>
+			</FluentDataGridRow>
+		}
+	</FluentDataGrid>
 }
 
 @code {
-    [Parameter]
-    public required string PathName { get; init; }
+	[Parameter]
+	public required string PathName { get; init; }
 
-    private Scratchcard? _scratchcard;
+	private Scratchcard? _scratchcard;
 
-    protected override void OnInitialized() =>
-        _scratchcard = ScratchcardService.Scratchcards.Single(s => string.Equals(s.PathName, PathName));
+	protected override void OnInitialized() =>
+		_scratchcard = ScratchcardService.Scratchcards.Single(s => string.Equals(s.PathName, PathName));
 }

@@ -3,12 +3,12 @@
 <FluentDesignTheme Mode="DesignThemeModes.Dark" OfficeColor="OfficeColor.Project" />
 
 <Router AppAssembly="@typeof(App).Assembly">
-    <Found Context="routeData">
-        <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
-    </Found>
-    <NotFound>
-        @{
-            NavigationManager.NavigateTo("scratchcards");
-        }
-    </NotFound>
+	<Found Context="routeData">
+		<RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)" />
+	</Found>
+	<NotFound>
+		@{
+			NavigationManager.NavigateTo("scratchcards");
+		}
+	</NotFound>
 </Router>
