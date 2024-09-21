@@ -82,6 +82,11 @@
             .ThenByDescending(s => s.Price)
             .AsQueryable();
 
-    private void HandleRowClick(FluentDataGridRow<Scratchcard> row) =>
-        NavigationManager.NavigateTo($"scratchcards/{row.Item!.PathName}");
+    private void HandleRowClick(FluentDataGridRow<Scratchcard> row)
+    {
+        if (row.Item is not null)
+        {
+            NavigationManager.NavigateTo($"scratchcards/{row.Item.PathName}");
+        }
+    }
 }
