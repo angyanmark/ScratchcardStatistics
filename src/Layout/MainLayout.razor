@@ -1,8 +1,16 @@
 ﻿@inherits LayoutComponentBase
 
 <FluentLayout>
-	<FluentHeader>
-		<a href="scratchcards" style="color: rgb(39, 39, 39); text-decoration: none;">Kaparós sorsjegyek</a>
+	<FluentHeader Height="48">
+		<a href="scratchcards" style="color: var(--neutral-layer-1); text-decoration: none;">Kaparós sorsjegyek</a>
+		<FluentSpacer />
+		<a href="https://bet.szerencsejatek.hu/sorsjegyek" target="_blank" style="margin-top: 4px;">
+			<FluentIcon Value="@(new Icons.Regular.Size24.Clover())" Color="@Color.Lightweight" Title="Szerencsejáték Zrt." />
+		</a>
+		<FluentSpacer Width="8" />
+		<a href="https://github.com/angyanmark/ScratchcardStatistics" target="_blank" style="margin-top: 4px;">
+			<FluentIcon Value="@(new Icons.Regular.Size24.Code())" Color="@Color.Lightweight" Title="Forráskód" />
+		</a>
 	</FluentHeader>
 	<FluentStack Class="main" Orientation="Orientation.Horizontal" Width="100%">
 		<FluentBodyContent Class="body-content">
@@ -18,9 +26,4 @@
 			</ErrorBoundary>
 		</FluentBodyContent>
 	</FluentStack>
-	<FluentFooter>
-		<a href="https://bet.szerencsejatek.hu/sorsjegyek" target="_blank">Szerencsejáték Zrt.</a>
-		<FluentSpacer />
-		<a href="https://github.com/angyanmark/ScratchcardStatistics" target="_blank">Forráskód</a>
-	</FluentFooter>
 </FluentLayout>
