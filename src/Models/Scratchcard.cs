@@ -1,6 +1,6 @@
 ﻿namespace ScratchcardStatistics.Models;
 
-public record Scratchcard(
+public sealed record Scratchcard(
     string Name,
     uint Price,
     DateOnly ReleaseDate,

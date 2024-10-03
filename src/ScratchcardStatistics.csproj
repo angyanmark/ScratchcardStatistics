@@ -4,7 +4,6 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <BlazorWebAssemblyLoadAllGlobalizationData>false</BlazorWebAssemblyLoadAllGlobalizationData>
     <RunAOTCompilation>true</RunAOTCompilation>
     <WasmStripILAfterAOT>true</WasmStripILAfterAOT>
   </PropertyGroup>
