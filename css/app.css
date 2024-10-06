@@ -9,14 +9,14 @@ body {
 }
 
 .main {
-  min-height: calc(100dvh - 48px);
+  min-height: calc(100dvh - 42px);
   color: var(--neutral-foreground-rest);
   align-items: stretch !important;
 }
 
 .body-content {
   align-self: stretch;
-  height: calc(100dvh - 48px) !important;
+  height: calc(100dvh - 42px) !important;
   display: flex;
 }
 
