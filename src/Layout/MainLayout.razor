@@ -1,18 +1,16 @@
 ﻿@inherits LayoutComponentBase
 
 <FluentLayout>
-	<FluentHeader Height="48">
-		<a href="scratchcards" style="color: var(--neutral-layer-1); text-decoration: none;">Kaparós sorsjegyek</a>
+	<FluentHeader Height="42">
+		<FluentNavLink Href="scratchcards">Kaparós sorsjegyek</FluentNavLink>
 		<FluentSpacer />
-		<a href="https://bet.szerencsejatek.hu/sorsjegyek" target="_blank" style="margin-top: 4px;">
-			<FluentIcon Value="@(new Icons.Regular.Size24.Clover())" Color="@Color.Lightweight" Title="Szerencsejáték Zrt." />
-		</a>
+		<FluentLabel Color="@Color.Lightweight" Style="font-size: var(--type-ramp-minus-1-font-size);">@System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription</FluentLabel>
 		<FluentSpacer Width="8" />
-		<a href="https://github.com/angyanmark/ScratchcardStatistics" target="_blank" style="margin-top: 4px;">
-			<FluentIcon Value="@(new Icons.Regular.Size24.Code())" Color="@Color.Lightweight" Title="Forráskód" />
-		</a>
+		<FluentNavLink Href="https://bet.szerencsejatek.hu/sorsjegyek" Icon="@(new Icons.Regular.Size24.Clover())" IconColor="@Color.Lightweight" Target="_blank" Tooltip="Szerencsejáték Zrt." Style="margin-bottom: -4px;" />
+		<FluentSpacer Width="8" />
+		<FluentNavLink Href="https://github.com/angyanmark/ScratchcardStatistics" Icon="@(new Icons.Regular.Size24.Code())" IconColor="@Color.Lightweight" Target="_blank" Tooltip="Forráskód" Style="margin-bottom: -4px;" />
 	</FluentHeader>
-	<FluentStack Class="main" Orientation="Orientation.Horizontal" Width="100%">
+	<FluentStack Class="main" Width="100%">
 		<FluentBodyContent Class="body-content">
 			<ErrorBoundary>
 				<ChildContent>

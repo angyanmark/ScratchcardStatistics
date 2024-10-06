@@ -8,16 +8,16 @@
 
 	<FluentLabel Typo="Typography.H3" Style="margin-bottom: 16px;">@_scratchcard.Name</FluentLabel>
 
-	<FluentLabel Typo="Typography.Body">Ár: <b>@_scratchcard.Price.ToString("C0")</b></FluentLabel>
-	<FluentLabel Typo="Typography.Body">Várható érték: <b>@_scratchcard.ExpectedValue.ToString("C0")</b> (@_scratchcard.ExpectedValuePercent.ToString("P0"))</FluentLabel>
-	<FluentLabel Typo="Typography.Body">Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></FluentLabel>
-	<FluentLabel Typo="Typography.Body">Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></FluentLabel>
+	<FluentLabel>Ár: <b>@_scratchcard.Price.ToString("C0")</b></FluentLabel>
+	<FluentLabel>Várható érték: <b>@_scratchcard.ExpectedValue.ToString("C0")</b> (@_scratchcard.ExpectedValuePercent.ToString("P0"))</FluentLabel>
+	<FluentLabel>Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></FluentLabel>
+	<FluentLabel>Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></FluentLabel>
 	@if (_scratchcard.EndDate.HasValue)
 	{
-		<FluentLabel Typo="Typography.Body">Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></FluentLabel>
+		<FluentLabel>Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></FluentLabel>
 	}
-	<FluentLabel Typo="Typography.Body">Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b> (@_scratchcard.ChanceOfWinningPercent.ToString("P2"))</FluentLabel>
-	<FluentLabel Typo="Typography.Body">Kibocsátott darabszám sorozatonként: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></FluentLabel>
+	<FluentLabel>Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b> (@_scratchcard.ChanceOfWinningPercent.ToString("P2"))</FluentLabel>
+	<FluentLabel>Kibocsátott darabszám sorozatonként: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></FluentLabel>
 
 	<FluentLabel Typo="Typography.H4" Style="margin-top: 12px;">Nyereménystruktúra:</FluentLabel>
 
