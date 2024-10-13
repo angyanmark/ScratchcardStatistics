@@ -6,7 +6,7 @@ namespace ScratchcardStatistics.Services;
 
 public static class ScratchcardService
 {
-    public static FrozenSet<Scratchcard> Scratchcards => new Scratchcard[]
+    public static FrozenSet<Scratchcard> Scratchcards => new HashSet<Scratchcard>
     {
         new(
             "Fáraók Kincse 200",
@@ -14,7 +14,7 @@ public static class ScratchcardService
             new(2005, 4, 30),
             new(2011, 1, 28),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 10 },
                 { 50000, 75 },
@@ -25,14 +25,14 @@ public static class ScratchcardService
                 { 1000, 61502 },
                 { 500, 355062 },
                 { 200, 1356735 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencsesüti",
             200,
             new(2008, 9, 12),
             new(2010, 2, 26),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 5 },
                 { 50000, 300 },
@@ -41,14 +41,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 400, 850000 },
                 { 200, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Póker",
             300,
             new(2008, 11, 7),
             new(2011, 10, 28),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 4 },
                 { 1000000, 5 },
@@ -59,14 +59,14 @@ public static class ScratchcardService
                 { 800, 150000 },
                 { 500, 550000 },
                 { 300, 600000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Black Jack 200",
             200,
             new(2008, 11, 29),
             new(2018, 6, 24),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 4 },
                 { 50000, 40 },
@@ -74,14 +74,14 @@ public static class ScratchcardService
                 { 1000, 150000 },
                 { 500, 400000 },
                 { 200, 1000000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szuper Bankó",
             500,
             new(2008, 11, 29),
             null,
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -94,14 +94,14 @@ public static class ScratchcardService
                 { 1500, 17500 },
                 { 1000, 200000 },
                 { 500, 400000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Üveggolyó",
             200,
             new(2009, 3, 27),
             new(2010, 4, 25),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 5 },
                 { 50000, 100 },
@@ -109,14 +109,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 600, 100000 },
                 { 300, 1500000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kincskereső",
             200,
             new(2009, 5, 29),
             new(2010, 10, 24),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 5 },
                 { 500000, 10 },
@@ -125,14 +125,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 600000 },
                 { 200, 800000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencsekoktél",
             300,
             new(2009, 7, 31),
             new(2010, 9, 26),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 15000000, 3 },
                 { 1000000, 5 },
@@ -144,14 +144,14 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 650000 },
                 { 300, 750000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Derby",
             200,
             new(2009, 9, 25),
             new(2011, 7, 1),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 5 },
                 { 100000, 50 },
@@ -163,14 +163,14 @@ public static class ScratchcardService
                 { 500, 100000 },
                 { 300, 650000 },
                 { 200, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Édes Élet",
             300,
             new(2009, 11, 27),
             new(2012, 4, 27),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 15000000, 5 },
                 { 1000000, 10 },
@@ -179,14 +179,14 @@ public static class ScratchcardService
                 { 1000, 150000 },
                 { 500, 650000 },
                 { 300, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Afrika",
             200,
             new(2010, 1, 29),
             new(2011, 3, 25),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 1000000, 5 },
@@ -195,14 +195,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Állatvilág",
             200,
             new(2010, 3, 26),
             new(2012, 4, 6),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 4 },
                 { 500000, 5 },
@@ -210,14 +210,14 @@ public static class ScratchcardService
                 { 2000, 50000 },
                 { 500, 650000 },
                 { 200, 750000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Gólparádé",
             200,
             new(2010, 5, 21),
             new(2013, 2, 22),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 5 },
                 { 50000, 400 },
@@ -226,14 +226,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 300, 700000 },
                 { 200, 750000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nyerőkártya",
             300,
             new(2010, 7, 30),
             new(2013, 5, 24),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 15000000, 3 },
                 { 1000000, 6 },
@@ -246,14 +246,14 @@ public static class ScratchcardService
                 { 800, 200000 },
                 { 500, 500000 },
                 { 300, 650000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kockapárbaj",
             300,
             new(2010, 9, 24),
             new(2012, 7, 27),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 3 },
                 { 100000, 500 },
@@ -263,14 +263,14 @@ public static class ScratchcardService
                 { 800, 250000 },
                 { 500, 500000 },
                 { 300, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Gyémánt",
             300,
             new(2010, 11, 26),
             new(2012, 1, 27),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 15000000, 5 },
                 { 1000000, 10 },
@@ -282,14 +282,14 @@ public static class ScratchcardService
                 { 600, 300000 },
                 { 500, 400000 },
                 { 300, 650000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Fáraók Kincse 300",
             300,
             new(2011, 1, 14),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000500, 3 },
                 { 5000000, 10 },
@@ -316,14 +316,14 @@ public static class ScratchcardService
                 { 800, 250000 },
                 { 500, 350000 },
                 { 300, 950000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Világutazó",
             200,
             new(2011, 3, 11),
             new(2012, 7, 27),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 1000000, 5 },
@@ -332,14 +332,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Buksza 66",
             1000,
             new(2011, 5, 6),
             null,
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -357,14 +357,14 @@ public static class ScratchcardService
                 { 3000, 50000 },
                 { 2000, 250000 },
                 { 1000, 350000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencsepatkó",
             200,
             new(2011, 6, 24),
             new(2012, 6, 15),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 5 },
                 { 1000000, 10 },
@@ -376,14 +376,14 @@ public static class ScratchcardService
                 { 500, 150000 },
                 { 300, 650000 },
                 { 200, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Áll az alku",
             300,
             new(2011, 8, 26),
             new(2012, 8, 31),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 15000000, 3 },
                 { 1000000, 10 },
@@ -397,14 +397,14 @@ public static class ScratchcardService
                 { 500, 200000 },
                 { 400, 400000 },
                 { 300, 650000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2011",
             500,
             new(2011, 10, 28),
             new(2012, 1, 6),
             1500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 5000000, 3 },
@@ -415,14 +415,14 @@ public static class ScratchcardService
                 { 1500, 60000 },
                 { 1000, 150000 },
                 { 500, 210000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Karátok közt",
             500,
             new(2012, 1, 27),
             new(2014, 5, 23),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 2 },
                 { 5000000, 5 },
@@ -435,14 +435,14 @@ public static class ScratchcardService
                 { 1500, 100000 },
                 { 1000, 500000 },
                 { 500, 600000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Állati Sztárok",
             200,
             new(2012, 3, 30),
             new(2013, 2, 22),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 500000, 5 },
@@ -451,14 +451,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nasi",
             200,
             new(2012, 5, 25),
             new(2013, 10, 18),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 500000, 50 },
@@ -467,14 +467,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 400, 800000 },
                 { 200, 650000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Tengeri Kincsek",
             300,
             new(2012, 8, 31),
             new(2014, 1, 31),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -489,14 +489,14 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 500000 },
                 { 300, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2012",
             500,
             new(2012, 11, 2),
             new(2013, 1, 11),
             1500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 5000000, 3 },
@@ -507,14 +507,14 @@ public static class ScratchcardService
                 { 1500, 60000 },
                 { 1000, 150000 },
                 { 500, 210000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kávészünet 200",
             200,
             new(2013, 2, 1),
             new(2014, 10, 10),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 2500000, 6 },
@@ -526,14 +526,14 @@ public static class ScratchcardService
                 { 500, 100000 },
                 { 400, 700000 },
                 { 200, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Monopoly",
             300,
             new(2013, 3, 29),
             new(2014, 7, 25),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -550,14 +550,14 @@ public static class ScratchcardService
                 { 600, 50000 },
                 { 500, 650000 },
                 { 300, 750000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Állati Párok",
             200,
             new(2013, 5, 31),
             new(2014, 10, 10),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 1000000, 5 },
@@ -566,14 +566,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 450000 },
                 { 300, 950000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Astro+TV",
             300,
             new(2013, 8, 2),
             new(2013, 8, 2),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -584,14 +584,14 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 650000 },
                 { 300, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Édenkert",
             500,
             new(2013, 9, 27),
             new(2015, 2, 13),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 24000000, 4 },
                 { 5000000, 5 },
@@ -604,14 +604,14 @@ public static class ScratchcardService
                 { 1500, 50000 },
                 { 1000, 500000 },
                 { 500, 650000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2013",
             1000,
             new(2013, 11, 6),
             new(2014, 1, 10),
             2000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 2 },
@@ -627,14 +627,14 @@ public static class ScratchcardService
                 { 3000, 40000 },
                 { 2000, 200000 },
                 { 1000, 280000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kabala",
             200,
             new(2014, 1, 31),
             new(2015, 3, 27),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 500000, 3 },
@@ -644,14 +644,14 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 500, 420000 },
                 { 300, 1380000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nyerő négyes",
             500,
             new(2014, 3, 28),
             new(2015, 9, 25),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 4 },
                 { 5000000, 6 },
@@ -663,14 +663,14 @@ public static class ScratchcardService
                 { 1500, 58800 },
                 { 1000, 400000 },
                 { 500, 800000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Rubik kocka",
             300,
             new(2014, 5, 30),
             new(2016, 4, 25),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 2 },
                 { 1000000, 4 },
@@ -684,14 +684,14 @@ public static class ScratchcardService
                 { 1000, 300000 },
                 { 500, 600000 },
                 { 300, 900000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Balaton",
             200,
             new(2014, 7, 18),
             new(2015, 2, 13),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 2 },
                 { 1000000, 5 },
@@ -701,14 +701,14 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 500, 360000 },
                 { 300, 1440000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szuper Black Jack",
             500,
             new(2014, 9, 26),
             null,
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 2 },
                 { 5000000, 8 },
@@ -721,14 +721,14 @@ public static class ScratchcardService
                 { 2000, 60000 },
                 { 1000, 840000 },
                 { 500, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2014",
             2000,
             new(2014, 11, 7),
             new(2015, 2, 2),
             2000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 10 },
@@ -744,14 +744,14 @@ public static class ScratchcardService
                 { 5000, 80000 },
                 { 3000, 200000 },
                 { 2000, 240000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Sok szeretettel! 200",
             200,
             new(2015, 1, 30),
             new(2017, 5, 27),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 2 },
                 { 100000, 10 },
@@ -761,14 +761,14 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 500, 320000 },
                 { 300, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Bakancslista",
             1000,
             new(2015, 3, 27),
             new(2018, 4, 8),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 48000000, 2 },
                 { 1000000, 10 },
@@ -785,14 +785,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Pörgettyű",
             300,
             new(2015, 5, 29),
             new(2017, 5, 27),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 2 },
                 { 500000, 4 },
@@ -806,14 +806,14 @@ public static class ScratchcardService
                 { 900, 200000 },
                 { 600, 360000 },
                 { 300, 560000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencsepart",
             500,
             new(2015, 7, 17),
             new(2016, 6, 13),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 4000000, 3 },
@@ -827,14 +827,14 @@ public static class ScratchcardService
                 { 2000, 60000 },
                 { 1000, 360000 },
                 { 500, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Házi kedvenc",
             200,
             new(2015, 9, 25),
             new(2016, 10, 24),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 100000, 15 },
@@ -845,14 +845,14 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 500, 280000 },
                 { 300, 800000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2015",
             2000,
             new(2015, 11, 6),
             new(2016, 1, 25),
             1800000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 3 },
@@ -867,14 +867,14 @@ public static class ScratchcardService
                 { 5000, 72000 },
                 { 3000, 216000 },
                 { 2000, 216000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Pénzfa",
             200,
             new(2016, 1, 29),
             new(2017, 3, 27),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 2 },
                 { 500000, 5 },
@@ -885,14 +885,14 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 500, 280000 },
                 { 300, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Hurrá 25!",
             300,
             new(2016, 4, 1),
             new(2016, 10, 24),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 2 },
                 { 1000000, 5 },
@@ -905,14 +905,14 @@ public static class ScratchcardService
                 { 1000, 120000 },
                 { 400, 520000 },
                 { 300, 560000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Zseton",
             500,
             new(2016, 6, 3),
             new(2018, 4, 8),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 10 },
@@ -928,14 +928,14 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 800, 360000 },
                 { 500, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kéményseprő",
             200,
             new(2016, 7, 29),
             new(2017, 7, 29),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 3 },
                 { 500000, 35 },
@@ -946,14 +946,14 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 400, 200000 },
                 { 300, 920000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencsenaptár",
             1000,
             new(2016, 9, 23),
             new(2019, 3, 31),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 2 },
                 { 1000000, 7 },
@@ -971,14 +971,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2016",
             2000,
             new(2016, 11, 4),
             new(2017, 1, 30),
             2300000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 15 },
@@ -996,14 +996,14 @@ public static class ScratchcardService
                 { 4000, 46000 },
                 { 3000, 184000 },
                 { 2000, 368000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Labirintus",
             300,
             new(2017, 2, 3),
             new(2018, 4, 8),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 2 },
                 { 1000000, 15 },
@@ -1016,14 +1016,14 @@ public static class ScratchcardService
                 { 800, 240000 },
                 { 500, 360000 },
                 { 300, 560000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Mega Bankó",
             1000,
             new(2017, 3, 31),
             new(2019, 5, 26),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 10 },
@@ -1039,14 +1039,14 @@ public static class ScratchcardService
                 { 3000, 120000 },
                 { 2000, 240000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Fesztivál",
             300,
             new(2017, 6, 2),
             new(2017, 9, 25),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 1 },
                 { 500000, 5 },
@@ -1059,14 +1059,14 @@ public static class ScratchcardService
                 { 800, 250000 },
                 { 400, 400000 },
                 { 300, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Hoppá! 10x",
             300,
             new(2017, 6, 30),
             new(2018, 8, 26),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 1 },
                 { 1000000, 2 },
@@ -1079,14 +1079,14 @@ public static class ScratchcardService
                 { 1000, 300000 },
                 { 600, 350000 },
                 { 300, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Hoppá! 20x",
             500,
             new(2017, 6, 30),
             new(2018, 8, 26),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 20000000, 2 },
                 { 1000000, 6 },
@@ -1103,14 +1103,14 @@ public static class ScratchcardService
                 { 1000, 240000 },
                 { 800, 400000 },
                 { 500, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Hoppá! 50x",
             1000,
             new(2017, 6, 30),
             new(2018, 8, 26),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -1128,14 +1128,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Lottóláz",
             500,
             new(2017, 9, 1),
             new(2020, 6, 28),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -1152,14 +1152,14 @@ public static class ScratchcardService
                 { 2000, 60000 },
                 { 1000, 300000 },
                 { 500, 540000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kiskarácsony 2017",
             200,
             new(2017, 11, 3),
             new(2018, 2, 4),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 5000000, 1 },
                 { 100000, 10 },
@@ -1170,14 +1170,14 @@ public static class ScratchcardService
                 { 800, 30000 },
                 { 500, 210000 },
                 { 300, 660000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagykarácsony 2017",
             2000,
             new(2017, 11, 3),
             new(2018, 2, 4),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -1192,14 +1192,14 @@ public static class ScratchcardService
                 { 5000, 120000 },
                 { 3000, 360000 },
                 { 2000, 360000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Black Jack 300",
             300,
             new(2018, 1, 5),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 15000000, 4 },
                 { 100000, 40 },
@@ -1208,14 +1208,14 @@ public static class ScratchcardService
                 { 1000, 250000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencsemalac",
             300,
             new(2018, 1, 12),
             new(2020, 6, 28),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 3 },
                 { 500000, 6 },
@@ -1226,14 +1226,14 @@ public static class ScratchcardService
                 { 1000, 300000 },
                 { 500, 600000 },
                 { 300, 960000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Astro",
             300,
             new(2018, 2, 2),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -1244,14 +1244,14 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 650000 },
                 { 300, 750000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kaszinó 112",
             2000,
             new(2018, 4, 6),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 8 },
@@ -1269,14 +1269,14 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kleopátra kincse",
             500,
             new(2018, 6, 1),
             new(2020, 8, 30),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -1295,14 +1295,14 @@ public static class ScratchcardService
                 { 1000, 480000 },
                 { 800, 360000 },
                 { 500, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Sok szeretettel 300",
             300,
             new(2018, 7, 13),
             new(2020, 6, 28),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 2 },
                 { 1000000, 3 },
@@ -1313,14 +1313,14 @@ public static class ScratchcardService
                 { 1000, 240000 },
                 { 600, 720000 },
                 { 300, 960000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kódfejtő",
             1000,
             new(2018, 9, 7),
             new(2020, 3, 15),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -1338,14 +1338,14 @@ public static class ScratchcardService
                 { 3000, 120000 },
                 { 2000, 240000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kiskarácsony 2018",
             300,
             new(2018, 11, 3),
             new(2019, 2, 3),
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 1 },
                 { 1000000, 10 },
@@ -1356,14 +1356,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 350000 },
                 { 300, 400000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagykarácsony 2018",
             3000,
             new(2018, 11, 3),
             new(2019, 2, 3),
             2300000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -1377,14 +1377,14 @@ public static class ScratchcardService
                 { 9000, 92000 },
                 { 6000, 276000 },
                 { 3000, 368000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Bronz",
             300,
             new(2019, 2, 8),
             new(2020, 7, 26),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 1 },
                 { 1000000, 5 },
@@ -1397,14 +1397,14 @@ public static class ScratchcardService
                 { 1000, 150000 },
                 { 600, 600000 },
                 { 300, 750000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Ezüst",
             500,
             new(2019, 2, 8),
             new(2020, 3, 15),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 20000000, 2 },
                 { 1000000, 5 },
@@ -1421,14 +1421,14 @@ public static class ScratchcardService
                 { 1000, 240000 },
                 { 800, 320000 },
                 { 500, 560000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Arany",
             1000,
             new(2019, 2, 8),
             new(2020, 3, 15),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -1446,14 +1446,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Pénzlift",
             500,
             new(2019, 3, 29),
             new(2022, 4, 24),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 10 },
@@ -1469,14 +1469,14 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 800, 360000 },
                 { 500, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Világjáró",
             2000,
             new(2019, 5, 10),
             new(2020, 7, 26),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 10 },
@@ -1494,14 +1494,14 @@ public static class ScratchcardService
                 { 4000, 60000 },
                 { 3000, 300000 },
                 { 2000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencsehozó",
             300,
             new(2019, 7, 12),
             new(2020, 7, 26),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 2 },
                 { 500000, 8 },
@@ -1514,14 +1514,14 @@ public static class ScratchcardService
                 { 1000, 180000 },
                 { 600, 660000 },
                 { 300, 900000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Aranybánya",
             1000,
             new(2019, 9, 6),
             new(2023, 4, 23),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -1538,14 +1538,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kiskarácsony 2019",
             300,
             new(2019, 11, 4),
             new(2020, 2, 23),
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 10000000, 1 },
                 { 1000000, 10 },
@@ -1556,14 +1556,14 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 350000 },
                 { 300, 400000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagykarácsony 2019",
             3000,
             new(2019, 11, 4),
             new(2020, 2, 23),
             2300000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -1577,14 +1577,14 @@ public static class ScratchcardService
                 { 9000, 92000 },
                 { 6000, 276000 },
                 { 3000, 368000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szerencse vagy Mázli",
             500,
             new(2020, 1, 11),
             new(2022, 4, 24),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 10 },
@@ -1596,14 +1596,14 @@ public static class ScratchcardService
                 { 1500, 120000 },
                 { 800, 360000 },
                 { 500, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kis Ajándék",
             500,
             new(2020, 3, 20),
             new(2022, 1, 16),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 20000000, 1 },
                 { 1000000, 3 },
@@ -1620,14 +1620,14 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 400000 },
                 { 500, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagy Ajándék",
             1000,
             new(2020, 3, 20),
             new(2023, 5, 21),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -1646,14 +1646,14 @@ public static class ScratchcardService
                 { 3000, 80000 },
                 { 2000, 480000 },
                 { 1000, 565000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Óriási Ajándék",
             2000,
             new(2020, 3, 20),
             new(2023, 5, 21),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -1677,14 +1677,14 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 491000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Pénzes bőrönd",
             1000,
             new(2020, 5, 8),
             new(2023, 2, 19),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -1700,14 +1700,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kávészünet 500",
             500,
             new(2020, 7, 10),
             new(2021, 8, 22),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -1720,14 +1720,14 @@ public static class ScratchcardService
                 { 1000, 120000 },
                 { 800, 360000 },
                 { 500, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kincseskamra",
             2000,
             new(2020, 9, 4),
             new(2023, 2, 19),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -1745,14 +1745,14 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kiskarácsony 2020",
             500,
             new(2020, 11, 6),
             new(2021, 2, 28),
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -1768,14 +1768,14 @@ public static class ScratchcardService
                 { 1500, 240000 },
                 { 1000, 480000 },
                 { 500, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagykarácsony 2020",
             3000,
             new(2020, 11, 6),
             new(2021, 2, 28),
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -1789,14 +1789,14 @@ public static class ScratchcardService
                 { 9000, 100000 },
                 { 6000, 300000 },
                 { 3000, 400000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Napi Bónusz",
             500,
             new(2021, 1, 15),
             new(2022, 7, 24),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -1810,14 +1810,14 @@ public static class ScratchcardService
                 { 2000, 100000 },
                 { 1000, 600000 },
                 { 500, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Heti Bónusz",
             1000,
             new(2021, 1, 15),
             null,
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -1834,14 +1834,14 @@ public static class ScratchcardService
                 { 3000, 80000 },
                 { 2000, 480000 },
                 { 1000, 560000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Havi Bónusz",
             2000,
             new(2021, 1, 15),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 15 },
@@ -1863,14 +1863,14 @@ public static class ScratchcardService
                 { 4000, 60000 },
                 { 3000, 300000 },
                 { 2000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Mega Black Jack",
             1000,
             new(2021, 3, 5),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -1886,14 +1886,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Pénzkerék",
             1000,
             new(2021, 5, 7),
             new(2022, 11, 13),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -1909,14 +1909,14 @@ public static class ScratchcardService
                 { 3000, 160000 },
                 { 2000, 400000 },
                 { 1000, 560000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Óriás Pénzkerék",
             2000,
             new(2021, 5, 7),
             new(2023, 7, 16),
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 8 },
@@ -1937,14 +1937,14 @@ public static class ScratchcardService
                 { 4000, 160000 },
                 { 3000, 240000 },
                 { 2000, 640000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Retro borítékos sorsjegy",
             500,
             new(2021, 7, 9),
             new(2022, 5, 22),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 30000000, 1 },
                 { 900000, 5 },
@@ -1962,14 +1962,14 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 450000 },
                 { 500, 750000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Varázsfőzet",
             2000,
             new(2021, 9, 10),
             new(2023, 4, 23),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 2 },
                 { 10000000, 5 },
@@ -1989,14 +1989,14 @@ public static class ScratchcardService
                 { 4000, 105000 },
                 { 3000, 226000 },
                 { 2000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kiskarácsony 2021",
             500,
             new(2021, 11, 5),
             new(2022, 3, 20),
             5500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2013,14 +2013,14 @@ public static class ScratchcardService
                 { 1000, 330000 },
                 { 800, 440000 },
                 { 500, 660000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagykarácsony 2021",
             3000,
             new(2021, 11, 5),
             new(2022, 3, 20),
             2400000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 1 },
                 { 10000000, 10 },
@@ -2034,14 +2034,14 @@ public static class ScratchcardService
                 { 6000, 96000 },
                 { 5000, 288000 },
                 { 3000, 384000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Sok szerencsét! 2022",
             1000,
             new(2021, 12, 30),
             new(2022, 9, 25),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 5 },
@@ -2057,14 +2057,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Vadvilág 500",
             500,
             new(2022, 2, 4),
             new(2023, 9, 17),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2081,14 +2081,14 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 500000 },
                 { 500, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Vadvilág 1000",
             1000,
             new(2022, 2, 4),
             new(2023, 9, 17),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 5 },
@@ -2106,14 +2106,14 @@ public static class ScratchcardService
                 { 3000, 120000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Vadvilág 2000",
             2000,
             new(2022, 2, 4),
             new(2024, 1, 21),
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 14 },
@@ -2131,14 +2131,14 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 300000 },
                 { 2000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Pénzmátrix",
             500,
             new(2022, 3, 25),
             new(2023, 11, 12),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2152,14 +2152,14 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 300000 },
                 { 500, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Ökokaland",
             1000,
             new(2022, 5, 13),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 10 },
@@ -2175,14 +2175,14 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Ökokaland Extra",
             2000,
             new(2022, 5, 13),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2200,14 +2200,14 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nyomkövető",
             500,
             new(2022, 7, 8),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -2223,14 +2223,14 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 400000 },
                 { 500, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kincsvadász",
             2000,
             new(2022, 9, 9),
             null,
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 2 },
                 { 5000000, 10 },
@@ -2249,14 +2249,14 @@ public static class ScratchcardService
                 { 4000, 160000 },
                 { 3000, 320000 },
                 { 2000, 560000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kiskarácsony 2022",
             500,
             new(2022, 11, 4),
             new(2023, 3, 19),
             5500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2273,14 +2273,14 @@ public static class ScratchcardService
                 { 1000, 330000 },
                 { 800, 440000 },
                 { 500, 660000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagykarácsony 2022",
             3000,
             new(2022, 11, 4),
             new(2023, 3, 19),
             2400000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -2297,14 +2297,14 @@ public static class ScratchcardService
                 { 6000, 192000 },
                 { 5000, 192000 },
                 { 3000, 288000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Sok szerencsét! 2023",
             1000,
             new(2022, 12, 30),
             new(2023, 9, 17),
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 5 },
@@ -2320,14 +2320,14 @@ public static class ScratchcardService
                 { 3000, 200000 },
                 { 2000, 400000 },
                 { 1000, 800000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "NEON 500",
             500,
             new(2023, 2, 3),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 3 },
@@ -2344,14 +2344,14 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 500000 },
                 { 500, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "NEON 1000",
             1000,
             new(2023, 2, 3),
             null,
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -2370,14 +2370,14 @@ public static class ScratchcardService
                 { 3000, 160000 },
                 { 2000, 400000 },
                 { 1000, 640000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "NEON 2000",
             2000,
             new(2023, 2, 3),
             null,
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2398,14 +2398,14 @@ public static class ScratchcardService
                 { 4000, 100000 },
                 { 3000, 250000 },
                 { 2000, 400000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Atlantisz",
             2000,
             new(2023, 3, 24),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 2 },
                 { 10000000, 5 },
@@ -2425,14 +2425,14 @@ public static class ScratchcardService
                 { 4000, 105000 },
                 { 3000, 226000 },
                 { 2000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kis Meglepetés",
             500,
             new(2023, 5, 12),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 3 },
@@ -2449,14 +2449,14 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 500000 },
                 { 500, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagy Meglepetés",
             1000,
             new(2023, 5, 12),
             null,
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -2472,14 +2472,14 @@ public static class ScratchcardService
                 { 3000, 160000 },
                 { 2000, 400000 },
                 { 1000, 640000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Óriási Meglepetés",
             2000,
             new(2023, 5, 12),
             null,
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2498,14 +2498,14 @@ public static class ScratchcardService
                 { 4000, 100000 },
                 { 3000, 250000 },
                 { 2000, 400000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Puzzle",
             1000,
             new(2023, 7, 7),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -2521,14 +2521,14 @@ public static class ScratchcardService
                 { 5000, 100000 },
                 { 2000, 800000 },
                 { 1000, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Milliomos Klub",
             2500,
             new(2023, 9, 1),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 85000000, 2 },
                 { 5000000, 45 },
@@ -2544,14 +2544,14 @@ public static class ScratchcardService
                 { 5000, 60000 },
                 { 3000, 480000 },
                 { 2500, 360000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kiskarácsony 2023",
             1000,
             new(2023, 10, 27),
             null,
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -2568,14 +2568,14 @@ public static class ScratchcardService
                 { 3000, 240000 },
                 { 2000, 600000 },
                 { 1000, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagykarácsony 2023",
             3500,
             new(2023, 10, 27),
             null,
             3200000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 125000000, 1 },
                 { 75000000, 1 },
@@ -2592,14 +2592,14 @@ public static class ScratchcardService
                 { 6000, 128000 },
                 { 5000, 256000 },
                 { 3500, 384000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Sok szerencsét! 2024",
             1000,
             new(2023, 12, 27),
             null,
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -2615,14 +2615,14 @@ public static class ScratchcardService
                 { 3000, 240000 },
                 { 2000, 720000 },
                 { 1000, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kis Kerék",
             500,
             new(2024, 2, 2),
             null,
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2635,14 +2635,14 @@ public static class ScratchcardService
                 { 2000, 240000 },
                 { 1000, 900000 },
                 { 500, 840000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nagy Kerék",
             1000,
             new(2024, 2, 2),
             null,
             5500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 10 },
@@ -2655,14 +2655,14 @@ public static class ScratchcardService
                 { 4000, 110000 },
                 { 2000, 880000 },
                 { 1000, 770000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Óriási Kerék",
             2000,
             new(2024, 2, 2),
             null,
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 1 },
                 { 10000000, 5 },
@@ -2673,14 +2673,14 @@ public static class ScratchcardService
                 { 10000, 40000 },
                 { 4000, 720000 },
                 { 2000, 600000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Nyereményözön",
             1000,
             new(2024, 3, 8),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000, 4000 },
                 { 10000, 40000 },
@@ -2688,14 +2688,14 @@ public static class ScratchcardService
                 { 3000, 150000 },
                 { 2000, 500000 },
                 { 1000, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kaszinó 171",
             2000,
             new(2024, 3, 14),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 3 },
@@ -2713,14 +2713,14 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 480000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Buksza 170",
             1000,
             new(2024, 3, 27),
             null,
             5000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -2738,14 +2738,14 @@ public static class ScratchcardService
                 { 3000, 100000 },
                 { 2000, 500000 },
                 { 1000, 700000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Ajándék",
             2000,
             new(2024, 4, 12),
             null,
             8000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 2 },
                 { 10000000, 5 },
@@ -2756,14 +2756,14 @@ public static class ScratchcardService
                 { 7500, 160000 },
                 { 5000, 1200000 },
                 { 2500, 1200000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Biliárd",
             1500,
             new(2024, 5, 10),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2776,14 +2776,14 @@ public static class ScratchcardService
                 { 3000, 90000 },
                 { 2500, 330000 },
                 { 1500, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Darts",
             1500,
             new(2024, 5, 10),
             null,
             3000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2796,14 +2796,14 @@ public static class ScratchcardService
                 { 3000, 90000 },
                 { 2500, 330000 },
                 { 1500, 420000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Szalon",
             3000,
             new(2024, 5, 10),
             null,
             4500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 150000000, 1 },
                 { 25000000, 10 },
@@ -2818,14 +2818,14 @@ public static class ScratchcardService
                 { 6000, 270000 },
                 { 5000, 540000 },
                 { 3000, 720000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Puskás 500",
             500,
             new(2024, 6, 14),
             null,
             7000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 25000000, 1 },
                 { 1000000, 4 },
@@ -2835,14 +2835,14 @@ public static class ScratchcardService
                 { 2000, 280000 },
                 { 1000, 980000 },
                 { 500, 980000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Puskás 1000",
             1000,
             new(2024, 6, 14),
             null,
             7000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 2 },
                 { 1000000, 10 },
@@ -2853,14 +2853,14 @@ public static class ScratchcardService
                 { 5000, 100000 },
                 { 2000, 1300000 },
                 { 1000, 1000000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Sorsjegymánia",
             5000,
             new(2024, 8, 2),
             null,
             2500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 250000000, 1 },
                 { 10000000, 20 },
@@ -2874,14 +2874,14 @@ public static class ScratchcardService
                 { 8000, 150000 },
                 { 6000, 200000 },
                 { 5000, 400000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kalózok Kincse",
             1000,
             new(2024, 9, 6),
             null,
             7500000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 50000000, 1 },
                 { 1000000, 16 },
@@ -2897,14 +2897,14 @@ public static class ScratchcardService
                 { 3000, 375000 },
                 { 2000, 525000 },
                 { 1000, 1200000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kalózok Kincse Plusz",
             2000,
             new(2024, 9, 6),
             null,
             6000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 100000000, 1 },
                 { 10000000, 10 },
@@ -2920,14 +2920,14 @@ public static class ScratchcardService
                 { 4000, 240000 },
                 { 3000, 480000 },
                 { 2000, 960000 },
-            }),
+            }.ToFrozenDictionary()),
         new(
             "Kalózok Kincse Extra",
             3000,
             new(2024, 9, 6),
             null,
             4000000,
-            new()
+            new Dictionary<uint, uint>()
             {
                 { 150000000, 1 },
                 { 15000000, 10 },
@@ -2943,7 +2943,7 @@ public static class ScratchcardService
                 { 5000, 240000 },
                 { 4000, 480000 },
                 { 3000, 640000 },
-            }),
+            }.ToFrozenDictionary()),
     }
     .ToFrozenSet();
 }

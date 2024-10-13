@@ -45,5 +45,5 @@
 	private Scratchcard? _scratchcard;
 
 	protected override void OnInitialized() =>
-		_scratchcard = ScratchcardService.Scratchcards.Single(s => string.Equals(s.PathName, PathName));
+		_scratchcard = ScratchcardService.Scratchcards.First(s => string.Equals(s.PathName, PathName));
 }

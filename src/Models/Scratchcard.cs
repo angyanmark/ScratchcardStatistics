@@ -1,4 +1,6 @@
-﻿namespace ScratchcardStatistics.Models;
+﻿using System.Collections.Frozen;
+
+namespace ScratchcardStatistics.Models;
 
 public sealed record Scratchcard(
     string Name,
@@ -6,7 +8,7 @@ public sealed record Scratchcard(
     DateOnly ReleaseDate,
     DateOnly? EndDate,
     uint TotalSupply,
-    Dictionary<uint, uint> PrizeStructure)
+    FrozenDictionary<uint, uint> PrizeStructure)
 {
     public bool IsAvailable => !EndDate.HasValue || EndDate.Value > DateOnly.FromDateTime(DateTime.Now);
     public uint Jackpot => PrizeStructure.Max(ps => ps.Key);
