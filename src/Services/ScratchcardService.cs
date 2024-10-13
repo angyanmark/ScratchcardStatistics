@@ -1815,7 +1815,7 @@ public static class ScratchcardService
             "Heti Bónusz",
             1000,
             new(2021, 1, 15),
-            null,
+            new(2024, 3, 10),
             4000000,
             new Dictionary<uint, uint>()
             {
@@ -1868,7 +1868,7 @@ public static class ScratchcardService
             "Mega Black Jack",
             1000,
             new(2021, 3, 5),
-            null,
+            new(2024, 4, 21),
             3000000,
             new Dictionary<uint, uint>()
             {
@@ -2325,7 +2325,7 @@ public static class ScratchcardService
             "NEON 500",
             500,
             new(2023, 2, 3),
-            null,
+            new(2024, 4, 21),
             5000000,
             new Dictionary<uint, uint>()
             {
@@ -2349,7 +2349,7 @@ public static class ScratchcardService
             "NEON 1000",
             1000,
             new(2023, 2, 3),
-            null,
+            new(2024, 5, 26),
             4000000,
             new Dictionary<uint, uint>()
             {
@@ -2403,7 +2403,7 @@ public static class ScratchcardService
             "Atlantisz",
             2000,
             new(2023, 3, 24),
-            null,
+            new(2024, 4, 21),
             3000000,
             new Dictionary<uint, uint>()
             {
@@ -2549,7 +2549,7 @@ public static class ScratchcardService
             "Kiskarácsony 2023",
             1000,
             new(2023, 10, 27),
-            null,
+            new(2024, 3, 24),
             6000000,
             new Dictionary<uint, uint>()
             {
@@ -2573,7 +2573,7 @@ public static class ScratchcardService
             "Nagykarácsony 2023",
             3500,
             new(2023, 10, 27),
-            null,
+            new(2024, 3, 24),
             3200000,
             new Dictionary<uint, uint>()
             {
