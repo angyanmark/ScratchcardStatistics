@@ -22,11 +22,11 @@ jobs:
 
     # Install workloads
     - name: Install workloads
-      run: dotnet workload restore src/ScratchcardStatistics.csproj
+      run: dotnet workload restore src/ScratchcardStatistics/ScratchcardStatistics.csproj
 
     # Publish the Blazor project to the release folder
     - name: Publish Blazor project
-      run: dotnet publish src/ScratchcardStatistics.csproj -c Release -o release --nologo
+      run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj -c Release -o release --nologo
 
     # Change the base tag in index.html from '/' to '/ScratchcardStatistics/' to match GitHub Pages repository subdirectory
     - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
