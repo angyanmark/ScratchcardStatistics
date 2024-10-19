@@ -25,7 +25,8 @@ public static class ScratchcardService
                 { 1000, 61502 },
                 { 500, 355062 },
                 { 200, 1356735 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencsesüti",
             200,
@@ -41,7 +42,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 400, 850000 },
                 { 200, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Póker",
             300,
@@ -59,7 +61,8 @@ public static class ScratchcardService
                 { 800, 150000 },
                 { 500, 550000 },
                 { 300, 600000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Black Jack 200",
             200,
@@ -74,7 +77,8 @@ public static class ScratchcardService
                 { 1000, 150000 },
                 { 500, 400000 },
                 { 200, 1000000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szuper Bankó",
             500,
@@ -94,7 +98,8 @@ public static class ScratchcardService
                 { 1500, 17500 },
                 { 1000, 200000 },
                 { 500, 400000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Üveggolyó",
             200,
@@ -109,7 +114,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 600, 100000 },
                 { 300, 1500000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kincskereső",
             200,
@@ -125,7 +131,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 600000 },
                 { 200, 800000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencsekoktél",
             300,
@@ -144,7 +151,8 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 650000 },
                 { 300, 750000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Derby",
             200,
@@ -163,7 +171,8 @@ public static class ScratchcardService
                 { 500, 100000 },
                 { 300, 650000 },
                 { 200, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Édes Élet",
             300,
@@ -179,7 +188,8 @@ public static class ScratchcardService
                 { 1000, 150000 },
                 { 500, 650000 },
                 { 300, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Afrika",
             200,
@@ -195,7 +205,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Állatvilág",
             200,
@@ -210,7 +221,8 @@ public static class ScratchcardService
                 { 2000, 50000 },
                 { 500, 650000 },
                 { 200, 750000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Gólparádé",
             200,
@@ -226,7 +238,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 300, 700000 },
                 { 200, 750000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nyerőkártya",
             300,
@@ -246,7 +259,8 @@ public static class ScratchcardService
                 { 800, 200000 },
                 { 500, 500000 },
                 { 300, 650000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kockapárbaj",
             300,
@@ -263,7 +277,8 @@ public static class ScratchcardService
                 { 800, 250000 },
                 { 500, 500000 },
                 { 300, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Gyémánt",
             300,
@@ -282,7 +297,8 @@ public static class ScratchcardService
                 { 600, 300000 },
                 { 500, 400000 },
                 { 300, 650000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Fáraók Kincse 300",
             300,
@@ -316,7 +332,8 @@ public static class ScratchcardService
                 { 800, 250000 },
                 { 500, 350000 },
                 { 300, 950000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Világutazó",
             200,
@@ -332,7 +349,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Buksza 66",
             1000,
@@ -357,7 +375,8 @@ public static class ScratchcardService
                 { 3000, 50000 },
                 { 2000, 250000 },
                 { 1000, 350000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencsepatkó",
             200,
@@ -376,7 +395,8 @@ public static class ScratchcardService
                 { 500, 150000 },
                 { 300, 650000 },
                 { 200, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Áll az alku",
             300,
@@ -397,7 +417,8 @@ public static class ScratchcardService
                 { 500, 200000 },
                 { 400, 400000 },
                 { 300, 650000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2011",
             500,
@@ -415,7 +436,8 @@ public static class ScratchcardService
                 { 1500, 60000 },
                 { 1000, 150000 },
                 { 500, 210000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Karátok közt",
             500,
@@ -435,7 +457,8 @@ public static class ScratchcardService
                 { 1500, 100000 },
                 { 1000, 500000 },
                 { 500, 600000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Állati Sztárok",
             200,
@@ -451,7 +474,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nasi",
             200,
@@ -467,7 +491,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 400, 800000 },
                 { 200, 650000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Tengeri Kincsek",
             300,
@@ -489,7 +514,8 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 500000 },
                 { 300, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2012",
             500,
@@ -507,7 +533,8 @@ public static class ScratchcardService
                 { 1500, 60000 },
                 { 1000, 150000 },
                 { 500, 210000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kávészünet 200",
             200,
@@ -526,7 +553,8 @@ public static class ScratchcardService
                 { 500, 100000 },
                 { 400, 700000 },
                 { 200, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Monopoly",
             300,
@@ -550,7 +578,8 @@ public static class ScratchcardService
                 { 600, 50000 },
                 { 500, 650000 },
                 { 300, 750000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Állati Párok",
             200,
@@ -566,7 +595,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 450000 },
                 { 300, 950000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Astro+TV",
             300,
@@ -584,7 +614,8 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 650000 },
                 { 300, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Édenkert",
             500,
@@ -604,7 +635,8 @@ public static class ScratchcardService
                 { 1500, 50000 },
                 { 1000, 500000 },
                 { 500, 650000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2013",
             1000,
@@ -627,7 +659,8 @@ public static class ScratchcardService
                 { 3000, 40000 },
                 { 2000, 200000 },
                 { 1000, 280000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kabala",
             200,
@@ -644,7 +677,8 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 500, 420000 },
                 { 300, 1380000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nyerő négyes",
             500,
@@ -663,7 +697,8 @@ public static class ScratchcardService
                 { 1500, 58800 },
                 { 1000, 400000 },
                 { 500, 800000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Rubik kocka",
             300,
@@ -684,7 +719,8 @@ public static class ScratchcardService
                 { 1000, 300000 },
                 { 500, 600000 },
                 { 300, 900000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Balaton",
             200,
@@ -701,7 +737,8 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 500, 360000 },
                 { 300, 1440000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szuper Black Jack",
             500,
@@ -721,7 +758,8 @@ public static class ScratchcardService
                 { 2000, 60000 },
                 { 1000, 840000 },
                 { 500, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2014",
             2000,
@@ -744,7 +782,8 @@ public static class ScratchcardService
                 { 5000, 80000 },
                 { 3000, 200000 },
                 { 2000, 240000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Sok szeretettel! 200",
             200,
@@ -761,7 +800,8 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 500, 320000 },
                 { 300, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Bakancslista",
             1000,
@@ -785,7 +825,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Pörgettyű",
             300,
@@ -806,7 +847,8 @@ public static class ScratchcardService
                 { 900, 200000 },
                 { 600, 360000 },
                 { 300, 560000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencsepart",
             500,
@@ -827,7 +869,8 @@ public static class ScratchcardService
                 { 2000, 60000 },
                 { 1000, 360000 },
                 { 500, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Házi kedvenc",
             200,
@@ -845,7 +888,8 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 500, 280000 },
                 { 300, 800000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2015",
             2000,
@@ -867,7 +911,8 @@ public static class ScratchcardService
                 { 5000, 72000 },
                 { 3000, 216000 },
                 { 2000, 216000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Pénzfa",
             200,
@@ -885,7 +930,8 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 500, 280000 },
                 { 300, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Hurrá 25!",
             300,
@@ -905,7 +951,8 @@ public static class ScratchcardService
                 { 1000, 120000 },
                 { 400, 520000 },
                 { 300, 560000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Zseton",
             500,
@@ -928,7 +975,8 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 800, 360000 },
                 { 500, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kéményseprő",
             200,
@@ -946,7 +994,8 @@ public static class ScratchcardService
                 { 1000, 40000 },
                 { 400, 200000 },
                 { 300, 920000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencsenaptár",
             1000,
@@ -971,7 +1020,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Boldog karácsonyt! 2016",
             2000,
@@ -996,7 +1046,8 @@ public static class ScratchcardService
                 { 4000, 46000 },
                 { 3000, 184000 },
                 { 2000, 368000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Labirintus",
             300,
@@ -1016,7 +1067,8 @@ public static class ScratchcardService
                 { 800, 240000 },
                 { 500, 360000 },
                 { 300, 560000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Mega Bankó",
             1000,
@@ -1039,7 +1091,8 @@ public static class ScratchcardService
                 { 3000, 120000 },
                 { 2000, 240000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Fesztivál",
             300,
@@ -1059,7 +1112,8 @@ public static class ScratchcardService
                 { 800, 250000 },
                 { 400, 400000 },
                 { 300, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Hoppá! 10x",
             300,
@@ -1079,7 +1133,8 @@ public static class ScratchcardService
                 { 1000, 300000 },
                 { 600, 350000 },
                 { 300, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Hoppá! 20x",
             500,
@@ -1103,7 +1158,8 @@ public static class ScratchcardService
                 { 1000, 240000 },
                 { 800, 400000 },
                 { 500, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Hoppá! 50x",
             1000,
@@ -1128,7 +1184,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Lottóláz",
             500,
@@ -1152,7 +1209,8 @@ public static class ScratchcardService
                 { 2000, 60000 },
                 { 1000, 300000 },
                 { 500, 540000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kiskarácsony 2017",
             200,
@@ -1170,7 +1228,8 @@ public static class ScratchcardService
                 { 800, 30000 },
                 { 500, 210000 },
                 { 300, 660000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagykarácsony 2017",
             2000,
@@ -1192,7 +1251,8 @@ public static class ScratchcardService
                 { 5000, 120000 },
                 { 3000, 360000 },
                 { 2000, 360000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Black Jack 300",
             300,
@@ -1208,7 +1268,8 @@ public static class ScratchcardService
                 { 1000, 250000 },
                 { 500, 400000 },
                 { 300, 1000000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencsemalac",
             300,
@@ -1226,7 +1287,8 @@ public static class ScratchcardService
                 { 1000, 300000 },
                 { 500, 600000 },
                 { 300, 960000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Astro",
             300,
@@ -1244,7 +1306,8 @@ public static class ScratchcardService
                 { 800, 50000 },
                 { 500, 650000 },
                 { 300, 750000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kaszinó 112",
             2000,
@@ -1269,7 +1332,8 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kleopátra kincse",
             500,
@@ -1295,7 +1359,8 @@ public static class ScratchcardService
                 { 1000, 480000 },
                 { 800, 360000 },
                 { 500, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Sok szeretettel 300",
             300,
@@ -1313,7 +1378,8 @@ public static class ScratchcardService
                 { 1000, 240000 },
                 { 600, 720000 },
                 { 300, 960000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kódfejtő",
             1000,
@@ -1338,7 +1404,8 @@ public static class ScratchcardService
                 { 3000, 120000 },
                 { 2000, 240000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kiskarácsony 2018",
             300,
@@ -1356,7 +1423,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 350000 },
                 { 300, 400000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagykarácsony 2018",
             3000,
@@ -1377,7 +1445,8 @@ public static class ScratchcardService
                 { 9000, 92000 },
                 { 6000, 276000 },
                 { 3000, 368000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Bronz",
             300,
@@ -1397,7 +1466,8 @@ public static class ScratchcardService
                 { 1000, 150000 },
                 { 600, 600000 },
                 { 300, 750000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Ezüst",
             500,
@@ -1421,7 +1491,8 @@ public static class ScratchcardService
                 { 1000, 240000 },
                 { 800, 320000 },
                 { 500, 560000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Arany",
             1000,
@@ -1446,7 +1517,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Pénzlift",
             500,
@@ -1469,7 +1541,8 @@ public static class ScratchcardService
                 { 1000, 60000 },
                 { 800, 360000 },
                 { 500, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Világjáró",
             2000,
@@ -1494,7 +1567,8 @@ public static class ScratchcardService
                 { 4000, 60000 },
                 { 3000, 300000 },
                 { 2000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencsehozó",
             300,
@@ -1514,7 +1588,8 @@ public static class ScratchcardService
                 { 1000, 180000 },
                 { 600, 660000 },
                 { 300, 900000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Aranybánya",
             1000,
@@ -1538,7 +1613,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 300000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kiskarácsony 2019",
             300,
@@ -1556,7 +1632,8 @@ public static class ScratchcardService
                 { 1000, 50000 },
                 { 500, 350000 },
                 { 300, 400000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagykarácsony 2019",
             3000,
@@ -1577,7 +1654,8 @@ public static class ScratchcardService
                 { 9000, 92000 },
                 { 6000, 276000 },
                 { 3000, 368000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szerencse vagy Mázli",
             500,
@@ -1596,7 +1674,8 @@ public static class ScratchcardService
                 { 1500, 120000 },
                 { 800, 360000 },
                 { 500, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kis Ajándék",
             500,
@@ -1620,7 +1699,8 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 400000 },
                 { 500, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagy Ajándék",
             1000,
@@ -1646,7 +1726,8 @@ public static class ScratchcardService
                 { 3000, 80000 },
                 { 2000, 480000 },
                 { 1000, 565000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Óriási Ajándék",
             2000,
@@ -1677,7 +1758,8 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 491000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Pénzes bőrönd",
             1000,
@@ -1700,7 +1782,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kávészünet 500",
             500,
@@ -1720,7 +1803,8 @@ public static class ScratchcardService
                 { 1000, 120000 },
                 { 800, 360000 },
                 { 500, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kincseskamra",
             2000,
@@ -1745,7 +1829,8 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kiskarácsony 2020",
             500,
@@ -1768,7 +1853,8 @@ public static class ScratchcardService
                 { 1500, 240000 },
                 { 1000, 480000 },
                 { 500, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagykarácsony 2020",
             3000,
@@ -1789,7 +1875,8 @@ public static class ScratchcardService
                 { 9000, 100000 },
                 { 6000, 300000 },
                 { 3000, 400000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Napi Bónusz",
             500,
@@ -1810,7 +1897,8 @@ public static class ScratchcardService
                 { 2000, 100000 },
                 { 1000, 600000 },
                 { 500, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Heti Bónusz",
             1000,
@@ -1834,7 +1922,8 @@ public static class ScratchcardService
                 { 3000, 80000 },
                 { 2000, 480000 },
                 { 1000, 560000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Havi Bónusz",
             2000,
@@ -1863,7 +1952,8 @@ public static class ScratchcardService
                 { 4000, 60000 },
                 { 3000, 300000 },
                 { 2000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Mega Black Jack",
             1000,
@@ -1886,7 +1976,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Pénzkerék",
             1000,
@@ -1909,7 +2000,8 @@ public static class ScratchcardService
                 { 3000, 160000 },
                 { 2000, 400000 },
                 { 1000, 560000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Óriás Pénzkerék",
             2000,
@@ -1937,7 +2029,8 @@ public static class ScratchcardService
                 { 4000, 160000 },
                 { 3000, 240000 },
                 { 2000, 640000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Retro borítékos sorsjegy",
             500,
@@ -1962,7 +2055,8 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 450000 },
                 { 500, 750000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Varázsfőzet",
             2000,
@@ -1989,7 +2083,8 @@ public static class ScratchcardService
                 { 4000, 105000 },
                 { 3000, 226000 },
                 { 2000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kiskarácsony 2021",
             500,
@@ -2013,7 +2108,8 @@ public static class ScratchcardService
                 { 1000, 330000 },
                 { 800, 440000 },
                 { 500, 660000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagykarácsony 2021",
             3000,
@@ -2034,7 +2130,8 @@ public static class ScratchcardService
                 { 6000, 96000 },
                 { 5000, 288000 },
                 { 3000, 384000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Sok szerencsét! 2022",
             1000,
@@ -2057,7 +2154,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Vadvilág 500",
             500,
@@ -2081,7 +2179,8 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 500000 },
                 { 500, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Vadvilág 1000",
             1000,
@@ -2106,7 +2205,8 @@ public static class ScratchcardService
                 { 3000, 120000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Vadvilág 2000",
             2000,
@@ -2131,7 +2231,8 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 300000 },
                 { 2000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Pénzmátrix",
             500,
@@ -2152,7 +2253,8 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 300000 },
                 { 500, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Ökokaland",
             1000,
@@ -2175,7 +2277,8 @@ public static class ScratchcardService
                 { 3000, 60000 },
                 { 2000, 360000 },
                 { 1000, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Ökokaland Extra",
             2000,
@@ -2200,7 +2303,8 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nyomkövető",
             500,
@@ -2223,7 +2327,8 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 400000 },
                 { 500, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kincsvadász",
             2000,
@@ -2249,7 +2354,8 @@ public static class ScratchcardService
                 { 4000, 160000 },
                 { 3000, 320000 },
                 { 2000, 560000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kiskarácsony 2022",
             500,
@@ -2273,7 +2379,8 @@ public static class ScratchcardService
                 { 1000, 330000 },
                 { 800, 440000 },
                 { 500, 660000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagykarácsony 2022",
             3000,
@@ -2297,7 +2404,8 @@ public static class ScratchcardService
                 { 6000, 192000 },
                 { 5000, 192000 },
                 { 3000, 288000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Sok szerencsét! 2023",
             1000,
@@ -2320,7 +2428,8 @@ public static class ScratchcardService
                 { 3000, 200000 },
                 { 2000, 400000 },
                 { 1000, 800000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "NEON 500",
             500,
@@ -2344,7 +2453,8 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 500000 },
                 { 500, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "NEON 1000",
             1000,
@@ -2370,7 +2480,8 @@ public static class ScratchcardService
                 { 3000, 160000 },
                 { 2000, 400000 },
                 { 1000, 640000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "NEON 2000",
             2000,
@@ -2398,7 +2509,8 @@ public static class ScratchcardService
                 { 4000, 100000 },
                 { 3000, 250000 },
                 { 2000, 400000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Atlantisz",
             2000,
@@ -2425,7 +2537,8 @@ public static class ScratchcardService
                 { 4000, 105000 },
                 { 3000, 226000 },
                 { 2000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kis Meglepetés",
             500,
@@ -2449,7 +2562,8 @@ public static class ScratchcardService
                 { 1000, 200000 },
                 { 800, 500000 },
                 { 500, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagy Meglepetés",
             1000,
@@ -2472,7 +2586,8 @@ public static class ScratchcardService
                 { 3000, 160000 },
                 { 2000, 400000 },
                 { 1000, 640000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Óriási Meglepetés",
             2000,
@@ -2498,7 +2613,8 @@ public static class ScratchcardService
                 { 4000, 100000 },
                 { 3000, 250000 },
                 { 2000, 400000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Puzzle",
             1000,
@@ -2521,7 +2637,8 @@ public static class ScratchcardService
                 { 5000, 100000 },
                 { 2000, 800000 },
                 { 1000, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Milliomos Klub",
             2500,
@@ -2544,7 +2661,8 @@ public static class ScratchcardService
                 { 5000, 60000 },
                 { 3000, 480000 },
                 { 2500, 360000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kiskarácsony 2023",
             1000,
@@ -2568,7 +2686,8 @@ public static class ScratchcardService
                 { 3000, 240000 },
                 { 2000, 600000 },
                 { 1000, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagykarácsony 2023",
             3500,
@@ -2592,7 +2711,8 @@ public static class ScratchcardService
                 { 6000, 128000 },
                 { 5000, 256000 },
                 { 3500, 384000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Sok szerencsét! 2024",
             1000,
@@ -2615,7 +2735,8 @@ public static class ScratchcardService
                 { 3000, 240000 },
                 { 2000, 720000 },
                 { 1000, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kis Kerék",
             500,
@@ -2635,7 +2756,8 @@ public static class ScratchcardService
                 { 2000, 240000 },
                 { 1000, 900000 },
                 { 500, 840000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nagy Kerék",
             1000,
@@ -2655,7 +2777,8 @@ public static class ScratchcardService
                 { 4000, 110000 },
                 { 2000, 880000 },
                 { 1000, 770000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Óriási Kerék",
             2000,
@@ -2673,7 +2796,8 @@ public static class ScratchcardService
                 { 10000, 40000 },
                 { 4000, 720000 },
                 { 2000, 600000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Nyereményözön",
             1000,
@@ -2688,7 +2812,8 @@ public static class ScratchcardService
                 { 3000, 150000 },
                 { 2000, 500000 },
                 { 1000, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kaszinó 171",
             2000,
@@ -2713,7 +2838,8 @@ public static class ScratchcardService
                 { 4000, 120000 },
                 { 3000, 240000 },
                 { 2000, 480000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Buksza 170",
             1000,
@@ -2738,7 +2864,8 @@ public static class ScratchcardService
                 { 3000, 100000 },
                 { 2000, 500000 },
                 { 1000, 700000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Ajándék",
             2000,
@@ -2756,7 +2883,8 @@ public static class ScratchcardService
                 { 7500, 160000 },
                 { 5000, 1200000 },
                 { 2500, 1200000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Biliárd",
             1500,
@@ -2776,7 +2904,8 @@ public static class ScratchcardService
                 { 3000, 90000 },
                 { 2500, 330000 },
                 { 1500, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Darts",
             1500,
@@ -2796,7 +2925,8 @@ public static class ScratchcardService
                 { 3000, 90000 },
                 { 2500, 330000 },
                 { 1500, 420000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Szalon",
             3000,
@@ -2818,7 +2948,8 @@ public static class ScratchcardService
                 { 6000, 270000 },
                 { 5000, 540000 },
                 { 3000, 720000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Puskás 500",
             500,
@@ -2835,7 +2966,8 @@ public static class ScratchcardService
                 { 2000, 280000 },
                 { 1000, 980000 },
                 { 500, 980000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Puskás 1000",
             1000,
@@ -2853,7 +2985,8 @@ public static class ScratchcardService
                 { 5000, 100000 },
                 { 2000, 1300000 },
                 { 1000, 1000000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Sorsjegymánia",
             5000,
@@ -2874,7 +3007,8 @@ public static class ScratchcardService
                 { 8000, 150000 },
                 { 6000, 200000 },
                 { 5000, 400000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kalózok Kincse",
             1000,
@@ -2897,7 +3031,8 @@ public static class ScratchcardService
                 { 3000, 375000 },
                 { 2000, 525000 },
                 { 1000, 1200000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kalózok Kincse Plusz",
             2000,
@@ -2920,7 +3055,8 @@ public static class ScratchcardService
                 { 4000, 240000 },
                 { 3000, 480000 },
                 { 2000, 960000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
         new(
             "Kalózok Kincse Extra",
             3000,
@@ -2943,7 +3079,8 @@ public static class ScratchcardService
                 { 5000, 240000 },
                 { 4000, 480000 },
                 { 3000, 640000 },
-            }.ToFrozenDictionary()),
+            }
+            .ToFrozenDictionary()),
     }
     .ToFrozenSet();
 }
