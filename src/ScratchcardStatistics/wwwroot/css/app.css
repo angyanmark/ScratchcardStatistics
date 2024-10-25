@@ -71,7 +71,7 @@ body {
 
     .loading-progress circle:last-child {
       stroke: #95d08d;
-      stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
+      stroke-dasharray: calc(3.14159 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
       transition: stroke-dasharray 0.05s ease-in-out;
     }
 
@@ -79,7 +79,7 @@ body {
   position: absolute;
   text-align: center;
   font-weight: bold;
-  inset: calc(20vh + 3.25rem) 0 auto 0.2rem;
+  inset: calc(20vh + 3.4rem) 0 auto 0.2rem;
 }
 
   .loading-progress-text:after {

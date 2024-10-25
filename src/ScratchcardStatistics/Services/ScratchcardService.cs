@@ -14,7 +14,7 @@ public static class ScratchcardService
             new(2005, 4, 30),
             new(2011, 1, 28),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 10 },
                 { 50000, 75 },
@@ -33,7 +33,7 @@ public static class ScratchcardService
             new(2008, 9, 12),
             new(2010, 2, 26),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 5 },
                 { 50000, 300 },
@@ -50,7 +50,7 @@ public static class ScratchcardService
             new(2008, 11, 7),
             new(2011, 10, 28),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 4 },
                 { 1000000, 5 },
@@ -69,7 +69,7 @@ public static class ScratchcardService
             new(2008, 11, 29),
             new(2018, 6, 24),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 4 },
                 { 50000, 40 },
@@ -85,7 +85,7 @@ public static class ScratchcardService
             new(2008, 11, 29),
             null,
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -106,7 +106,7 @@ public static class ScratchcardService
             new(2009, 3, 27),
             new(2010, 4, 25),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 5 },
                 { 50000, 100 },
@@ -122,7 +122,7 @@ public static class ScratchcardService
             new(2009, 5, 29),
             new(2010, 10, 24),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 5 },
                 { 500000, 10 },
@@ -139,7 +139,7 @@ public static class ScratchcardService
             new(2009, 7, 31),
             new(2010, 9, 26),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 15000000, 3 },
                 { 1000000, 5 },
@@ -159,7 +159,7 @@ public static class ScratchcardService
             new(2009, 9, 25),
             new(2011, 7, 1),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 5 },
                 { 100000, 50 },
@@ -179,7 +179,7 @@ public static class ScratchcardService
             new(2009, 11, 27),
             new(2012, 4, 27),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 15000000, 5 },
                 { 1000000, 10 },
@@ -196,7 +196,7 @@ public static class ScratchcardService
             new(2010, 1, 29),
             new(2011, 3, 25),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 1000000, 5 },
@@ -213,7 +213,7 @@ public static class ScratchcardService
             new(2010, 3, 26),
             new(2012, 4, 6),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 4 },
                 { 500000, 5 },
@@ -229,7 +229,7 @@ public static class ScratchcardService
             new(2010, 5, 21),
             new(2013, 2, 22),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 5 },
                 { 50000, 400 },
@@ -246,7 +246,7 @@ public static class ScratchcardService
             new(2010, 7, 30),
             new(2013, 5, 24),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 15000000, 3 },
                 { 1000000, 6 },
@@ -267,7 +267,7 @@ public static class ScratchcardService
             new(2010, 9, 24),
             new(2012, 7, 27),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 3 },
                 { 100000, 500 },
@@ -285,7 +285,7 @@ public static class ScratchcardService
             new(2010, 11, 26),
             new(2012, 1, 27),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 15000000, 5 },
                 { 1000000, 10 },
@@ -305,7 +305,7 @@ public static class ScratchcardService
             new(2011, 1, 14),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000500, 3 },
                 { 5000000, 10 },
@@ -340,7 +340,7 @@ public static class ScratchcardService
             new(2011, 3, 11),
             new(2012, 7, 27),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 1000000, 5 },
@@ -357,7 +357,7 @@ public static class ScratchcardService
             new(2011, 5, 6),
             null,
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -383,7 +383,7 @@ public static class ScratchcardService
             new(2011, 6, 24),
             new(2012, 6, 15),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 5 },
                 { 1000000, 10 },
@@ -403,7 +403,7 @@ public static class ScratchcardService
             new(2011, 8, 26),
             new(2012, 8, 31),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 15000000, 3 },
                 { 1000000, 10 },
@@ -425,7 +425,7 @@ public static class ScratchcardService
             new(2011, 10, 28),
             new(2012, 1, 6),
             1500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 5000000, 3 },
@@ -444,7 +444,7 @@ public static class ScratchcardService
             new(2012, 1, 27),
             new(2014, 5, 23),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 2 },
                 { 5000000, 5 },
@@ -465,7 +465,7 @@ public static class ScratchcardService
             new(2012, 3, 30),
             new(2013, 2, 22),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 500000, 5 },
@@ -482,7 +482,7 @@ public static class ScratchcardService
             new(2012, 5, 25),
             new(2013, 10, 18),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 500000, 50 },
@@ -499,7 +499,7 @@ public static class ScratchcardService
             new(2012, 8, 31),
             new(2014, 1, 31),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -522,7 +522,7 @@ public static class ScratchcardService
             new(2012, 11, 2),
             new(2013, 1, 11),
             1500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 5000000, 3 },
@@ -541,7 +541,7 @@ public static class ScratchcardService
             new(2013, 2, 1),
             new(2014, 10, 10),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 2500000, 6 },
@@ -561,7 +561,7 @@ public static class ScratchcardService
             new(2013, 3, 29),
             new(2014, 7, 25),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -586,7 +586,7 @@ public static class ScratchcardService
             new(2013, 5, 31),
             new(2014, 10, 10),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 1000000, 5 },
@@ -603,7 +603,7 @@ public static class ScratchcardService
             new(2013, 8, 2),
             new(2013, 8, 2),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -622,7 +622,7 @@ public static class ScratchcardService
             new(2013, 9, 27),
             new(2015, 2, 13),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 24000000, 4 },
                 { 5000000, 5 },
@@ -643,7 +643,7 @@ public static class ScratchcardService
             new(2013, 11, 6),
             new(2014, 1, 10),
             2000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 2 },
@@ -667,7 +667,7 @@ public static class ScratchcardService
             new(2014, 1, 31),
             new(2015, 3, 27),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 500000, 3 },
@@ -685,7 +685,7 @@ public static class ScratchcardService
             new(2014, 3, 28),
             new(2015, 9, 25),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 4 },
                 { 5000000, 6 },
@@ -705,7 +705,7 @@ public static class ScratchcardService
             new(2014, 5, 30),
             new(2016, 4, 25),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 2 },
                 { 1000000, 4 },
@@ -727,7 +727,7 @@ public static class ScratchcardService
             new(2014, 7, 18),
             new(2015, 2, 13),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 2 },
                 { 1000000, 5 },
@@ -745,7 +745,7 @@ public static class ScratchcardService
             new(2014, 9, 26),
             null,
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 2 },
                 { 5000000, 8 },
@@ -766,7 +766,7 @@ public static class ScratchcardService
             new(2014, 11, 7),
             new(2015, 2, 2),
             2000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 10 },
@@ -790,7 +790,7 @@ public static class ScratchcardService
             new(2015, 1, 30),
             new(2017, 5, 27),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 2 },
                 { 100000, 10 },
@@ -808,7 +808,7 @@ public static class ScratchcardService
             new(2015, 3, 27),
             new(2018, 4, 8),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 48000000, 2 },
                 { 1000000, 10 },
@@ -833,7 +833,7 @@ public static class ScratchcardService
             new(2015, 5, 29),
             new(2017, 5, 27),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 2 },
                 { 500000, 4 },
@@ -855,7 +855,7 @@ public static class ScratchcardService
             new(2015, 7, 17),
             new(2016, 6, 13),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 4000000, 3 },
@@ -877,7 +877,7 @@ public static class ScratchcardService
             new(2015, 9, 25),
             new(2016, 10, 24),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 100000, 15 },
@@ -896,7 +896,7 @@ public static class ScratchcardService
             new(2015, 11, 6),
             new(2016, 1, 25),
             1800000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 3 },
@@ -919,7 +919,7 @@ public static class ScratchcardService
             new(2016, 1, 29),
             new(2017, 3, 27),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 2 },
                 { 500000, 5 },
@@ -938,7 +938,7 @@ public static class ScratchcardService
             new(2016, 4, 1),
             new(2016, 10, 24),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 2 },
                 { 1000000, 5 },
@@ -959,7 +959,7 @@ public static class ScratchcardService
             new(2016, 6, 3),
             new(2018, 4, 8),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 10 },
@@ -983,7 +983,7 @@ public static class ScratchcardService
             new(2016, 7, 29),
             new(2017, 7, 29),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 3 },
                 { 500000, 35 },
@@ -1002,7 +1002,7 @@ public static class ScratchcardService
             new(2016, 9, 23),
             new(2019, 3, 31),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 2 },
                 { 1000000, 7 },
@@ -1028,7 +1028,7 @@ public static class ScratchcardService
             new(2016, 11, 4),
             new(2017, 1, 30),
             2300000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 15 },
@@ -1054,7 +1054,7 @@ public static class ScratchcardService
             new(2017, 2, 3),
             new(2018, 4, 8),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 2 },
                 { 1000000, 15 },
@@ -1075,7 +1075,7 @@ public static class ScratchcardService
             new(2017, 3, 31),
             new(2019, 5, 26),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 10 },
@@ -1099,7 +1099,7 @@ public static class ScratchcardService
             new(2017, 6, 2),
             new(2017, 9, 25),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 1 },
                 { 500000, 5 },
@@ -1120,7 +1120,7 @@ public static class ScratchcardService
             new(2017, 6, 30),
             new(2018, 8, 26),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 1 },
                 { 1000000, 2 },
@@ -1141,7 +1141,7 @@ public static class ScratchcardService
             new(2017, 6, 30),
             new(2018, 8, 26),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 20000000, 2 },
                 { 1000000, 6 },
@@ -1166,7 +1166,7 @@ public static class ScratchcardService
             new(2017, 6, 30),
             new(2018, 8, 26),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -1192,7 +1192,7 @@ public static class ScratchcardService
             new(2017, 9, 1),
             new(2020, 6, 28),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -1217,7 +1217,7 @@ public static class ScratchcardService
             new(2017, 11, 3),
             new(2018, 2, 4),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 5000000, 1 },
                 { 100000, 10 },
@@ -1236,7 +1236,7 @@ public static class ScratchcardService
             new(2017, 11, 3),
             new(2018, 2, 4),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -1259,7 +1259,7 @@ public static class ScratchcardService
             new(2018, 1, 5),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 15000000, 4 },
                 { 100000, 40 },
@@ -1276,7 +1276,7 @@ public static class ScratchcardService
             new(2018, 1, 12),
             new(2020, 6, 28),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 3 },
                 { 500000, 6 },
@@ -1295,7 +1295,7 @@ public static class ScratchcardService
             new(2018, 2, 2),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 3 },
                 { 1000000, 5 },
@@ -1314,7 +1314,7 @@ public static class ScratchcardService
             new(2018, 4, 6),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 8 },
@@ -1340,7 +1340,7 @@ public static class ScratchcardService
             new(2018, 6, 1),
             new(2020, 8, 30),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -1367,7 +1367,7 @@ public static class ScratchcardService
             new(2018, 7, 13),
             new(2020, 6, 28),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 2 },
                 { 1000000, 3 },
@@ -1386,7 +1386,7 @@ public static class ScratchcardService
             new(2018, 9, 7),
             new(2020, 3, 15),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -1412,7 +1412,7 @@ public static class ScratchcardService
             new(2018, 11, 3),
             new(2019, 2, 3),
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 1 },
                 { 1000000, 10 },
@@ -1431,7 +1431,7 @@ public static class ScratchcardService
             new(2018, 11, 3),
             new(2019, 2, 3),
             2300000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -1453,7 +1453,7 @@ public static class ScratchcardService
             new(2019, 2, 8),
             new(2020, 7, 26),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 1 },
                 { 1000000, 5 },
@@ -1474,7 +1474,7 @@ public static class ScratchcardService
             new(2019, 2, 8),
             new(2020, 3, 15),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 20000000, 2 },
                 { 1000000, 5 },
@@ -1499,7 +1499,7 @@ public static class ScratchcardService
             new(2019, 2, 8),
             new(2020, 3, 15),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -1525,7 +1525,7 @@ public static class ScratchcardService
             new(2019, 3, 29),
             new(2022, 4, 24),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 10 },
@@ -1549,7 +1549,7 @@ public static class ScratchcardService
             new(2019, 5, 10),
             new(2020, 7, 26),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 10 },
@@ -1575,7 +1575,7 @@ public static class ScratchcardService
             new(2019, 7, 12),
             new(2020, 7, 26),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 2 },
                 { 500000, 8 },
@@ -1596,7 +1596,7 @@ public static class ScratchcardService
             new(2019, 9, 6),
             new(2023, 4, 23),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -1621,7 +1621,7 @@ public static class ScratchcardService
             new(2019, 11, 4),
             new(2020, 2, 23),
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 10000000, 1 },
                 { 1000000, 10 },
@@ -1640,7 +1640,7 @@ public static class ScratchcardService
             new(2019, 11, 4),
             new(2020, 2, 23),
             2300000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -1662,7 +1662,7 @@ public static class ScratchcardService
             new(2020, 1, 11),
             new(2022, 4, 24),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 10 },
@@ -1682,7 +1682,7 @@ public static class ScratchcardService
             new(2020, 3, 20),
             new(2022, 1, 16),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 20000000, 1 },
                 { 1000000, 3 },
@@ -1707,7 +1707,7 @@ public static class ScratchcardService
             new(2020, 3, 20),
             new(2023, 5, 21),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -1734,7 +1734,7 @@ public static class ScratchcardService
             new(2020, 3, 20),
             new(2023, 5, 21),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -1766,7 +1766,7 @@ public static class ScratchcardService
             new(2020, 5, 8),
             new(2023, 2, 19),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -1790,7 +1790,7 @@ public static class ScratchcardService
             new(2020, 7, 10),
             new(2021, 8, 22),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -1811,7 +1811,7 @@ public static class ScratchcardService
             new(2020, 9, 4),
             new(2023, 2, 19),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -1837,7 +1837,7 @@ public static class ScratchcardService
             new(2020, 11, 6),
             new(2021, 2, 28),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -1861,7 +1861,7 @@ public static class ScratchcardService
             new(2020, 11, 6),
             new(2021, 2, 28),
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -1883,7 +1883,7 @@ public static class ScratchcardService
             new(2021, 1, 15),
             new(2022, 7, 24),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -1905,7 +1905,7 @@ public static class ScratchcardService
             new(2021, 1, 15),
             new(2024, 3, 10),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -1930,7 +1930,7 @@ public static class ScratchcardService
             new(2021, 1, 15),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 15 },
@@ -1960,7 +1960,7 @@ public static class ScratchcardService
             new(2021, 3, 5),
             new(2024, 4, 21),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -1984,7 +1984,7 @@ public static class ScratchcardService
             new(2021, 5, 7),
             new(2022, 11, 13),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -2008,7 +2008,7 @@ public static class ScratchcardService
             new(2021, 5, 7),
             new(2023, 7, 16),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 8 },
@@ -2037,7 +2037,7 @@ public static class ScratchcardService
             new(2021, 7, 9),
             new(2022, 5, 22),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 30000000, 1 },
                 { 900000, 5 },
@@ -2063,7 +2063,7 @@ public static class ScratchcardService
             new(2021, 9, 10),
             new(2023, 4, 23),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 2 },
                 { 10000000, 5 },
@@ -2091,7 +2091,7 @@ public static class ScratchcardService
             new(2021, 11, 5),
             new(2022, 3, 20),
             5500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2116,7 +2116,7 @@ public static class ScratchcardService
             new(2021, 11, 5),
             new(2022, 3, 20),
             2400000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 1 },
                 { 10000000, 10 },
@@ -2138,7 +2138,7 @@ public static class ScratchcardService
             new(2021, 12, 30),
             new(2022, 9, 25),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 5 },
@@ -2162,7 +2162,7 @@ public static class ScratchcardService
             new(2022, 2, 4),
             new(2023, 9, 17),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2187,7 +2187,7 @@ public static class ScratchcardService
             new(2022, 2, 4),
             new(2023, 9, 17),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 5 },
@@ -2213,7 +2213,7 @@ public static class ScratchcardService
             new(2022, 2, 4),
             new(2024, 1, 21),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 14 },
@@ -2239,7 +2239,7 @@ public static class ScratchcardService
             new(2022, 3, 25),
             new(2023, 11, 12),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2261,7 +2261,7 @@ public static class ScratchcardService
             new(2022, 5, 13),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 10 },
@@ -2285,7 +2285,7 @@ public static class ScratchcardService
             new(2022, 5, 13),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2311,7 +2311,7 @@ public static class ScratchcardService
             new(2022, 7, 8),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 5000000, 5 },
@@ -2335,7 +2335,7 @@ public static class ScratchcardService
             new(2022, 9, 9),
             null,
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 2 },
                 { 5000000, 10 },
@@ -2362,7 +2362,7 @@ public static class ScratchcardService
             new(2022, 11, 4),
             new(2023, 3, 19),
             5500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2387,7 +2387,7 @@ public static class ScratchcardService
             new(2022, 11, 4),
             new(2023, 3, 19),
             2400000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 1 },
                 { 10000000, 30 },
@@ -2412,7 +2412,7 @@ public static class ScratchcardService
             new(2022, 12, 30),
             new(2023, 9, 17),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 5 },
@@ -2436,7 +2436,7 @@ public static class ScratchcardService
             new(2023, 2, 3),
             new(2024, 4, 21),
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 3 },
@@ -2461,7 +2461,7 @@ public static class ScratchcardService
             new(2023, 2, 3),
             new(2024, 5, 26),
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -2488,7 +2488,7 @@ public static class ScratchcardService
             new(2023, 2, 3),
             null,
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2517,7 +2517,7 @@ public static class ScratchcardService
             new(2023, 3, 24),
             new(2024, 4, 21),
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 2 },
                 { 10000000, 5 },
@@ -2545,7 +2545,7 @@ public static class ScratchcardService
             new(2023, 5, 12),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 3 },
@@ -2570,7 +2570,7 @@ public static class ScratchcardService
             new(2023, 5, 12),
             null,
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -2594,7 +2594,7 @@ public static class ScratchcardService
             new(2023, 5, 12),
             null,
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2621,7 +2621,7 @@ public static class ScratchcardService
             new(2023, 7, 7),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -2645,7 +2645,7 @@ public static class ScratchcardService
             new(2023, 9, 1),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 85000000, 2 },
                 { 5000000, 45 },
@@ -2669,7 +2669,7 @@ public static class ScratchcardService
             new(2023, 10, 27),
             new(2024, 3, 24),
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 6 },
@@ -2694,7 +2694,7 @@ public static class ScratchcardService
             new(2023, 10, 27),
             new(2024, 3, 24),
             3200000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 125000000, 1 },
                 { 75000000, 1 },
@@ -2719,7 +2719,7 @@ public static class ScratchcardService
             new(2023, 12, 27),
             null,
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 5 },
@@ -2743,7 +2743,7 @@ public static class ScratchcardService
             new(2024, 2, 2),
             null,
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 5 },
@@ -2764,7 +2764,7 @@ public static class ScratchcardService
             new(2024, 2, 2),
             null,
             5500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 10 },
@@ -2785,7 +2785,7 @@ public static class ScratchcardService
             new(2024, 2, 2),
             null,
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 1 },
                 { 10000000, 5 },
@@ -2804,7 +2804,7 @@ public static class ScratchcardService
             new(2024, 3, 8),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000, 4000 },
                 { 10000, 40000 },
@@ -2820,7 +2820,7 @@ public static class ScratchcardService
             new(2024, 3, 14),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 3 },
@@ -2846,7 +2846,7 @@ public static class ScratchcardService
             new(2024, 3, 27),
             null,
             5000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 5000000, 3 },
@@ -2872,7 +2872,7 @@ public static class ScratchcardService
             new(2024, 4, 12),
             null,
             8000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 2 },
                 { 10000000, 5 },
@@ -2891,7 +2891,7 @@ public static class ScratchcardService
             new(2024, 5, 10),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2912,7 +2912,7 @@ public static class ScratchcardService
             new(2024, 5, 10),
             null,
             3000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 75000000, 1 },
                 { 10000000, 5 },
@@ -2933,7 +2933,7 @@ public static class ScratchcardService
             new(2024, 5, 10),
             null,
             4500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 150000000, 1 },
                 { 25000000, 10 },
@@ -2956,7 +2956,7 @@ public static class ScratchcardService
             new(2024, 6, 14),
             null,
             7000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 25000000, 1 },
                 { 1000000, 4 },
@@ -2974,7 +2974,7 @@ public static class ScratchcardService
             new(2024, 6, 14),
             null,
             7000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 2 },
                 { 1000000, 10 },
@@ -2993,7 +2993,7 @@ public static class ScratchcardService
             new(2024, 8, 2),
             null,
             2500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 250000000, 1 },
                 { 10000000, 20 },
@@ -3015,7 +3015,7 @@ public static class ScratchcardService
             new(2024, 9, 6),
             null,
             7500000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 50000000, 1 },
                 { 1000000, 16 },
@@ -3039,7 +3039,7 @@ public static class ScratchcardService
             new(2024, 9, 6),
             null,
             6000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 100000000, 1 },
                 { 10000000, 10 },
@@ -3063,7 +3063,7 @@ public static class ScratchcardService
             new(2024, 9, 6),
             null,
             4000000,
-            new Dictionary<uint, uint>()
+            new Dictionary<uint, uint>
             {
                 { 150000000, 1 },
                 { 15000000, 10 },
@@ -3079,6 +3079,47 @@ public static class ScratchcardService
                 { 5000, 240000 },
                 { 4000, 480000 },
                 { 3000, 640000 },
+            }
+            .ToFrozenDictionary()),
+        new(
+            "Kiskarácsony 2024",
+            1000,
+            new(2024, 10, 28),
+            null,
+            6000000,
+            new Dictionary<uint, uint>
+            {
+                { 50000000, 1 },
+                { 1000000, 5 },
+                { 100000, 144 },
+                { 50000, 100 },
+                { 22000, 1940 },
+                { 10000, 9500 },
+                { 8000, 10990 },
+                { 5000, 60000 },
+                { 4000, 120000 },
+                { 2000, 960000 },
+                { 1000, 840000 },
+            }
+            .ToFrozenDictionary()),
+        new(
+            "Nagykarácsony 2024",
+            3500,
+            new(2024, 10, 28),
+            null,
+            3200000,
+            new Dictionary<uint, uint>
+            {
+                { 175000000, 2 },
+                { 50000000, 5 },
+                { 1000000, 90 },
+                { 100000, 1000 },
+                { 50000, 6000 },
+                { 20000, 14250 },
+                { 10000, 160100 },
+                { 5000, 512000 },
+                { 4000, 128000 },
+                { 3500, 384000 },
             }
             .ToFrozenDictionary()),
     }
