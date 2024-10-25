@@ -9,25 +9,28 @@
 @if (_scratchcardsFiltered is not null)
 {
 	<FluentDataGrid Items="@_scratchcardsFiltered" OnRowClick="HandleRowClick" TGridItem="Scratchcard" Style="height: calc(100dvh - 42px); overflow: auto; margin: -1rem;" GenerateHeader="GenerateHeaderOption.Sticky" ShowHover="true">
-		<PropertyColumn Property="@(s => s.Name)" Title="Név" Sortable="true" Filtered="!string.IsNullOrEmpty(_filterName)">
-			<ColumnOptions>
-				<FluentSearch Autofocus="true" @bind-Value="_filterName" @oninput="NameChanged" @bind-Value:after="NameCleared" Label="Szűrés" Placeholder="Név" />
-			</ColumnOptions>
-		</PropertyColumn>
-		<PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection="SortDirection.Descending" IsDefaultSortColumn="true" Title="Megjelenés" Align="Align.Center" Sortable="true" />
-		<PropertyColumn Property="@(s => s.Price)" Format="C0" Title="Ár" Align="Align.End" Sortable="true" />
-		<PropertyColumn Property="@(s => s.ExpectedValue)" Format="C0" Title="Várható érték" Align="Align.End" Sortable="true" />
-		<PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
-		<TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="@chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
-		<PropertyColumn Property="@(s => s.ChanceOfWinningPercent)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
-		<TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="@isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex;">
-			<ColumnOptions>
-				<FluentCheckbox ThreeState="true" CheckState="_filterIsAvailable" CheckStateChanged="IsAvailableChanged" Label="Elérhető" />
-			</ColumnOptions>
-			<ChildContent>
-				<FluentEmoji Value="@((Emoji)(context.IsAvailable ? new Emojis.Symbols.Flat.Default.CheckMarkButton() : new Emojis.Symbols.Flat.Default.CrossMark()))" Width="16px" />
-			</ChildContent>
-		</TemplateColumn>
+		<EmptyContent>Nincs megjeleníthető adat!</EmptyContent>
+		<ChildContent>
+			<PropertyColumn Property="@(s => s.Name)" Title="Név" Sortable="true" Filtered="!string.IsNullOrEmpty(_filterName)">
+				<ColumnOptions>
+					<FluentSearch Autofocus="true" @bind-Value="_filterName" @oninput="NameChanged" @bind-Value:after="NameCleared" Label="Szűrés" Placeholder="Név" />
+				</ColumnOptions>
+			</PropertyColumn>
+			<PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection="SortDirection.Descending" IsDefaultSortColumn="true" Title="Megjelenés" Align="Align.Center" Sortable="true" />
+			<PropertyColumn Property="@(s => s.Price)" Format="C0" Title="Ár" Align="Align.End" Sortable="true" />
+			<PropertyColumn Property="@(s => s.ExpectedValue)" Format="C0" Title="Várható érték" Align="Align.End" Sortable="true" />
+			<PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
+			<TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="@chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
+			<PropertyColumn Property="@(s => s.ChanceOfWinningPercent)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
+			<TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="@isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex;">
+				<ColumnOptions>
+					<FluentCheckbox ThreeState="true" CheckState="_filterIsAvailable" CheckStateChanged="IsAvailableChanged" Label="Elérhető" />
+				</ColumnOptions>
+				<ChildContent>
+					<FluentEmoji Value="@((Emoji)(context.IsAvailable ? new Emojis.Symbols.Flat.Default.CheckMarkButton() : new Emojis.Symbols.Flat.Default.CrossMark()))" Width="16px" />
+				</ChildContent>
+			</TemplateColumn>
+		</ChildContent>
 	</FluentDataGrid>
 }
 
