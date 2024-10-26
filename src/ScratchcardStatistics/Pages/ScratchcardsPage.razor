@@ -8,21 +8,24 @@
 
 @if (_scratchcardsFiltered is not null)
 {
-	<FluentDataGrid Items="@_scratchcardsFiltered" OnRowClick="HandleRowClick" TGridItem="Scratchcard" Style="height: calc(100dvh - 42px); overflow: auto; margin: -1rem;" GenerateHeader="GenerateHeaderOption.Sticky" ShowHover="true">
+	<FluentDataGrid Items="@_scratchcardsFiltered" TGridItem="Scratchcard" Style="height: calc(100dvh - 42px); overflow: auto; margin: -1rem;" GenerateHeader="GenerateHeaderOption.Sticky">
 		<EmptyContent>Nincs megjeleníthető adat!</EmptyContent>
 		<ChildContent>
-			<PropertyColumn Property="@(s => s.Name)" Title="Név" Sortable="true" Filtered="!string.IsNullOrEmpty(_filterName)">
+			<TemplateColumn Title="Név" Sortable="true" SortBy="_nameSort" Filtered="!string.IsNullOrEmpty(_filterName)">
 				<ColumnOptions>
 					<FluentSearch Autofocus="true" @bind-Value="_filterName" @oninput="NameChanged" @bind-Value:after="NameCleared" Label="Szűrés" Placeholder="Név" />
 				</ColumnOptions>
-			</PropertyColumn>
+				<ChildContent>
+					<a href="@($"scratchcards/{context.PathName}")" style="text-decoration: none;">@context.Name</a>
+				</ChildContent>
+			</TemplateColumn>
 			<PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection="SortDirection.Descending" IsDefaultSortColumn="true" Title="Megjelenés" Align="Align.Center" Sortable="true" />
 			<PropertyColumn Property="@(s => s.Price)" Format="C0" Title="Ár" Align="Align.End" Sortable="true" />
 			<PropertyColumn Property="@(s => s.ExpectedValue)" Format="C0" Title="Várható érték" Align="Align.End" Sortable="true" />
 			<PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
-			<TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="@chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
+			<TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="_chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
 			<PropertyColumn Property="@(s => s.ChanceOfWinningPercent)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
-			<TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="@isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex;">
+			<TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="_isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex;">
 				<ColumnOptions>
 					<FluentCheckbox ThreeState="true" CheckState="_filterIsAvailable" CheckStateChanged="IsAvailableChanged" Label="Elérhető" />
 				</ColumnOptions>
@@ -40,8 +43,9 @@
 
 	private IQueryable<Scratchcard>? _scratchcardsFiltered;
 
-	private GridSort<Scratchcard> chanceOfWinningToOneSort = GridSort<Scratchcard>.ByAscending(x => x.ChanceOfWinningToOne);
-	private GridSort<Scratchcard> isAvailableSort = GridSort<Scratchcard>.ByAscending(x => x.IsAvailable);
+	private GridSort<Scratchcard> _nameSort = GridSort<Scratchcard>.ByAscending(x => x.Name);
+	private GridSort<Scratchcard> _chanceOfWinningToOneSort = GridSort<Scratchcard>.ByAscending(x => x.ChanceOfWinningToOne);
+	private GridSort<Scratchcard> _isAvailableSort = GridSort<Scratchcard>.ByAscending(x => x.IsAvailable);
 
 	protected override void OnInitialized() =>
 		FilterChanged();
@@ -77,12 +81,4 @@
 			.OrderByDescending(s => s.ReleaseDate)
 			.ThenByDescending(s => s.Price)
 			.AsQueryable();
-
-	private void HandleRowClick(FluentDataGridRow<Scratchcard> row)
-	{
-		if (row.Item is not null)
-		{
-			NavigationManager.NavigateTo($"scratchcards/{row.Item.PathName}");
-		}
-	}
 }
