@@ -6,7 +6,7 @@ namespace ScratchcardStatistics.Services;
 
 public static class ScratchcardService
 {
-    public static FrozenSet<Scratchcard> Scratchcards => new HashSet<Scratchcard>
+    public static readonly FrozenSet<Scratchcard> Scratchcards = new HashSet<Scratchcard>
     {
         new(
             "Fáraók Kincse 200",
