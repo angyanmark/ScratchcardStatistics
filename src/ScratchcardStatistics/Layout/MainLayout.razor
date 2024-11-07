@@ -1,4 +1,6 @@
-﻿@inherits LayoutComponentBase
+﻿@using Microsoft.AspNetCore.Components.WebAssembly.Hosting
+@inherits LayoutComponentBase
+@inject IWebAssemblyHostEnvironment HostEnvironment
 
 <FluentLayout>
 	<FluentHeader Height="42">
@@ -8,7 +10,7 @@
 		<FluentSpacer Width="8" />
 		<FluentNavLink Href="https://github.com/angyanmark/ScratchcardStatistics" Icon="@(new Icons.Regular.Size24.Code())" IconColor="Color.Lightweight" Target="_blank" Tooltip="Forráskód" Style="margin-bottom: -4px;" />
 		<FluentSpacer Width="8" />
-		<FluentIcon Value="@(new Icons.Regular.Size20.Info())" Color="Color.Lightweight" Title="@System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription" />
+		<FluentIcon Value="@(new Icons.Regular.Size20.Info())" Color="Color.Lightweight" Title="@($"{HostEnvironment.Environment} • v{System.Reflection.Assembly.GetExecutingAssembly().GetName().Version?.Major} • {System.Runtime.InteropServices.RuntimeInformation.FrameworkDescription}")" />
 	</FluentHeader>
 	<FluentStack Class="main" Width="100%">
 		<FluentBodyContent Class="body-content">

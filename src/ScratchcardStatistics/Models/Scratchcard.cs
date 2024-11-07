@@ -2,9 +2,9 @@
 
 namespace ScratchcardStatistics.Models;
 
-public sealed record Scratchcard(
+public readonly record struct Scratchcard(
     string Name,
-    uint Price,
+    ushort Price,
     DateOnly ReleaseDate,
     DateOnly? EndDate,
     uint TotalSupply,

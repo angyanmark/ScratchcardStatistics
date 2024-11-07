@@ -9,45 +9,58 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-    # Checkout branch
-    - name: Checkout branch
-      uses: actions/checkout@v4
+      # Checkout branch
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-    # Setup .NET Core SDK
-    - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 9.0
-        dotnet-quality: 'preview'
+      # Setup GitVersion
+      - name: Setup GitVersion
+        uses: gittools/actions/gitversion/setup@v3
+        with:
+          versionSpec: '6.x'
 
-    # Install workloads
-    - name: Install workloads
-      run: dotnet workload restore src/ScratchcardStatistics/ScratchcardStatistics.csproj
+      # Execute GitVersion
+      - name: Execute GitVersion
+        id: version
+        uses: gittools/actions/gitversion/execute@v3
 
-    # Publish the Blazor project to the release folder
-    - name: Publish Blazor project
-      run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj -c Release -o release --nologo
+      # Setup .NET Core SDK
+      - name: Setup .NET Core SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 9.0
+          dotnet-quality: 'preview'
 
-    # Change the base tag in index.html from '/' to '/ScratchcardStatistics/' to match GitHub Pages repository subdirectory
-    - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
-      run: sed -i 's/<base href="\/" \/>/<base href="\/ScratchcardStatistics\/" \/>/g' release/wwwroot/index.html
+      # Install workloads
+      - name: Install workloads
+        run: dotnet workload restore src/ScratchcardStatistics/ScratchcardStatistics.csproj
 
-    # Copy index.html to 404.html to serve the same file when a file is not found
-    - name: Copy index.html to 404.html
-      run: cp release/wwwroot/index.html release/wwwroot/404.html
+      # Publish the Blazor project to the release folder
+      - name: Publish Blazor project
+        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj -c Release -o release --nologo /p:Version=${{ steps.version.outputs.commitsSinceVersionSource }}
 
-    # Add .nojekyll file to tell GitHub Pages to not treat this as a Jekyll project (allow files and folders starting with an underscore)
-    - name: Add .nojekyll file
-      run: touch release/wwwroot/.nojekyll
+      # Change the base tag in index.html from '/' to '/ScratchcardStatistics/' to match GitHub Pages repository subdirectory
+      - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
+        run: sed -i 's/<base href="\/" \/>/<base href="\/ScratchcardStatistics\/" \/>/g' release/wwwroot/index.html
 
-    # Add .gitattributes file to treat files as binary files
-    - name: Add .gitattributes file
-      run: echo "* binary" > release/wwwroot/.gitattributes
+      # Copy index.html to 404.html to serve the same file when a file is not found
+      - name: Copy index.html to 404.html
+        run: cp release/wwwroot/index.html release/wwwroot/404.html
 
-    # Commit the published project files to GitHub Pages branch
-    - name: Commit files to GitHub Pages branch
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: release/wwwroot
+      # Add .nojekyll file to tell GitHub Pages to not treat this as a Jekyll project (allow files and folders starting with an underscore)
+      - name: Add .nojekyll file
+        run: touch release/wwwroot/.nojekyll
+
+      # Add .gitattributes file to treat files as binary files
+      - name: Add .gitattributes file
+        run: echo "* binary" > release/wwwroot/.gitattributes
+
+      # Commit the published project files to GitHub Pages branch
+      - name: Commit files to GitHub Pages branch
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
+          folder: release/wwwroot

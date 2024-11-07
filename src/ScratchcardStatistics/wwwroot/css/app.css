@@ -83,7 +83,7 @@ body {
 }
 
   .loading-progress-text:after {
-    content: var(--blazor-load-percentage-text, "Betöltés");
+    content: var(--blazor-load-percentage-text, "Betöltés…");
   }
 
 @media (max-width: 600px) {
