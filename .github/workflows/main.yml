@@ -17,14 +17,14 @@ jobs:
 
       # Setup GitVersion
       - name: Setup GitVersion
-        uses: gittools/actions/gitversion/setup@v3
+        uses: gittools/actions/gitversion/setup@v3.0
         with:
           versionSpec: '6.x'
 
       # Execute GitVersion
       - name: Execute GitVersion
         id: version
-        uses: gittools/actions/gitversion/execute@v3
+        uses: gittools/actions/gitversion/execute@v3.0
 
       # Setup .NET Core SDK
       - name: Setup .NET Core SDK
