@@ -15,7 +15,7 @@ builder.RootComponents.Add<App>("#app");
 builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services
-    .AddScoped(sp => new HttpClient { BaseAddress = new(builder.HostEnvironment.BaseAddress) })
+    .AddScoped(_ => new HttpClient { BaseAddress = new(builder.HostEnvironment.BaseAddress) })
     .AddFluentUIComponents(new LibraryConfiguration { UseTooltipServiceProvider = false });
 
 await builder.Build().RunAsync();

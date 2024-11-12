@@ -31,7 +31,6 @@ jobs:
         uses: actions/setup-dotnet@v4
         with:
           dotnet-version: 9.0
-          dotnet-quality: 'preview'
 
       # Install workloads
       - name: Install workloads
@@ -39,7 +38,7 @@ jobs:
 
       # Publish the Blazor project to the release folder
       - name: Publish Blazor project
-        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj -c Release -o release --nologo /p:Version=${{ steps.version.outputs.commitsSinceVersionSource }}
+        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj -o release /p:Version=${{ steps.version.outputs.commitsSinceVersionSource }}
 
       # Change the base tag in index.html from '/' to '/ScratchcardStatistics/' to match GitHub Pages repository subdirectory
       - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
