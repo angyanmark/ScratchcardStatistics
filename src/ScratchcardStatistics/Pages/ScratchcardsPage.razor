@@ -1,4 +1,4 @@
-﻿@page "/scratchcards"
+@page "/scratchcards"
 @using ScratchcardStatistics.Models
 @using ScratchcardStatistics.Services
 
@@ -6,77 +6,77 @@
 
 @if (_scratchcardsFiltered is not null)
 {
-	<FluentDataGrid Items="@_scratchcardsFiltered" TGridItem="Scratchcard" Style="height: calc(100dvh - 42px); overflow: auto; margin: -1rem;" GenerateHeader="GenerateHeaderOption.Sticky">
-		<EmptyContent>Nincs megjeleníthető adat!</EmptyContent>
-		<ChildContent>
-			<TemplateColumn Title="Név" Sortable="true" SortBy="_nameSort" Filtered="!string.IsNullOrEmpty(_filterName)">
-				<ColumnOptions>
-					<FluentSearch Autofocus="true" @bind-Value="_filterName" @oninput="NameChanged" @bind-Value:after="NameCleared" Label="Szűrés" Placeholder="Név" />
-				</ColumnOptions>
-				<ChildContent>
-					<a href="@($"scratchcards/{context.PathName}")" style="text-decoration: none;">@context.Name</a>
-				</ChildContent>
-			</TemplateColumn>
-			<PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection="SortDirection.Descending" IsDefaultSortColumn="true" Title="Megjelenés" Align="Align.Center" Sortable="true" />
-			<PropertyColumn Property="@(s => s.Price)" Format="C0" Title="Ár" Align="Align.End" Sortable="true" />
-			<PropertyColumn Property="@(s => s.ExpectedValue)" Format="C0" Title="Várható érték" Align="Align.End" Sortable="true" />
-			<PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
-			<TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="_chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
-			<PropertyColumn Property="@(s => s.ChanceOfWinningPercent)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
-			<TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="_isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex;">
-				<ColumnOptions>
-					<FluentCheckbox ThreeState="true" CheckState="_filterIsAvailable" CheckStateChanged="IsAvailableChanged" Label="Elérhető" />
-				</ColumnOptions>
-				<ChildContent>
-					<FluentEmoji Value="@((Emoji)(context.IsAvailable ? new Emojis.Symbols.Flat.Default.CheckMarkButton() : new Emojis.Symbols.Flat.Default.CrossMark()))" Width="16px" />
-				</ChildContent>
-			</TemplateColumn>
-		</ChildContent>
-	</FluentDataGrid>
+    <FluentDataGrid Items="@_scratchcardsFiltered" TGridItem="Scratchcard" Style="height: calc(100dvh - 42px); overflow: auto; margin: -1rem;" GenerateHeader="GenerateHeaderOption.Sticky">
+        <EmptyContent>Nincs megjeleníthető adat!</EmptyContent>
+        <ChildContent>
+            <TemplateColumn Title="Név" Sortable="true" SortBy="_nameSort" Filtered="!string.IsNullOrEmpty(_filterName)">
+                <ColumnOptions>
+                    <FluentSearch Autofocus="true" @bind-Value="_filterName" @oninput="NameChanged" @bind-Value:after="NameCleared" Label="Szűrés" Placeholder="Név" />
+                </ColumnOptions>
+                <ChildContent>
+                    <a href="@($"scratchcards/{context.PathName}")" style="text-decoration: none;">@context.Name</a>
+                </ChildContent>
+            </TemplateColumn>
+            <PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection="SortDirection.Descending" IsDefaultSortColumn="true" Title="Megjelenés" Align="Align.Center" Sortable="true" />
+            <PropertyColumn Property="@(s => s.Price)" Format="C0" Title="Ár" Align="Align.End" Sortable="true" />
+            <PropertyColumn Property="@(s => s.ExpectedValue)" Format="C0" Title="Várható érték" Align="Align.End" Sortable="true" />
+            <PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
+            <TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="_chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
+            <PropertyColumn Property="@(s => s.ChanceOfWinningPercent)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
+            <TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="_isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex;">
+                <ColumnOptions>
+                    <FluentCheckbox ThreeState="true" CheckState="_filterIsAvailable" CheckStateChanged="IsAvailableChanged" Label="Elérhető" />
+                </ColumnOptions>
+                <ChildContent>
+                    <FluentEmoji Value="@((Emoji)(context.IsAvailable ? new Emojis.Symbols.Flat.Default.CheckMarkButton() : new Emojis.Symbols.Flat.Default.CrossMark()))" Width="16px" />
+                </ChildContent>
+            </TemplateColumn>
+        </ChildContent>
+    </FluentDataGrid>
 }
 
 @code {
-	private readonly GridSort<Scratchcard> _nameSort = GridSort<Scratchcard>.ByAscending(x => x.Name);
-	private readonly GridSort<Scratchcard> _chanceOfWinningToOneSort = GridSort<Scratchcard>.ByAscending(x => x.ChanceOfWinningToOne);
-	private readonly GridSort<Scratchcard> _isAvailableSort = GridSort<Scratchcard>.ByAscending(x => x.IsAvailable);
+    private readonly GridSort<Scratchcard> _nameSort = GridSort<Scratchcard>.ByAscending(x => x.Name);
+    private readonly GridSort<Scratchcard> _chanceOfWinningToOneSort = GridSort<Scratchcard>.ByAscending(x => x.ChanceOfWinningToOne);
+    private readonly GridSort<Scratchcard> _isAvailableSort = GridSort<Scratchcard>.ByAscending(x => x.IsAvailable);
 
-	private string _filterName = string.Empty;
-	private bool? _filterIsAvailable = true;
+    private string _filterName = string.Empty;
+    private bool? _filterIsAvailable = true;
 
-	private IQueryable<Scratchcard>? _scratchcardsFiltered;
+    private IQueryable<Scratchcard>? _scratchcardsFiltered;
 
-	protected override void OnInitialized() =>
-		FilterChanged();
+    protected override void OnInitialized() =>
+        FilterChanged();
 
-	private void NameChanged(ChangeEventArgs args)
-	{
-		if (args.Value is string value)
-		{
-			_filterName = value;
-			FilterChanged();
-		}
-	}
+    private void NameChanged(ChangeEventArgs args)
+    {
+        if (args.Value is string value)
+        {
+            _filterName = value;
+            FilterChanged();
+        }
+    }
 
-	private void NameCleared()
-	{
-		if (string.IsNullOrWhiteSpace(_filterName))
-		{
-			_filterName = string.Empty;
-			FilterChanged();
-		}
-	}
+    private void NameCleared()
+    {
+        if (string.IsNullOrWhiteSpace(_filterName))
+        {
+            _filterName = string.Empty;
+            FilterChanged();
+        }
+    }
 
-	private void IsAvailableChanged(bool? isSelected)
-	{
-		_filterIsAvailable = isSelected;
-		FilterChanged();
-	}
+    private void IsAvailableChanged(bool? isSelected)
+    {
+        _filterIsAvailable = isSelected;
+        FilterChanged();
+    }
 
-	private void FilterChanged() =>
-		_scratchcardsFiltered = ScratchcardService.Scratchcards
-			.Where(s => s.Name.Contains(_filterName, StringComparison.OrdinalIgnoreCase))
-			.Where(s => !_filterIsAvailable.HasValue || s.IsAvailable == _filterIsAvailable)
-			.OrderByDescending(s => s.ReleaseDate)
-			.ThenByDescending(s => s.Price)
-			.AsQueryable();
+    private void FilterChanged() =>
+        _scratchcardsFiltered = ScratchcardService.Scratchcards
+            .Where(s => s.Name.Contains(_filterName, StringComparison.OrdinalIgnoreCase))
+            .Where(s => !_filterIsAvailable.HasValue || s.IsAvailable == _filterIsAvailable)
+            .OrderByDescending(s => s.ReleaseDate)
+            .ThenByDescending(s => s.Price)
+            .AsQueryable();
 }
