@@ -9,17 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      # Setup .NET SDK
-      - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v4
-        with:
-          global-json-file: global.json
-
       # Checkout branch
       - name: Checkout branch
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+
+      # Setup .NET SDK
+      - name: Setup .NET SDK
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: global.json
 
       # Setup GitVersion
       - name: Setup GitVersion
