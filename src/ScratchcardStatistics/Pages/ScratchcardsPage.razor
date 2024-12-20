@@ -6,7 +6,7 @@
 
 @if (_scratchcardsFiltered is not null)
 {
-    <FluentDataGrid Items="@_scratchcardsFiltered" TGridItem="Scratchcard" Style="height: calc(100dvh - 42px); overflow: auto; margin: -1rem;" GenerateHeader="GenerateHeaderOption.Sticky">
+    <FluentDataGrid Items="@_scratchcardsFiltered" Style="height: calc(100dvh - 42px); overflow: auto; margin: -1rem;" GenerateHeader="GenerateHeaderOption.Sticky">
         <EmptyContent>Nincs megjeleníthető adat!</EmptyContent>
         <ChildContent>
             <TemplateColumn Title="Név" Sortable="true" SortBy="_nameSort" Filtered="!string.IsNullOrEmpty(_filterName)">
@@ -23,7 +23,7 @@
             <PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
             <TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="_chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
             <PropertyColumn Property="@(s => s.ChanceOfWinningPercent)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
-            <TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="_isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex;">
+            <TemplateColumn Title="Elérhető" Sortable="true" SortBy="_isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex; justify-content: center;">
                 <ColumnOptions>
                     <FluentCheckbox ThreeState="true" CheckState="_filterIsAvailable" CheckStateChanged="IsAvailableChanged" Label="Elérhető" />
                 </ColumnOptions>
