@@ -355,7 +355,7 @@ public static class ScratchcardService
             "Buksza 66",
             1_000,
             new(2011, 5, 6),
-            null,
+            new(2024, 10, 27),
             2_500_000,
             new Dictionary<uint, uint>
             {
@@ -1312,7 +1312,7 @@ public static class ScratchcardService
             "Kaszinó 112",
             2_000,
             new(2018, 4, 6),
-            null,
+            new(2024, 11, 24),
             3_000_000,
             new Dictionary<uint, uint>
             {
@@ -1928,7 +1928,7 @@ public static class ScratchcardService
             "Havi Bónusz",
             2_000,
             new(2021, 1, 15),
-            null,
+            new(2024, 10, 27),
             3_000_000,
             new Dictionary<uint, uint>
             {
@@ -2308,8 +2308,8 @@ public static class ScratchcardService
         new(
             "Nyomkövető",
             500,
-            new(2022, 7, 8),
-            null,
+            new(2023, 7, 8),
+            new(2025, 2, 3),
             5_000_000,
             new Dictionary<uint, uint>
             {
@@ -2333,7 +2333,7 @@ public static class ScratchcardService
             "Kincsvadász",
             2_000,
             new(2022, 9, 9),
-            null,
+            new(2024, 9, 22),
             4_000_000,
             new Dictionary<uint, uint>
             {
@@ -2486,7 +2486,7 @@ public static class ScratchcardService
             "NEON 2000",
             2_000,
             new(2023, 2, 3),
-            null,
+            new(2024, 10, 27),
             2_500_000,
             new Dictionary<uint, uint>
             {
@@ -2543,7 +2543,7 @@ public static class ScratchcardService
             "Kis Meglepetés",
             500,
             new(2023, 5, 12),
-            null,
+            new(2024, 8, 25),
             5_000_000,
             new Dictionary<uint, uint>
             {
@@ -2568,7 +2568,7 @@ public static class ScratchcardService
             "Nagy Meglepetés",
             1_000,
             new(2023, 5, 12),
-            null,
+            new(2024, 8, 25),
             4_000_000,
             new Dictionary<uint, uint>
             {
@@ -2592,7 +2592,7 @@ public static class ScratchcardService
             "Óriási Meglepetés",
             2_000,
             new(2023, 5, 12),
-            null,
+            new(2024, 11, 24),
             2_500_000,
             new Dictionary<uint, uint>
             {
@@ -2643,7 +2643,7 @@ public static class ScratchcardService
             "Milliomos Klub",
             2_500,
             new(2023, 9, 1),
-            null,
+            new(2024, 9, 22),
             3_000_000,
             new Dictionary<uint, uint>
             {
@@ -2717,7 +2717,7 @@ public static class ScratchcardService
             "Sok szerencsét! 2024",
             1_000,
             new(2023, 12, 27),
-            null,
+            new(2024, 9, 22),
             6_000_000,
             new Dictionary<uint, uint>
             {
@@ -3145,6 +3145,85 @@ public static class ScratchcardService
                 { 4_000, 160_000 },
                 { 3_000, 480_000 },
                 { 2_000, 560_000 },
+            }
+            .ToFrozenDictionary()),
+        new(
+            "7",
+            1_000,
+            new(2025, 2, 7),
+            null,
+            5_000_000,
+            new Dictionary<uint, uint>
+            {
+                { 50_000_000, 1 },
+                { 1_000_000, 25 },
+                { 100_000, 500 },
+                { 50_000, 1_000 },
+                { 20_000, 4_250 },
+                { 10_000, 9_000 },
+                { 8_000, 12_500 },
+                { 5_000, 100_000 },
+                { 3_000, 200_000 },
+                { 2_000, 500_000 },
+                { 1_000, 800_000 },
+            }
+            .ToFrozenDictionary()),
+        new(
+            "77",
+            2_000,
+            new(2025, 2, 7),
+            null,
+            3_500_000,
+            new Dictionary<uint, uint>
+            {
+                { 100_000_000, 1 },
+                { 10_000_000, 10 },
+                { 1_000_000, 160 },
+                { 100_000, 1_000 },
+                { 50_000, 1_000 },
+                { 40_000, 2_250 },
+                { 30_000, 5_300 },
+                { 20_000, 5_000 },
+                { 15_000, 11_000 },
+                { 12_000, 13_000 },
+                { 10_000, 13_000 },
+                { 8_000, 20_000 },
+                { 6_000, 70_000 },
+                { 5_000, 70_000 },
+                { 4_000, 140_000 },
+                { 3_000, 280_000 },
+                { 2_000, 560_000 },
+            }
+            .ToFrozenDictionary()),
+        new(
+            "777",
+            3_000,
+            new(2025, 2, 7),
+            null,
+            3_000_000,
+            new Dictionary<uint, uint>
+            {
+                { 150_000_000, 1 },
+                { 7_000_000, 21 },
+                { 1_000_000, 150 },
+                { 100_000, 500 },
+                { 70_000, 350 },
+                { 50_000, 600 },
+                { 45_000, 300 },
+                { 40_000, 1_000 },
+                { 30_000, 12_000 },
+                { 25_000, 3_000 },
+                { 20_000, 6_000 },
+                { 15_000, 9_000 },
+                { 12_000, 10_000 },
+                { 10_000, 13_000 },
+                { 9_000, 25_000 },
+                { 8_000, 25_000 },
+                { 7_000, 40_000 },
+                { 6_000, 120_000 },
+                { 5_000, 240_000 },
+                { 4_000, 240_000 },
+                { 3_000, 360_000 },
             }
             .ToFrozenDictionary()),
     }
