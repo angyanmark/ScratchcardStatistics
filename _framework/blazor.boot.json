@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "ScratchcardStatistics",
   "resources": {
-    "hash": "sha256-JiSSiTSI1wnvYX2J8RWPDZ1I97c5+BlbbV6TN803zhQ=",
+    "hash": "sha256-/bM/8FnLrZGynwRjPS4ETPM7QCqa7vPOWfmlETKatR4=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Components.Forms.padlvj5mbw.wasm": "Microsoft.AspNetCore.Components.Forms.wasm",
       "Microsoft.AspNetCore.Components.w8gqjley1a.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -16,12 +16,12 @@
       "Microsoft.Extensions.Logging.hnku8105c3.wasm": "Microsoft.Extensions.Logging.wasm",
       "Microsoft.Extensions.Options.2shovcm8i6.wasm": "Microsoft.Extensions.Options.wasm",
       "Microsoft.Extensions.Primitives.clgq3disb2.wasm": "Microsoft.Extensions.Primitives.wasm",
-      "Microsoft.FluentUI.AspNetCore.Components.Emojis.Symbols.oz8dlc4a3w.wasm": "Microsoft.FluentUI.AspNetCore.Components.Emojis.Symbols.wasm",
-      "Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.ms6tat2ybf.wasm": "Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.wasm",
-      "Microsoft.FluentUI.AspNetCore.Components.sxme8zk2mo.wasm": "Microsoft.FluentUI.AspNetCore.Components.wasm",
+      "Microsoft.FluentUI.AspNetCore.Components.Emojis.Symbols.jl0bfd3mgb.wasm": "Microsoft.FluentUI.AspNetCore.Components.Emojis.Symbols.wasm",
+      "Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.p8kk0xl5a1.wasm": "Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.wasm",
+      "Microsoft.FluentUI.AspNetCore.Components.lvcgazvpdt.wasm": "Microsoft.FluentUI.AspNetCore.Components.wasm",
       "Microsoft.JSInterop.2l3q1yckw7.wasm": "Microsoft.JSInterop.wasm",
       "Microsoft.JSInterop.WebAssembly.8eb000j8w7.wasm": "Microsoft.JSInterop.WebAssembly.wasm",
-      "ScratchcardStatistics.yz3y2uakc2.wasm": "ScratchcardStatistics.wasm",
+      "ScratchcardStatistics.u31w4365do.wasm": "ScratchcardStatistics.wasm",
       "System.Collections.Concurrent.qno4yqwepb.wasm": "System.Collections.Concurrent.wasm",
       "System.Collections.Immutable.0rv4bmtiqx.wasm": "System.Collections.Immutable.wasm",
       "System.Collections.Specialized.36skdlc6z4.wasm": "System.Collections.Specialized.wasm",
@@ -52,7 +52,7 @@
       "System.pndwwxah3a.wasm": "System.wasm",
       "System.Web.HttpUtility.gg85jvomfx.wasm": "System.Web.HttpUtility.wasm",
       "dotnet.native.2r9yn4ahg6.js": "dotnet.native.js",
-      "dotnet.native.2edh86ed93.wasm": "dotnet.native.wasm",
+      "dotnet.native.jeym11zq9w.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.runtime.rubq0v1yiy.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
@@ -66,7 +66,7 @@
       "dotnet.runtime.rubq0v1yiy.js": "sha256-gypqZnsxxUh4y4EJmawvOCaX4hoTaesVGwIgWXwZcNw="
     },
     "wasmNative": {
-      "dotnet.native.2edh86ed93.wasm": "sha256-Cl5abjtLmwQd8D3pGzHl1FJ2p6bafn76ba5oEpkdU6A="
+      "dotnet.native.jeym11zq9w.wasm": "sha256-q0wPW/9pymBYCHpFAtj+Azh6Ru1D9A5q6pPd5Zp5Gbo="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -87,12 +87,12 @@
       "Microsoft.Extensions.Logging.hnku8105c3.wasm": "sha256-80/De8ap0gyN55dk5uNsXFeXfErTXwOM36WyS6vbBs0=",
       "Microsoft.Extensions.Options.2shovcm8i6.wasm": "sha256-/gANVhV41IbOdzTxxv1meMv98wru09MYrVIK5/1Yw+o=",
       "Microsoft.Extensions.Primitives.clgq3disb2.wasm": "sha256-gC2b3IjfjTAaJ3LAlb1UTvn6Vs5QVSZbyStCtCS5PAc=",
-      "Microsoft.FluentUI.AspNetCore.Components.Emojis.Symbols.oz8dlc4a3w.wasm": "sha256-xBMRvS/svVU2vNUyAA/SFHg/kHajLQs7L88dJ/78GP8=",
-      "Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.ms6tat2ybf.wasm": "sha256-WrrsurO5cLXoYv09bhXC3gjNH86St86jmRRZloNfmDU=",
-      "Microsoft.FluentUI.AspNetCore.Components.sxme8zk2mo.wasm": "sha256-YGA04dY+jbu47NJRnOQKJYwPYgT1cpZBEUIsWoJdzsM=",
+      "Microsoft.FluentUI.AspNetCore.Components.Emojis.Symbols.jl0bfd3mgb.wasm": "sha256-x0qVDnYVGoN/MTYAp6ysGyTiwn94UIcm8SKCOdkkNkw=",
+      "Microsoft.FluentUI.AspNetCore.Components.Icons.Regular.p8kk0xl5a1.wasm": "sha256-eVdvRZlHp2JCLk94S0QWT9WCHhBOi9y1Kh/LOW9zdig=",
+      "Microsoft.FluentUI.AspNetCore.Components.lvcgazvpdt.wasm": "sha256-MYsYCx8EFtAZLz4OdQUlASPdsWzKf+KX8bdMg3Mvk5Y=",
       "Microsoft.JSInterop.2l3q1yckw7.wasm": "sha256-WkIM944Tcf2etXHPlGvhPdwYOX5XxXHByqg0wATwQNc=",
       "Microsoft.JSInterop.WebAssembly.8eb000j8w7.wasm": "sha256-sGms9Oai1ztzgfMsqBvmeKwa5ZyGWr/AEXr6thw0lso=",
-      "ScratchcardStatistics.yz3y2uakc2.wasm": "sha256-Qp1dyXwhp0XIxiQyE9lTB+EirLqTvNl+D159npMf7O8=",
+      "ScratchcardStatistics.u31w4365do.wasm": "sha256-mt37SODUUvhjX97cCtSacNw4v816O9kXZtUxdJsQxvU=",
       "System.Collections.Concurrent.qno4yqwepb.wasm": "sha256-KiBClV5ANxzbzHiZx5kb0zCsaEbDe8atkBeT6Znz4cU=",
       "System.Collections.Immutable.0rv4bmtiqx.wasm": "sha256-RDOlp/gk8/mUQ/OZN0iiF7ATS1kDu5niw5777WwylmA=",
       "System.Collections.Specialized.36skdlc6z4.wasm": "sha256-m6yoNU7Yh1Jj6s1Dtifsg7bBLmvsX+zXETVU6uDNFgo=",
