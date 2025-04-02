@@ -19,24 +19,13 @@ jobs:
       - name: Setup .NET SDK
         uses: actions/setup-dotnet@v4
 
-      # Setup GitVersion
-      - name: Setup GitVersion
-        uses: gittools/actions/gitversion/setup@v3.1
-        with:
-          versionSpec: '6.0.x'
-
-      # Execute GitVersion
-      - name: Execute GitVersion
-        id: version
-        uses: gittools/actions/gitversion/execute@v3.1
-
       # Install workloads
       - name: Install workloads
         run: dotnet workload restore src/ScratchcardStatistics/ScratchcardStatistics.csproj
 
       # Publish the Blazor project to the release folder
       - name: Publish Blazor project
-        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj -o release /p:Version=${{ steps.version.outputs.commitsSinceVersionSource }}
+        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj -o release /p:Version=$(git rev-list --count HEAD)
 
       # Change the base tag in index.html from '/' to '/ScratchcardStatistics/' to match GitHub Pages repository subdirectory
       - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
