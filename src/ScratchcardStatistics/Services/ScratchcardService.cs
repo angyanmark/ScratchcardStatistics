@@ -3326,7 +3326,7 @@ public static class ScratchcardService
         new(
             "Kutyák",
             1_500,
-            new(2025, 5, 2),
+            new(2025, 5, 9),
             null,
             5_000_000,
             new Dictionary<uint, uint>
@@ -3348,7 +3348,7 @@ public static class ScratchcardService
         new(
             "Macskák",
             1_500,
-            new(2025, 5, 2),
+            new(2025, 5, 9),
             null,
             5_000_000,
             new Dictionary<uint, uint>
@@ -3370,7 +3370,7 @@ public static class ScratchcardService
         new(
             "Kutyák & Macskák",
             3_000,
-            new(2025, 5, 2),
+            new(2025, 5, 9),
             null,
             3_500_000,
             new Dictionary<uint, uint>
