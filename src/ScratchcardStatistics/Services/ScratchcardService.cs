@@ -3418,7 +3418,7 @@ public static class ScratchcardService
             }
             .ToFrozenDictionary()),
         new(
-            "10x",
+            "10X",
             1_000,
             new(2025, 9, 5),
             null,
@@ -3442,7 +3442,7 @@ public static class ScratchcardService
             }
             .ToFrozenDictionary()),
         new(
-            "20x",
+            "20X",
             2_000,
             new(2025, 9, 5),
             null,
@@ -3466,7 +3466,7 @@ public static class ScratchcardService
             }
             .ToFrozenDictionary()),
         new(
-            "50x",
+            "50X",
             3_000,
             new(2025, 9, 5),
             null,
@@ -3487,6 +3487,55 @@ public static class ScratchcardService
                 { 5_000, 140_000 },
                 { 4_000, 350_000 },
                 { 3_000, 630_000 },
+            }
+            .ToFrozenDictionary()),
+        new(
+            "Kiskarácsony 2025",
+            1_500,
+            DateOnly.MaxValue,
+            null,
+            5_000_000,
+            new Dictionary<uint, uint>
+            {
+                { 75_000_000, 1 },
+                { 1_000_000, 100 },
+                { 100_000, 300 },
+                { 75_000, 600 },
+                { 50_000, 1_500 },
+                { 25_000, 12_000 },
+                { 10_000, 57_500 },
+                { 7_000, 50_000 },
+                { 5_000, 100_000 },
+                { 4_000, 100_000 },
+                { 3_000, 200_000 },
+                { 2_000, 400_000 },
+                { 1_000, 700_000 },
+            }
+            .ToFrozenDictionary()),
+        new(
+            "Nagykarácsony 2025",
+            3_500,
+            DateOnly.MaxValue,
+            null,
+            3_200_000,
+            new Dictionary<uint, uint>
+            {
+                { 175_000_000, 2 },
+                { 50_000_000, 5 },
+                { 5_000_000, 10 },
+                { 1_000_000, 100 },
+                { 100_000, 600 },
+                { 50_000, 5_000 },
+                { 30_000, 4_000 },
+                { 25_000, 10_000 },
+                { 20_000, 11_300 },
+                { 15_000, 16_000 },
+                { 12_000, 20_000 },
+                { 10_000, 52_000 },
+                { 8_000, 64_000 },
+                { 6_000, 128_000 },
+                { 5_000, 512_000 },
+                { 3_500, 384_000 },
             }
             .ToFrozenDictionary()),
     }
