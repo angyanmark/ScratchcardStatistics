@@ -3492,7 +3492,7 @@ public static class ScratchcardService
         new(
             "Kiskarácsony 2025",
             1_500,
-            DateOnly.MaxValue,
+            new(2025, 10, 31),
             null,
             5_000_000,
             new Dictionary<uint, uint>
@@ -3515,7 +3515,7 @@ public static class ScratchcardService
         new(
             "Nagykarácsony 2025",
             3_500,
-            DateOnly.MaxValue,
+            new(2025, 10, 31),
             null,
             3_200_000,
             new Dictionary<uint, uint>
