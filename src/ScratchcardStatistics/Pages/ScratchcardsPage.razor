@@ -35,7 +35,8 @@
     </FluentDataGrid>
 }
 
-@code {
+@code
+{
     private readonly GridSort<Scratchcard> _nameSort = GridSort<Scratchcard>.ByAscending(x => x.Name);
     private readonly GridSort<Scratchcard> _chanceOfWinningToOneSort = GridSort<Scratchcard>.ByAscending(x => x.ChanceOfWinningToOne);
     private readonly GridSort<Scratchcard> _isAvailableSort = GridSort<Scratchcard>.ByAscending(x => x.IsAvailable);
