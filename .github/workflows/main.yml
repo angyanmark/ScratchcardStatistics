@@ -21,11 +21,7 @@ jobs:
         run: dotnet workload restore src/ScratchcardStatistics/ScratchcardStatistics.csproj
 
       - name: Publish Blazor project
-        run: |
-          dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj \
-            --output release \
-            --property RestoreLockedMode=true \
-            --property Version=$(git rev-list --count HEAD)
+        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj --output release --property Version=$(git rev-list --count HEAD)
 
       - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
         run: sed -i 's/<base href="\/" \/>/<base href="\/ScratchcardStatistics\/" \/>/g' release/wwwroot/index.html
