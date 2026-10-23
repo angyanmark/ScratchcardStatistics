@@ -1,6 +1,4 @@
 @page "/scratchcards/{PathName}"
-@using ScratchcardStatistics.Models
-@using ScratchcardStatistics.Services
 
 @if (_scratchcard.HasValue)
 {
@@ -26,15 +24,4 @@
         <PropertyColumn Property="@(ps => ps.Key)" Format="C0" Title="Nyeremény" Align="Align.End" />
         <TemplateColumn Title="Esély" Align="Align.Center">1:@((1 / ((decimal)context.Value / _scratchcard.Value.TotalSupply)).ToString("#,##0.##"))</TemplateColumn>
     </FluentDataGrid>
-}
-
-@code
-{
-    [Parameter]
-    public required string PathName { get; init; }
-
-    private Scratchcard? _scratchcard;
-
-    protected override void OnInitialized() =>
-        _scratchcard = ScratchcardService.Scratchcards.First(s => string.Equals(s.PathName, PathName));
 }

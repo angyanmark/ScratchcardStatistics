@@ -2,42 +2,42 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-slim
+    environment: github-pages
     steps:
-
       - name: Checkout branch
-        uses: actions/checkout@v7
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v6
+        uses: actions/setup-dotnet@v6.0.0
 
       - name: Install workloads
         run: dotnet workload restore src/ScratchcardStatistics/ScratchcardStatistics.csproj
 
       - name: Publish Blazor project
-        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj --output release --property Version=$(git rev-list --count HEAD)
+        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj --output release --property Version=$(git rev-list --count HEAD) -warnaserror
 
       - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
-        run: sed -i 's/<base href="\/" \/>/<base href="\/ScratchcardStatistics\/" \/>/g' release/wwwroot/index.html
+        run: sed -i 's/<base href="\/" \/>/<base href="\/ScratchcardStatistics\/" \/>/' release/wwwroot/index.html
 
       - name: Copy index.html to 404.html
         run: cp release/wwwroot/index.html release/wwwroot/404.html
 
-      - name: Add .nojekyll file
-        run: touch release/wwwroot/.nojekyll
-
-      - name: Add .gitattributes file
-        run: echo "* binary" > release/wwwroot/.gitattributes
-
-      - name: Commit files to GitHub Pages branch
-        uses: JamesIves/github-pages-deploy-action@v4
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v5.0.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-          folder: release/wwwroot
+          path: release/wwwroot
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v5.0.1
