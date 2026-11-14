@@ -8,13 +8,14 @@ public static class ScratchcardService
 {
     public static readonly FrozenSet<Scratchcard> Scratchcards =
     [
-        new(
-            "Fáraók Kincse 200",
-            200,
-            new(2005, 4, 30),
-            new(2011, 1, 28),
-            5_000_000,
-            FrozenDictionary.Create([
+        new()
+        {
+            Name = "Fáraók Kincse 200",
+            Price = 200,
+            ReleaseDate = new(2005, 4, 30),
+            EndDate = new(2011, 1, 28),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 10U),
                 KeyValuePair.Create(50_000U, 75U),
                 KeyValuePair.Create(20_000U, 273U),
@@ -24,14 +25,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 61_502U),
                 KeyValuePair.Create(500U, 355_062U),
                 KeyValuePair.Create(200U, 1_356_735U),
-            ])),
-        new(
-            "Szerencsesüti",
-            200,
-            new(2008, 9, 12),
-            new(2010, 2, 26),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencsesüti",
+            Price = 200,
+            ReleaseDate = new(2008, 9, 12),
+            EndDate = new(2010, 2, 26),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 300U),
                 KeyValuePair.Create(10_000U, 500U),
@@ -39,14 +42,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(400U, 850_000U),
                 KeyValuePair.Create(200U, 700_000U),
-            ])),
-        new(
-            "Póker",
-            300,
-            new(2008, 11, 7),
-            new(2011, 10, 28),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Póker",
+            Price = 300,
+            ReleaseDate = new(2008, 11, 7),
+            EndDate = new(2011, 10, 28),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 4U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(10_000U, 1_538U),
@@ -56,28 +61,32 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 150_000U),
                 KeyValuePair.Create(500U, 550_000U),
                 KeyValuePair.Create(300U, 600_000U),
-            ])),
-        new(
-            "Black Jack 200",
-            200,
-            new(2008, 11, 29),
-            new(2018, 6, 24),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Black Jack 200",
+            Price = 200,
+            ReleaseDate = new(2008, 11, 29),
+            EndDate = new(2018, 6, 24),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 4U),
                 KeyValuePair.Create(50_000U, 40U),
                 KeyValuePair.Create(10_000U, 800U),
                 KeyValuePair.Create(1_000U, 150_000U),
                 KeyValuePair.Create(500U, 400_000U),
                 KeyValuePair.Create(200U, 1_000_000U),
-            ])),
-        new(
-            "Szuper Bankó",
-            500,
-            new(2008, 11, 29),
-            null,
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szuper Bankó",
+            Price = 500,
+            ReleaseDate = new(2008, 11, 29),
+            EndDate = null,
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 32U),
@@ -89,28 +98,32 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 17_500U),
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(500U, 400_000U),
-            ])),
-        new(
-            "Üveggolyó",
-            200,
-            new(2009, 3, 27),
-            new(2010, 4, 25),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Üveggolyó",
+            Price = 200,
+            ReleaseDate = new(2009, 3, 27),
+            EndDate = new(2010, 4, 25),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 100U),
                 KeyValuePair.Create(2_000U, 5_000U),
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(600U, 100_000U),
                 KeyValuePair.Create(300U, 1_500_000U),
-            ])),
-        new(
-            "Kincskereső",
-            200,
-            new(2009, 5, 29),
-            new(2010, 10, 24),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kincskereső",
+            Price = 200,
+            ReleaseDate = new(2009, 5, 29),
+            EndDate = new(2010, 10, 24),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(500_000U, 10U),
                 KeyValuePair.Create(10_000U, 1_000U),
@@ -118,14 +131,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(500U, 600_000U),
                 KeyValuePair.Create(200U, 800_000U),
-            ])),
-        new(
-            "Szerencsekoktél",
-            300,
-            new(2009, 7, 31),
-            new(2010, 9, 26),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencsekoktél",
+            Price = 300,
+            ReleaseDate = new(2009, 7, 31),
+            EndDate = new(2010, 9, 26),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(15_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 25U),
@@ -136,14 +151,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 50_000U),
                 KeyValuePair.Create(500U, 650_000U),
                 KeyValuePair.Create(300U, 750_000U),
-            ])),
-        new(
-            "Derby",
-            200,
-            new(2009, 9, 25),
-            new(2011, 7, 1),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Derby",
+            Price = 200,
+            ReleaseDate = new(2009, 9, 25),
+            EndDate = new(2011, 7, 1),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 50U),
                 KeyValuePair.Create(50_000U, 500U),
@@ -154,14 +171,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(500U, 100_000U),
                 KeyValuePair.Create(300U, 650_000U),
                 KeyValuePair.Create(200U, 700_000U),
-            ])),
-        new(
-            "Édes Élet",
-            300,
-            new(2009, 11, 27),
-            new(2012, 4, 27),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Édes Élet",
+            Price = 300,
+            ReleaseDate = new(2009, 11, 27),
+            EndDate = new(2012, 4, 27),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(15_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 350U),
@@ -169,14 +188,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 150_000U),
                 KeyValuePair.Create(500U, 650_000U),
                 KeyValuePair.Create(300U, 700_000U),
-            ])),
-        new(
-            "Afrika",
-            200,
-            new(2010, 1, 29),
-            new(2011, 3, 25),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Afrika",
+            Price = 200,
+            ReleaseDate = new(2010, 1, 29),
+            EndDate = new(2011, 3, 25),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 20U),
@@ -184,28 +205,32 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(500U, 400_000U),
                 KeyValuePair.Create(300U, 1_000_000U),
-            ])),
-        new(
-            "Állatvilág",
-            200,
-            new(2010, 3, 26),
-            new(2012, 4, 6),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Állatvilág",
+            Price = 200,
+            ReleaseDate = new(2010, 3, 26),
+            EndDate = new(2012, 4, 6),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 4U),
                 KeyValuePair.Create(500_000U, 5U),
                 KeyValuePair.Create(100_000U, 25U),
                 KeyValuePair.Create(2_000U, 50_000U),
                 KeyValuePair.Create(500U, 650_000U),
                 KeyValuePair.Create(200U, 750_000U),
-            ])),
-        new(
-            "Gólparádé",
-            200,
-            new(2010, 5, 21),
-            new(2013, 2, 22),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Gólparádé",
+            Price = 200,
+            ReleaseDate = new(2010, 5, 21),
+            EndDate = new(2013, 2, 22),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 400U),
                 KeyValuePair.Create(10_000U, 2_000U),
@@ -213,14 +238,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(300U, 700_000U),
                 KeyValuePair.Create(200U, 750_000U),
-            ])),
-        new(
-            "Nyerőkártya",
-            300,
-            new(2010, 7, 30),
-            new(2013, 5, 24),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nyerőkártya",
+            Price = 300,
+            ReleaseDate = new(2010, 7, 30),
+            EndDate = new(2013, 5, 24),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(15_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 6U),
                 KeyValuePair.Create(50_000U, 500U),
@@ -232,14 +259,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 200_000U),
                 KeyValuePair.Create(500U, 500_000U),
                 KeyValuePair.Create(300U, 650_000U),
-            ])),
-        new(
-            "Kockapárbaj",
-            300,
-            new(2010, 9, 24),
-            new(2012, 7, 27),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kockapárbaj",
+            Price = 300,
+            ReleaseDate = new(2010, 9, 24),
+            EndDate = new(2012, 7, 27),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 500U),
                 KeyValuePair.Create(5_000U, 10_000U),
@@ -248,14 +277,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 250_000U),
                 KeyValuePair.Create(500U, 500_000U),
                 KeyValuePair.Create(300U, 700_000U),
-            ])),
-        new(
-            "Gyémánt",
-            300,
-            new(2010, 11, 26),
-            new(2012, 1, 27),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Gyémánt",
+            Price = 300,
+            ReleaseDate = new(2010, 11, 26),
+            EndDate = new(2012, 1, 27),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(15_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 200U),
@@ -266,14 +297,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(600U, 300_000U),
                 KeyValuePair.Create(500U, 400_000U),
                 KeyValuePair.Create(300U, 650_000U),
-            ])),
-        new(
-            "Fáraók Kincse 300",
-            300,
-            new(2011, 1, 14),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Fáraók Kincse 300",
+            Price = 300,
+            ReleaseDate = new(2011, 1, 14),
+            EndDate = new(2025, 10, 26),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_500U, 3U),
                 KeyValuePair.Create(5_000_000U, 10U),
                 KeyValuePair.Create(60_000U, 25U),
@@ -299,14 +332,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 250_000U),
                 KeyValuePair.Create(500U, 350_000U),
                 KeyValuePair.Create(300U, 950_000U),
-            ])),
-        new(
-            "Világutazó",
-            200,
-            new(2011, 3, 11),
-            new(2012, 7, 27),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Világutazó",
+            Price = 200,
+            ReleaseDate = new(2011, 3, 11),
+            EndDate = new(2012, 7, 27),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 20U),
@@ -314,14 +349,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(500U, 400_000U),
                 KeyValuePair.Create(300U, 1_000_000U),
-            ])),
-        new(
-            "Buksza 66",
-            1_000,
-            new(2011, 5, 6),
-            new(2024, 10, 27),
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Buksza 66",
+            Price = 1_000,
+            ReleaseDate = new(2011, 5, 6),
+            EndDate = new(2024, 10, 27),
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -338,14 +375,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 50_000U),
                 KeyValuePair.Create(2_000U, 250_000U),
                 KeyValuePair.Create(1_000U, 350_000U),
-            ])),
-        new(
-            "Szerencsepatkó",
-            200,
-            new(2011, 6, 24),
-            new(2012, 6, 15),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencsepatkó",
+            Price = 200,
+            ReleaseDate = new(2011, 6, 24),
+            EndDate = new(2012, 6, 15),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -356,14 +395,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(500U, 150_000U),
                 KeyValuePair.Create(300U, 650_000U),
                 KeyValuePair.Create(200U, 700_000U),
-            ])),
-        new(
-            "Áll az alku",
-            300,
-            new(2011, 8, 26),
-            new(2012, 8, 31),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Áll az alku",
+            Price = 300,
+            ReleaseDate = new(2011, 8, 26),
+            EndDate = new(2012, 8, 31),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(15_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(50_000U, 50U),
@@ -376,14 +417,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(500U, 200_000U),
                 KeyValuePair.Create(400U, 400_000U),
                 KeyValuePair.Create(300U, 650_000U),
-            ])),
-        new(
-            "Boldog karácsonyt! 2011",
-            500,
-            new(2011, 10, 28),
-            new(2012, 1, 6),
-            1_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Boldog karácsonyt! 2011",
+            Price = 500,
+            ReleaseDate = new(2011, 10, 28),
+            EndDate = new(2012, 1, 6),
+            TotalSupply = 1_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(50_000U, 126U),
@@ -393,14 +436,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 60_000U),
                 KeyValuePair.Create(1_000U, 150_000U),
                 KeyValuePair.Create(500U, 210_000U),
-            ])),
-        new(
-            "Karátok közt",
-            500,
-            new(2012, 1, 27),
-            new(2014, 5, 23),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Karátok közt",
+            Price = 500,
+            ReleaseDate = new(2012, 1, 27),
+            EndDate = new(2014, 5, 23),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 2U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 21U),
@@ -412,14 +457,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 100_000U),
                 KeyValuePair.Create(1_000U, 500_000U),
                 KeyValuePair.Create(500U, 600_000U),
-            ])),
-        new(
-            "Állati Sztárok",
-            200,
-            new(2012, 3, 30),
-            new(2013, 2, 22),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Állati Sztárok",
+            Price = 200,
+            ReleaseDate = new(2012, 3, 30),
+            EndDate = new(2013, 2, 22),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(500_000U, 5U),
                 KeyValuePair.Create(50_000U, 50U),
@@ -427,14 +474,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(500U, 400_000U),
                 KeyValuePair.Create(300U, 1_000_000U),
-            ])),
-        new(
-            "Nasi",
-            200,
-            new(2012, 5, 25),
-            new(2013, 10, 18),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nasi",
+            Price = 200,
+            ReleaseDate = new(2012, 5, 25),
+            EndDate = new(2013, 10, 18),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(500_000U, 50U),
                 KeyValuePair.Create(50_000U, 200U),
@@ -442,14 +491,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(400U, 800_000U),
                 KeyValuePair.Create(200U, 650_000U),
-            ])),
-        new(
-            "Tengeri Kincsek",
-            300,
-            new(2012, 8, 31),
-            new(2014, 1, 31),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Tengeri Kincsek",
+            Price = 300,
+            ReleaseDate = new(2012, 8, 31),
+            EndDate = new(2014, 1, 31),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(500_000U, 27U),
@@ -463,14 +514,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 50_000U),
                 KeyValuePair.Create(500U, 500_000U),
                 KeyValuePair.Create(300U, 700_000U),
-            ])),
-        new(
-            "Boldog karácsonyt! 2012",
-            500,
-            new(2012, 11, 2),
-            new(2013, 1, 11),
-            1_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Boldog karácsonyt! 2012",
+            Price = 500,
+            ReleaseDate = new(2012, 11, 2),
+            EndDate = new(2013, 1, 11),
+            TotalSupply = 1_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(50_000U, 122U),
@@ -480,14 +533,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 60_000U),
                 KeyValuePair.Create(1_000U, 150_000U),
                 KeyValuePair.Create(500U, 210_000U),
-            ])),
-        new(
-            "Kávészünet 200",
-            200,
-            new(2013, 2, 1),
-            new(2014, 10, 10),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kávészünet 200",
+            Price = 200,
+            ReleaseDate = new(2013, 2, 1),
+            EndDate = new(2014, 10, 10),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(2_500_000U, 6U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -498,14 +553,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(500U, 100_000U),
                 KeyValuePair.Create(400U, 700_000U),
                 KeyValuePair.Create(200U, 700_000U),
-            ])),
-        new(
-            "Monopoly",
-            300,
-            new(2013, 3, 29),
-            new(2014, 7, 25),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Monopoly",
+            Price = 300,
+            ReleaseDate = new(2013, 3, 29),
+            EndDate = new(2014, 7, 25),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 65U),
@@ -521,14 +578,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(600U, 50_000U),
                 KeyValuePair.Create(500U, 650_000U),
                 KeyValuePair.Create(300U, 750_000U),
-            ])),
-        new(
-            "Állati Párok",
-            200,
-            new(2013, 5, 31),
-            new(2014, 10, 10),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Állati Párok",
+            Price = 200,
+            ReleaseDate = new(2013, 5, 31),
+            EndDate = new(2014, 10, 10),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 40U),
@@ -536,14 +595,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(500U, 450_000U),
                 KeyValuePair.Create(300U, 950_000U),
-            ])),
-        new(
-            "Astro+TV",
-            300,
-            new(2013, 8, 2),
-            new(2013, 8, 2),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Astro+TV",
+            Price = 300,
+            ReleaseDate = new(2013, 8, 2),
+            EndDate = new(2013, 8, 2),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(10_000U, 5_000U),
@@ -553,14 +614,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 50_000U),
                 KeyValuePair.Create(500U, 650_000U),
                 KeyValuePair.Create(300U, 700_000U),
-            ])),
-        new(
-            "Édenkert",
-            500,
-            new(2013, 9, 27),
-            new(2015, 2, 13),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Édenkert",
+            Price = 500,
+            ReleaseDate = new(2013, 9, 27),
+            EndDate = new(2015, 2, 13),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(24_000_000U, 4U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 270U),
@@ -572,14 +635,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 50_000U),
                 KeyValuePair.Create(1_000U, 500_000U),
                 KeyValuePair.Create(500U, 650_000U),
-            ])),
-        new(
-            "Boldog karácsonyt! 2013",
-            1_000,
-            new(2013, 11, 6),
-            new(2014, 1, 10),
-            2_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Boldog karácsonyt! 2013",
+            Price = 1_000,
+            ReleaseDate = new(2013, 11, 6),
+            EndDate = new(2014, 1, 10),
+            TotalSupply = 2_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 2U),
                 KeyValuePair.Create(100_000U, 20U),
@@ -594,14 +659,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 40_000U),
                 KeyValuePair.Create(2_000U, 200_000U),
                 KeyValuePair.Create(1_000U, 280_000U),
-            ])),
-        new(
-            "Kabala",
-            200,
-            new(2014, 1, 31),
-            new(2015, 3, 27),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kabala",
+            Price = 200,
+            ReleaseDate = new(2014, 1, 31),
+            EndDate = new(2015, 3, 27),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(500_000U, 3U),
                 KeyValuePair.Create(50_000U, 50U),
@@ -610,14 +677,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 60_000U),
                 KeyValuePair.Create(500U, 420_000U),
                 KeyValuePair.Create(300U, 1_380_000U),
-            ])),
-        new(
-            "Nyerő négyes",
-            500,
-            new(2014, 3, 28),
-            new(2015, 9, 25),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nyerő négyes",
+            Price = 500,
+            ReleaseDate = new(2014, 3, 28),
+            EndDate = new(2015, 9, 25),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 4U),
                 KeyValuePair.Create(5_000_000U, 6U),
                 KeyValuePair.Create(50_000U, 200U),
@@ -628,14 +697,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 58_800U),
                 KeyValuePair.Create(1_000U, 400_000U),
                 KeyValuePair.Create(500U, 800_000U),
-            ])),
-        new(
-            "Rubik kocka",
-            300,
-            new(2014, 5, 30),
-            new(2016, 4, 25),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Rubik kocka",
+            Price = 300,
+            ReleaseDate = new(2014, 5, 30),
+            EndDate = new(2016, 4, 25),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 4U),
                 KeyValuePair.Create(200_000U, 5U),
@@ -648,14 +719,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 300_000U),
                 KeyValuePair.Create(500U, 600_000U),
                 KeyValuePair.Create(300U, 900_000U),
-            ])),
-        new(
-            "Balaton",
-            200,
-            new(2014, 7, 18),
-            new(2015, 2, 13),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Balaton",
+            Price = 200,
+            ReleaseDate = new(2014, 7, 18),
+            EndDate = new(2015, 2, 13),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(50_000U, 50U),
@@ -664,14 +737,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 60_000U),
                 KeyValuePair.Create(500U, 360_000U),
                 KeyValuePair.Create(300U, 1_440_000U),
-            ])),
-        new(
-            "Szuper Black Jack",
-            500,
-            new(2014, 9, 26),
-            null,
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szuper Black Jack",
+            Price = 500,
+            ReleaseDate = new(2014, 9, 26),
+            EndDate = null,
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 2U),
                 KeyValuePair.Create(5_000_000U, 8U),
                 KeyValuePair.Create(50_000U, 200U),
@@ -683,14 +758,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(2_000U, 60_000U),
                 KeyValuePair.Create(1_000U, 840_000U),
                 KeyValuePair.Create(500U, 840_000U),
-            ])),
-        new(
-            "Boldog karácsonyt! 2014",
-            2_000,
-            new(2014, 11, 7),
-            new(2015, 2, 2),
-            2_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Boldog karácsonyt! 2014",
+            Price = 2_000,
+            ReleaseDate = new(2014, 11, 7),
+            EndDate = new(2015, 2, 2),
+            TotalSupply = 2_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(200_000U, 100U),
@@ -705,14 +782,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 80_000U),
                 KeyValuePair.Create(3_000U, 200_000U),
                 KeyValuePair.Create(2_000U, 240_000U),
-            ])),
-        new(
-            "Sok szeretettel! 200",
-            200,
-            new(2015, 1, 30),
-            new(2017, 5, 27),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sok szeretettel! 200",
+            Price = 200,
+            ReleaseDate = new(2015, 1, 30),
+            EndDate = new(2017, 5, 27),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 2U),
                 KeyValuePair.Create(100_000U, 10U),
                 KeyValuePair.Create(50_000U, 20U),
@@ -721,14 +800,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 40_000U),
                 KeyValuePair.Create(500U, 320_000U),
                 KeyValuePair.Create(300U, 840_000U),
-            ])),
-        new(
-            "Bakancslista",
-            1_000,
-            new(2015, 3, 27),
-            new(2018, 4, 8),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Bakancslista",
+            Price = 1_000,
+            ReleaseDate = new(2015, 3, 27),
+            EndDate = new(2018, 4, 8),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(48_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -744,14 +825,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 300_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Pörgettyű",
-            300,
-            new(2015, 5, 29),
-            new(2017, 5, 27),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Pörgettyű",
+            Price = 300,
+            ReleaseDate = new(2015, 5, 29),
+            EndDate = new(2017, 5, 27),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 2U),
                 KeyValuePair.Create(500_000U, 4U),
                 KeyValuePair.Create(100_000U, 10U),
@@ -764,14 +847,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(900U, 200_000U),
                 KeyValuePair.Create(600U, 360_000U),
                 KeyValuePair.Create(300U, 560_000U),
-            ])),
-        new(
-            "Szerencsepart",
-            500,
-            new(2015, 7, 17),
-            new(2016, 6, 13),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencsepart",
+            Price = 500,
+            ReleaseDate = new(2015, 7, 17),
+            EndDate = new(2016, 6, 13),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(4_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 4U),
@@ -784,14 +869,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(2_000U, 60_000U),
                 KeyValuePair.Create(1_000U, 360_000U),
                 KeyValuePair.Create(500U, 420_000U),
-            ])),
-        new(
-            "Házi kedvenc",
-            200,
-            new(2015, 9, 25),
-            new(2016, 10, 24),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Házi kedvenc",
+            Price = 200,
+            ReleaseDate = new(2015, 9, 25),
+            EndDate = new(2016, 10, 24),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 15U),
                 KeyValuePair.Create(20_000U, 100U),
@@ -801,14 +888,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 40_000U),
                 KeyValuePair.Create(500U, 280_000U),
                 KeyValuePair.Create(300U, 800_000U),
-            ])),
-        new(
-            "Boldog karácsonyt! 2015",
-            2_000,
-            new(2015, 11, 6),
-            new(2016, 1, 25),
-            1_800_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Boldog karácsonyt! 2015",
+            Price = 2_000,
+            ReleaseDate = new(2015, 11, 6),
+            EndDate = new(2016, 1, 25),
+            TotalSupply = 1_800_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 30U),
@@ -822,14 +911,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 72_000U),
                 KeyValuePair.Create(3_000U, 216_000U),
                 KeyValuePair.Create(2_000U, 216_000U),
-            ])),
-        new(
-            "Pénzfa",
-            200,
-            new(2016, 1, 29),
-            new(2017, 3, 27),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Pénzfa",
+            Price = 200,
+            ReleaseDate = new(2016, 1, 29),
+            EndDate = new(2017, 3, 27),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 2U),
                 KeyValuePair.Create(500_000U, 5U),
                 KeyValuePair.Create(10_000U, 50U),
@@ -839,14 +930,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 40_000U),
                 KeyValuePair.Create(500U, 280_000U),
                 KeyValuePair.Create(300U, 840_000U),
-            ])),
-        new(
-            "Hurrá 25!",
-            300,
-            new(2016, 4, 1),
-            new(2016, 10, 24),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Hurrá 25!",
+            Price = 300,
+            ReleaseDate = new(2016, 4, 1),
+            EndDate = new(2016, 10, 24),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(125_000U, 150U),
@@ -858,14 +951,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 120_000U),
                 KeyValuePair.Create(400U, 520_000U),
                 KeyValuePair.Create(300U, 560_000U),
-            ])),
-        new(
-            "Zseton",
-            500,
-            new(2016, 6, 3),
-            new(2018, 4, 8),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Zseton",
+            Price = 500,
+            ReleaseDate = new(2016, 6, 3),
+            EndDate = new(2018, 4, 8),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 25U),
@@ -880,14 +975,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 60_000U),
                 KeyValuePair.Create(800U, 360_000U),
                 KeyValuePair.Create(500U, 420_000U),
-            ])),
-        new(
-            "Kéményseprő",
-            200,
-            new(2016, 7, 29),
-            new(2017, 7, 29),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kéményseprő",
+            Price = 200,
+            ReleaseDate = new(2016, 7, 29),
+            EndDate = new(2017, 7, 29),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(500_000U, 35U),
                 KeyValuePair.Create(50_000U, 100U),
@@ -897,14 +994,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 40_000U),
                 KeyValuePair.Create(400U, 200_000U),
                 KeyValuePair.Create(300U, 920_000U),
-            ])),
-        new(
-            "Szerencsenaptár",
-            1_000,
-            new(2016, 9, 23),
-            new(2019, 3, 31),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencsenaptár",
+            Price = 1_000,
+            ReleaseDate = new(2016, 9, 23),
+            EndDate = new(2019, 3, 31),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 7U),
                 KeyValuePair.Create(100_000U, 110U),
@@ -921,14 +1020,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 300_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Boldog karácsonyt! 2016",
-            2_000,
-            new(2016, 11, 4),
-            new(2017, 1, 30),
-            2_300_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Boldog karácsonyt! 2016",
+            Price = 2_000,
+            ReleaseDate = new(2016, 11, 4),
+            EndDate = new(2017, 1, 30),
+            TotalSupply = 2_300_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 15U),
                 KeyValuePair.Create(1_000_000U, 32U),
@@ -945,14 +1046,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 46_000U),
                 KeyValuePair.Create(3_000U, 184_000U),
                 KeyValuePair.Create(2_000U, 368_000U),
-            ])),
-        new(
-            "Labirintus",
-            300,
-            new(2017, 2, 3),
-            new(2018, 4, 8),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Labirintus",
+            Price = 300,
+            ReleaseDate = new(2017, 2, 3),
+            EndDate = new(2018, 4, 8),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 15U),
                 KeyValuePair.Create(100_000U, 5U),
@@ -964,14 +1067,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 240_000U),
                 KeyValuePair.Create(500U, 360_000U),
                 KeyValuePair.Create(300U, 560_000U),
-            ])),
-        new(
-            "Mega Bankó",
-            1_000,
-            new(2017, 3, 31),
-            new(2019, 5, 26),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Mega Bankó",
+            Price = 1_000,
+            ReleaseDate = new(2017, 3, 31),
+            EndDate = new(2019, 5, 26),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 80U),
@@ -986,14 +1091,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 120_000U),
                 KeyValuePair.Create(2_000U, 240_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Fesztivál",
-            300,
-            new(2017, 6, 2),
-            new(2017, 9, 25),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Fesztivál",
+            Price = 300,
+            ReleaseDate = new(2017, 6, 2),
+            EndDate = new(2017, 9, 25),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 1U),
                 KeyValuePair.Create(500_000U, 5U),
                 KeyValuePair.Create(50_000U, 45U),
@@ -1005,14 +1112,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 250_000U),
                 KeyValuePair.Create(400U, 400_000U),
                 KeyValuePair.Create(300U, 700_000U),
-            ])),
-        new(
-            "Hoppá! 10x",
-            300,
-            new(2017, 6, 30),
-            new(2018, 8, 26),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Hoppá! 10x",
+            Price = 300,
+            ReleaseDate = new(2017, 6, 30),
+            EndDate = new(2018, 8, 26),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 2U),
                 KeyValuePair.Create(100_000U, 20U),
@@ -1024,14 +1133,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 300_000U),
                 KeyValuePair.Create(600U, 350_000U),
                 KeyValuePair.Create(300U, 700_000U),
-            ])),
-        new(
-            "Hoppá! 20x",
-            500,
-            new(2017, 6, 30),
-            new(2018, 8, 26),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Hoppá! 20x",
+            Price = 500,
+            ReleaseDate = new(2017, 6, 30),
+            EndDate = new(2018, 8, 26),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(20_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 6U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -1047,14 +1158,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 240_000U),
                 KeyValuePair.Create(800U, 400_000U),
                 KeyValuePair.Create(500U, 480_000U),
-            ])),
-        new(
-            "Hoppá! 50x",
-            1_000,
-            new(2017, 6, 30),
-            new(2018, 8, 26),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Hoppá! 50x",
+            Price = 1_000,
+            ReleaseDate = new(2017, 6, 30),
+            EndDate = new(2018, 8, 26),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 6U),
                 KeyValuePair.Create(100_000U, 115U),
@@ -1071,14 +1184,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 300_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Lottóláz",
-            500,
-            new(2017, 9, 1),
-            new(2020, 6, 28),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Lottóláz",
+            Price = 500,
+            ReleaseDate = new(2017, 9, 1),
+            EndDate = new(2020, 6, 28),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(600_000U, 8U),
@@ -1094,14 +1209,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(2_000U, 60_000U),
                 KeyValuePair.Create(1_000U, 300_000U),
                 KeyValuePair.Create(500U, 540_000U),
-            ])),
-        new(
-            "Kiskarácsony 2017",
-            200,
-            new(2017, 11, 3),
-            new(2018, 2, 4),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2017",
+            Price = 200,
+            ReleaseDate = new(2017, 11, 3),
+            EndDate = new(2018, 2, 4),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(5_000_000U, 1U),
                 KeyValuePair.Create(100_000U, 10U),
                 KeyValuePair.Create(50_000U, 20U),
@@ -1111,14 +1228,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 30_000U),
                 KeyValuePair.Create(500U, 210_000U),
                 KeyValuePair.Create(300U, 660_000U),
-            ])),
-        new(
-            "Nagykarácsony 2017",
-            2_000,
-            new(2017, 11, 3),
-            new(2018, 2, 4),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2017",
+            Price = 2_000,
+            ReleaseDate = new(2017, 11, 3),
+            EndDate = new(2018, 2, 4),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 55U),
@@ -1132,14 +1251,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 120_000U),
                 KeyValuePair.Create(3_000U, 360_000U),
                 KeyValuePair.Create(2_000U, 360_000U),
-            ])),
-        new(
-            "Black Jack 300",
-            300,
-            new(2018, 1, 5),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Black Jack 300",
+            Price = 300,
+            ReleaseDate = new(2018, 1, 5),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(15_000_000U, 4U),
                 KeyValuePair.Create(100_000U, 40U),
                 KeyValuePair.Create(50_000U, 320U),
@@ -1147,14 +1268,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 250_000U),
                 KeyValuePair.Create(500U, 400_000U),
                 KeyValuePair.Create(300U, 1_000_000U),
-            ])),
-        new(
-            "Szerencsemalac",
-            300,
-            new(2018, 1, 12),
-            new(2020, 6, 28),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencsemalac",
+            Price = 300,
+            ReleaseDate = new(2018, 1, 12),
+            EndDate = new(2020, 6, 28),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(500_000U, 6U),
                 KeyValuePair.Create(10_000U, 300U),
@@ -1164,14 +1287,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 300_000U),
                 KeyValuePair.Create(500U, 600_000U),
                 KeyValuePair.Create(300U, 960_000U),
-            ])),
-        new(
-            "Astro",
-            300,
-            new(2018, 2, 2),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Astro",
+            Price = 300,
+            ReleaseDate = new(2018, 2, 2),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(10_000U, 6_000U),
@@ -1181,14 +1306,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(800U, 50_000U),
                 KeyValuePair.Create(500U, 650_000U),
                 KeyValuePair.Create(300U, 750_000U),
-            ])),
-        new(
-            "Kaszinó 112",
-            2_000,
-            new(2018, 4, 6),
-            new(2024, 11, 24),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kaszinó 112",
+            Price = 2_000,
+            ReleaseDate = new(2018, 4, 6),
+            EndDate = new(2024, 11, 24),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 8U),
                 KeyValuePair.Create(1_000_000U, 25U),
@@ -1205,14 +1332,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 120_000U),
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Kleopátra kincse",
-            500,
-            new(2018, 6, 1),
-            new(2020, 8, 30),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kleopátra kincse",
+            Price = 500,
+            ReleaseDate = new(2018, 6, 1),
+            EndDate = new(2020, 8, 30),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(500_000U, 40U),
@@ -1230,14 +1359,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 480_000U),
                 KeyValuePair.Create(800U, 360_000U),
                 KeyValuePair.Create(500U, 840_000U),
-            ])),
-        new(
-            "Sok szeretettel 300",
-            300,
-            new(2018, 7, 13),
-            new(2020, 6, 28),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sok szeretettel 300",
+            Price = 300,
+            ReleaseDate = new(2018, 7, 13),
+            EndDate = new(2020, 6, 28),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -1247,14 +1378,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 240_000U),
                 KeyValuePair.Create(600U, 720_000U),
                 KeyValuePair.Create(300U, 960_000U),
-            ])),
-        new(
-            "Kódfejtő",
-            1_000,
-            new(2018, 9, 7),
-            new(2020, 3, 15),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kódfejtő",
+            Price = 1_000,
+            ReleaseDate = new(2018, 9, 7),
+            EndDate = new(2020, 3, 15),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -1271,14 +1404,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 120_000U),
                 KeyValuePair.Create(2_000U, 240_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Kiskarácsony 2018",
-            300,
-            new(2018, 11, 3),
-            new(2019, 2, 3),
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2018",
+            Price = 300,
+            ReleaseDate = new(2018, 11, 3),
+            EndDate = new(2019, 2, 3),
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -1288,14 +1423,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(500U, 350_000U),
                 KeyValuePair.Create(300U, 400_000U),
-            ])),
-        new(
-            "Nagykarácsony 2018",
-            3_000,
-            new(2018, 11, 3),
-            new(2019, 2, 3),
-            2_300_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2018",
+            Price = 3_000,
+            ReleaseDate = new(2018, 11, 3),
+            EndDate = new(2019, 2, 3),
+            TotalSupply = 2_300_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 30U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -1308,14 +1445,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(9_000U, 92_000U),
                 KeyValuePair.Create(6_000U, 276_000U),
                 KeyValuePair.Create(3_000U, 368_000U),
-            ])),
-        new(
-            "Bronz",
-            300,
-            new(2019, 2, 8),
-            new(2020, 7, 26),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Bronz",
+            Price = 300,
+            ReleaseDate = new(2019, 2, 8),
+            EndDate = new(2020, 7, 26),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 30U),
@@ -1327,14 +1466,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 150_000U),
                 KeyValuePair.Create(600U, 600_000U),
                 KeyValuePair.Create(300U, 750_000U),
-            ])),
-        new(
-            "Ezüst",
-            500,
-            new(2019, 2, 8),
-            new(2020, 3, 15),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Ezüst",
+            Price = 500,
+            ReleaseDate = new(2019, 2, 8),
+            EndDate = new(2020, 3, 15),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(20_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 38U),
@@ -1350,14 +1491,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 240_000U),
                 KeyValuePair.Create(800U, 320_000U),
                 KeyValuePair.Create(500U, 560_000U),
-            ])),
-        new(
-            "Arany",
-            1_000,
-            new(2019, 2, 8),
-            new(2020, 3, 15),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Arany",
+            Price = 1_000,
+            ReleaseDate = new(2019, 2, 8),
+            EndDate = new(2020, 3, 15),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 6U),
                 KeyValuePair.Create(100_000U, 115U),
@@ -1374,14 +1517,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 300_000U),
                 KeyValuePair.Create(1_000U, 480_000U),
-            ])),
-        new(
-            "Pénzlift",
-            500,
-            new(2019, 3, 29),
-            new(2022, 4, 24),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Pénzlift",
+            Price = 500,
+            ReleaseDate = new(2019, 3, 29),
+            EndDate = new(2022, 4, 24),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 25U),
@@ -1396,14 +1541,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 60_000U),
                 KeyValuePair.Create(800U, 360_000U),
                 KeyValuePair.Create(500U, 420_000U),
-            ])),
-        new(
-            "Világjáró",
-            2_000,
-            new(2019, 5, 10),
-            new(2020, 7, 26),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Világjáró",
+            Price = 2_000,
+            ReleaseDate = new(2019, 5, 10),
+            EndDate = new(2020, 7, 26),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 60U),
@@ -1420,14 +1567,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 60_000U),
                 KeyValuePair.Create(3_000U, 300_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Szerencsehozó",
-            300,
-            new(2019, 7, 12),
-            new(2020, 7, 26),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencsehozó",
+            Price = 300,
+            ReleaseDate = new(2019, 7, 12),
+            EndDate = new(2020, 7, 26),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 2U),
                 KeyValuePair.Create(500_000U, 8U),
                 KeyValuePair.Create(100_000U, 200U),
@@ -1439,14 +1588,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 180_000U),
                 KeyValuePair.Create(600U, 660_000U),
                 KeyValuePair.Create(300U, 900_000U),
-            ])),
-        new(
-            "Aranybánya",
-            1_000,
-            new(2019, 9, 6),
-            new(2023, 4, 23),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Aranybánya",
+            Price = 1_000,
+            ReleaseDate = new(2019, 9, 6),
+            EndDate = new(2023, 4, 23),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 6U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -1462,14 +1613,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 300_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Kiskarácsony 2019",
-            300,
-            new(2019, 11, 4),
-            new(2020, 2, 23),
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2019",
+            Price = 300,
+            ReleaseDate = new(2019, 11, 4),
+            EndDate = new(2020, 2, 23),
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(10_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -1479,14 +1632,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 50_000U),
                 KeyValuePair.Create(500U, 350_000U),
                 KeyValuePair.Create(300U, 400_000U),
-            ])),
-        new(
-            "Nagykarácsony 2019",
-            3_000,
-            new(2019, 11, 4),
-            new(2020, 2, 23),
-            2_300_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2019",
+            Price = 3_000,
+            ReleaseDate = new(2019, 11, 4),
+            EndDate = new(2020, 2, 23),
+            TotalSupply = 2_300_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 30U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -1499,14 +1654,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(9_000U, 92_000U),
                 KeyValuePair.Create(6_000U, 276_000U),
                 KeyValuePair.Create(3_000U, 368_000U),
-            ])),
-        new(
-            "Szerencse vagy Mázli",
-            500,
-            new(2020, 1, 11),
-            new(2022, 4, 24),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szerencse vagy Mázli",
+            Price = 500,
+            ReleaseDate = new(2020, 1, 11),
+            EndDate = new(2022, 4, 24),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 45U),
@@ -1517,14 +1674,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 120_000U),
                 KeyValuePair.Create(800U, 360_000U),
                 KeyValuePair.Create(500U, 480_000U),
-            ])),
-        new(
-            "Kis Ajándék",
-            500,
-            new(2020, 3, 20),
-            new(2022, 1, 16),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kis Ajándék",
+            Price = 500,
+            ReleaseDate = new(2020, 3, 20),
+            EndDate = new(2022, 1, 16),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(20_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 23U),
@@ -1540,14 +1699,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(800U, 400_000U),
                 KeyValuePair.Create(500U, 700_000U),
-            ])),
-        new(
-            "Nagy Ajándék",
-            1_000,
-            new(2020, 3, 20),
-            new(2023, 5, 21),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagy Ajándék",
+            Price = 1_000,
+            ReleaseDate = new(2020, 3, 20),
+            EndDate = new(2023, 5, 21),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 70U),
@@ -1565,14 +1726,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 80_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
                 KeyValuePair.Create(1_000U, 565_000U),
-            ])),
-        new(
-            "Óriási Ajándék",
-            2_000,
-            new(2020, 3, 20),
-            new(2023, 5, 21),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Óriási Ajándék",
+            Price = 2_000,
+            ReleaseDate = new(2020, 3, 20),
+            EndDate = new(2023, 5, 21),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 25U),
@@ -1595,14 +1758,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 120_000U),
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 491_000U),
-            ])),
-        new(
-            "Pénzes bőrönd",
-            1_000,
-            new(2020, 5, 8),
-            new(2023, 2, 19),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Pénzes bőrönd",
+            Price = 1_000,
+            ReleaseDate = new(2020, 5, 8),
+            EndDate = new(2023, 2, 19),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -1617,14 +1782,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 360_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Kávészünet 500",
-            500,
-            new(2020, 7, 10),
-            new(2021, 8, 22),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kávészünet 500",
+            Price = 500,
+            ReleaseDate = new(2020, 7, 10),
+            EndDate = new(2021, 8, 22),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 60U),
@@ -1636,14 +1803,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 120_000U),
                 KeyValuePair.Create(800U, 360_000U),
                 KeyValuePair.Create(500U, 420_000U),
-            ])),
-        new(
-            "Kincseskamra",
-            2_000,
-            new(2020, 9, 4),
-            new(2023, 2, 19),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kincseskamra",
+            Price = 2_000,
+            ReleaseDate = new(2020, 9, 4),
+            EndDate = new(2023, 2, 19),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 15U),
@@ -1660,14 +1829,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 120_000U),
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 420_000U),
-            ])),
-        new(
-            "Kiskarácsony 2020",
-            500,
-            new(2020, 11, 6),
-            new(2021, 2, 28),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2020",
+            Price = 500,
+            ReleaseDate = new(2020, 11, 6),
+            EndDate = new(2021, 2, 28),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -1682,14 +1853,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_500U, 240_000U),
                 KeyValuePair.Create(1_000U, 480_000U),
                 KeyValuePair.Create(500U, 840_000U),
-            ])),
-        new(
-            "Nagykarácsony 2020",
-            3_000,
-            new(2020, 11, 6),
-            new(2021, 2, 28),
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2020",
+            Price = 3_000,
+            ReleaseDate = new(2020, 11, 6),
+            EndDate = new(2021, 2, 28),
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 30U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -1702,14 +1875,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(9_000U, 100_000U),
                 KeyValuePair.Create(6_000U, 300_000U),
                 KeyValuePair.Create(3_000U, 400_000U),
-            ])),
-        new(
-            "Napi Bónusz",
-            500,
-            new(2021, 1, 15),
-            new(2022, 7, 24),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Napi Bónusz",
+            Price = 500,
+            ReleaseDate = new(2021, 1, 15),
+            EndDate = new(2022, 7, 24),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 110U),
@@ -1722,14 +1897,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(2_000U, 100_000U),
                 KeyValuePair.Create(1_000U, 600_000U),
                 KeyValuePair.Create(500U, 700_000U),
-            ])),
-        new(
-            "Heti Bónusz",
-            1_000,
-            new(2021, 1, 15),
-            new(2024, 3, 10),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Heti Bónusz",
+            Price = 1_000,
+            ReleaseDate = new(2021, 1, 15),
+            EndDate = new(2024, 3, 10),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 75U),
@@ -1745,14 +1922,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 80_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
                 KeyValuePair.Create(1_000U, 560_000U),
-            ])),
-        new(
-            "Havi Bónusz",
-            2_000,
-            new(2021, 1, 15),
-            new(2024, 10, 27),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Havi Bónusz",
+            Price = 2_000,
+            ReleaseDate = new(2021, 1, 15),
+            EndDate = new(2024, 10, 27),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 15U),
                 KeyValuePair.Create(3_000_000U, 75U),
@@ -1773,14 +1952,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 60_000U),
                 KeyValuePair.Create(3_000U, 300_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Mega Black Jack",
-            1_000,
-            new(2021, 3, 5),
-            new(2024, 4, 21),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Mega Black Jack",
+            Price = 1_000,
+            ReleaseDate = new(2021, 3, 5),
+            EndDate = new(2024, 4, 21),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -1795,14 +1976,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 360_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Pénzkerék",
-            1_000,
-            new(2021, 5, 7),
-            new(2022, 11, 13),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Pénzkerék",
+            Price = 1_000,
+            ReleaseDate = new(2021, 5, 7),
+            EndDate = new(2022, 11, 13),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -1817,14 +2000,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 160_000U),
                 KeyValuePair.Create(2_000U, 400_000U),
                 KeyValuePair.Create(1_000U, 560_000U),
-            ])),
-        new(
-            "Óriás Pénzkerék",
-            2_000,
-            new(2021, 5, 7),
-            new(2023, 7, 16),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Óriás Pénzkerék",
+            Price = 2_000,
+            ReleaseDate = new(2021, 5, 7),
+            EndDate = new(2023, 7, 16),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 8U),
                 KeyValuePair.Create(1_000_000U, 25U),
@@ -1844,14 +2029,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 160_000U),
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 640_000U),
-            ])),
-        new(
-            "Retro borítékos sorsjegy",
-            500,
-            new(2021, 7, 9),
-            new(2022, 5, 22),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Retro borítékos sorsjegy",
+            Price = 500,
+            ReleaseDate = new(2021, 7, 9),
+            EndDate = new(2022, 5, 22),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(30_000_000U, 1U),
                 KeyValuePair.Create(900_000U, 5U),
                 KeyValuePair.Create(100_000U, 25U),
@@ -1868,14 +2055,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(800U, 450_000U),
                 KeyValuePair.Create(500U, 750_000U),
-            ])),
-        new(
-            "Varázsfőzet",
-            2_000,
-            new(2021, 9, 10),
-            new(2023, 4, 23),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Varázsfőzet",
+            Price = 2_000,
+            ReleaseDate = new(2021, 9, 10),
+            EndDate = new(2023, 4, 23),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 2U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
@@ -1894,14 +2083,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 105_000U),
                 KeyValuePair.Create(3_000U, 226_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Kiskarácsony 2021",
-            500,
-            new(2021, 11, 5),
-            new(2022, 3, 20),
-            5_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2021",
+            Price = 500,
+            ReleaseDate = new(2021, 11, 5),
+            EndDate = new(2022, 3, 20),
+            TotalSupply = 5_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 40U),
@@ -1917,14 +2108,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 330_000U),
                 KeyValuePair.Create(800U, 440_000U),
                 KeyValuePair.Create(500U, 660_000U),
-            ])),
-        new(
-            "Nagykarácsony 2021",
-            3_000,
-            new(2021, 11, 5),
-            new(2022, 3, 20),
-            2_400_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2021",
+            Price = 3_000,
+            ReleaseDate = new(2021, 11, 5),
+            EndDate = new(2022, 3, 20),
+            TotalSupply = 2_400_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -1937,14 +2130,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(6_000U, 96_000U),
                 KeyValuePair.Create(5_000U, 288_000U),
                 KeyValuePair.Create(3_000U, 384_000U),
-            ])),
-        new(
-            "Sok szerencsét! 2022",
-            1_000,
-            new(2021, 12, 30),
-            new(2022, 9, 25),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sok szerencsét! 2022",
+            Price = 1_000,
+            ReleaseDate = new(2021, 12, 30),
+            EndDate = new(2022, 9, 25),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 65U),
@@ -1959,14 +2154,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 360_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Vadvilág 500",
-            500,
-            new(2022, 2, 4),
-            new(2023, 9, 17),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Vadvilág 500",
+            Price = 500,
+            ReleaseDate = new(2022, 2, 4),
+            EndDate = new(2023, 9, 17),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 24U),
@@ -1982,14 +2179,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(800U, 500_000U),
                 KeyValuePair.Create(500U, 700_000U),
-            ])),
-        new(
-            "Vadvilág 1000",
-            1_000,
-            new(2022, 2, 4),
-            new(2023, 9, 17),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Vadvilág 1000",
+            Price = 1_000,
+            ReleaseDate = new(2022, 2, 4),
+            EndDate = new(2023, 9, 17),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 20U),
@@ -2006,14 +2205,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 120_000U),
                 KeyValuePair.Create(2_000U, 360_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Vadvilág 2000",
-            2_000,
-            new(2022, 2, 4),
-            new(2024, 1, 21),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Vadvilág 2000",
+            Price = 2_000,
+            ReleaseDate = new(2022, 2, 4),
+            EndDate = new(2024, 1, 21),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 14U),
                 KeyValuePair.Create(1_000_000U, 40U),
@@ -2030,14 +2231,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 120_000U),
                 KeyValuePair.Create(3_000U, 300_000U),
                 KeyValuePair.Create(2_000U, 420_000U),
-            ])),
-        new(
-            "Pénzmátrix",
-            500,
-            new(2022, 3, 25),
-            new(2023, 11, 12),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Pénzmátrix",
+            Price = 500,
+            ReleaseDate = new(2022, 3, 25),
+            EndDate = new(2023, 11, 12),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 110U),
@@ -2050,14 +2253,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(800U, 300_000U),
                 KeyValuePair.Create(500U, 700_000U),
-            ])),
-        new(
-            "Ökokaland",
-            1_000,
-            new(2022, 5, 13),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Ökokaland",
+            Price = 1_000,
+            ReleaseDate = new(2022, 5, 13),
+            EndDate = new(2025, 2, 3),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 115U),
@@ -2072,14 +2277,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 60_000U),
                 KeyValuePair.Create(2_000U, 360_000U),
                 KeyValuePair.Create(1_000U, 420_000U),
-            ])),
-        new(
-            "Ökokaland Extra",
-            2_000,
-            new(2022, 5, 13),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Ökokaland Extra",
+            Price = 2_000,
+            ReleaseDate = new(2022, 5, 13),
+            EndDate = new(2025, 9, 21),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 25U),
@@ -2096,14 +2303,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 120_000U),
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Nyomkövető",
-            500,
-            new(2023, 7, 8),
-            new(2025, 2, 3),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nyomkövető",
+            Price = 500,
+            ReleaseDate = new(2023, 7, 8),
+            EndDate = new(2025, 2, 3),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 160U),
@@ -2118,14 +2327,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(800U, 400_000U),
                 KeyValuePair.Create(500U, 700_000U),
-            ])),
-        new(
-            "Kincsvadász",
-            2_000,
-            new(2022, 9, 9),
-            new(2024, 9, 22),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kincsvadász",
+            Price = 2_000,
+            ReleaseDate = new(2022, 9, 9),
+            EndDate = new(2024, 9, 22),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 2U),
                 KeyValuePair.Create(5_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 50U),
@@ -2143,14 +2354,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 160_000U),
                 KeyValuePair.Create(3_000U, 320_000U),
                 KeyValuePair.Create(2_000U, 560_000U),
-            ])),
-        new(
-            "Kiskarácsony 2022",
-            500,
-            new(2022, 11, 4),
-            new(2023, 3, 19),
-            5_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2022",
+            Price = 500,
+            ReleaseDate = new(2022, 11, 4),
+            EndDate = new(2023, 3, 19),
+            TotalSupply = 5_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 65U),
@@ -2166,14 +2379,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 330_000U),
                 KeyValuePair.Create(800U, 440_000U),
                 KeyValuePair.Create(500U, 660_000U),
-            ])),
-        new(
-            "Nagykarácsony 2022",
-            3_000,
-            new(2022, 11, 4),
-            new(2023, 3, 19),
-            2_400_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2022",
+            Price = 3_000,
+            ReleaseDate = new(2022, 11, 4),
+            EndDate = new(2023, 3, 19),
+            TotalSupply = 2_400_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 30U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -2189,14 +2404,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(6_000U, 192_000U),
                 KeyValuePair.Create(5_000U, 192_000U),
                 KeyValuePair.Create(3_000U, 288_000U),
-            ])),
-        new(
-            "Sok szerencsét! 2023",
-            1_000,
-            new(2022, 12, 30),
-            new(2023, 9, 17),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sok szerencsét! 2023",
+            Price = 1_000,
+            ReleaseDate = new(2022, 12, 30),
+            EndDate = new(2023, 9, 17),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 120U),
@@ -2211,14 +2428,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 200_000U),
                 KeyValuePair.Create(2_000U, 400_000U),
                 KeyValuePair.Create(1_000U, 800_000U),
-            ])),
-        new(
-            "NEON 500",
-            500,
-            new(2023, 2, 3),
-            new(2024, 4, 21),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "NEON 500",
+            Price = 500,
+            ReleaseDate = new(2023, 2, 3),
+            EndDate = new(2024, 4, 21),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 24U),
@@ -2234,14 +2453,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(800U, 500_000U),
                 KeyValuePair.Create(500U, 700_000U),
-            ])),
-        new(
-            "NEON 1000",
-            1_000,
-            new(2023, 2, 3),
-            new(2024, 5, 26),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "NEON 1000",
+            Price = 1_000,
+            ReleaseDate = new(2023, 2, 3),
+            EndDate = new(2024, 5, 26),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 6U),
                 KeyValuePair.Create(150_000U, 60U),
@@ -2259,14 +2480,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 160_000U),
                 KeyValuePair.Create(2_000U, 400_000U),
                 KeyValuePair.Create(1_000U, 640_000U),
-            ])),
-        new(
-            "NEON 2000",
-            2_000,
-            new(2023, 2, 3),
-            new(2024, 10, 27),
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "NEON 2000",
+            Price = 2_000,
+            ReleaseDate = new(2023, 2, 3),
+            EndDate = new(2024, 10, 27),
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
@@ -2286,14 +2509,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 100_000U),
                 KeyValuePair.Create(3_000U, 250_000U),
                 KeyValuePair.Create(2_000U, 400_000U),
-            ])),
-        new(
-            "Atlantisz",
-            2_000,
-            new(2023, 3, 24),
-            new(2024, 4, 21),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Atlantisz",
+            Price = 2_000,
+            ReleaseDate = new(2023, 3, 24),
+            EndDate = new(2024, 4, 21),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 2U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
@@ -2312,14 +2537,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 105_000U),
                 KeyValuePair.Create(3_000U, 226_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Kis Meglepetés",
-            500,
-            new(2023, 5, 12),
-            new(2024, 8, 25),
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kis Meglepetés",
+            Price = 500,
+            ReleaseDate = new(2023, 5, 12),
+            EndDate = new(2024, 8, 25),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 14U),
@@ -2335,14 +2562,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 200_000U),
                 KeyValuePair.Create(800U, 500_000U),
                 KeyValuePair.Create(500U, 700_000U),
-            ])),
-        new(
-            "Nagy Meglepetés",
-            1_000,
-            new(2023, 5, 12),
-            new(2024, 8, 25),
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagy Meglepetés",
+            Price = 1_000,
+            ReleaseDate = new(2023, 5, 12),
+            EndDate = new(2024, 8, 25),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 80U),
@@ -2357,14 +2586,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 160_000U),
                 KeyValuePair.Create(2_000U, 400_000U),
                 KeyValuePair.Create(1_000U, 640_000U),
-            ])),
-        new(
-            "Óriási Meglepetés",
-            2_000,
-            new(2023, 5, 12),
-            new(2024, 11, 24),
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Óriási Meglepetés",
+            Price = 2_000,
+            ReleaseDate = new(2023, 5, 12),
+            EndDate = new(2024, 11, 24),
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
@@ -2382,14 +2613,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 100_000U),
                 KeyValuePair.Create(3_000U, 250_000U),
                 KeyValuePair.Create(2_000U, 400_000U),
-            ])),
-        new(
-            "Puzzle",
-            1_000,
-            new(2023, 7, 7),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Puzzle",
+            Price = 1_000,
+            ReleaseDate = new(2023, 7, 7),
+            EndDate = new(2025, 3, 23),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -2404,14 +2637,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 100_000U),
                 KeyValuePair.Create(2_000U, 800_000U),
                 KeyValuePair.Create(1_000U, 700_000U),
-            ])),
-        new(
-            "Milliomos Klub",
-            2_500,
-            new(2023, 9, 1),
-            new(2024, 9, 22),
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Milliomos Klub",
+            Price = 2_500,
+            ReleaseDate = new(2023, 9, 1),
+            EndDate = new(2024, 9, 22),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(85_000_000U, 2U),
                 KeyValuePair.Create(5_000_000U, 45U),
                 KeyValuePair.Create(1_000_000U, 265U),
@@ -2426,14 +2661,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 60_000U),
                 KeyValuePair.Create(3_000U, 480_000U),
                 KeyValuePair.Create(2_500U, 360_000U),
-            ])),
-        new(
-            "Kiskarácsony 2023",
-            1_000,
-            new(2023, 10, 27),
-            new(2024, 3, 24),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2023",
+            Price = 1_000,
+            ReleaseDate = new(2023, 10, 27),
+            EndDate = new(2024, 3, 24),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 6U),
                 KeyValuePair.Create(100_000U, 45U),
@@ -2449,14 +2686,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 600_000U),
                 KeyValuePair.Create(1_000U, 840_000U),
-            ])),
-        new(
-            "Nagykarácsony 2023",
-            3_500,
-            new(2023, 10, 27),
-            new(2024, 3, 24),
-            3_200_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2023",
+            Price = 3_500,
+            ReleaseDate = new(2023, 10, 27),
+            EndDate = new(2024, 3, 24),
+            TotalSupply = 3_200_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(125_000_000U, 1U),
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -2472,14 +2711,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(6_000U, 128_000U),
                 KeyValuePair.Create(5_000U, 256_000U),
                 KeyValuePair.Create(3_500U, 384_000U),
-            ])),
-        new(
-            "Sok szerencsét! 2024",
-            1_000,
-            new(2023, 12, 27),
-            new(2024, 9, 22),
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sok szerencsét! 2024",
+            Price = 1_000,
+            ReleaseDate = new(2023, 12, 27),
+            EndDate = new(2024, 9, 22),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 55U),
@@ -2494,14 +2735,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 720_000U),
                 KeyValuePair.Create(1_000U, 840_000U),
-            ])),
-        new(
-            "Kis Kerék",
-            500,
-            new(2024, 2, 2),
-            null,
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kis Kerék",
+            Price = 500,
+            ReleaseDate = new(2024, 2, 2),
+            EndDate = null,
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 30U),
@@ -2513,14 +2756,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(2_000U, 240_000U),
                 KeyValuePair.Create(1_000U, 900_000U),
                 KeyValuePair.Create(500U, 840_000U),
-            ])),
-        new(
-            "Nagy Kerék",
-            1_000,
-            new(2024, 2, 2),
-            null,
-            5_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagy Kerék",
+            Price = 1_000,
+            ReleaseDate = new(2024, 2, 2),
+            EndDate = new(2025, 9, 21),
+            TotalSupply = 5_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -2532,14 +2777,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 110_000U),
                 KeyValuePair.Create(2_000U, 880_000U),
                 KeyValuePair.Create(1_000U, 770_000U),
-            ])),
-        new(
-            "Óriási Kerék",
-            2_000,
-            new(2024, 2, 2),
-            null,
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Óriási Kerék",
+            Price = 2_000,
+            ReleaseDate = new(2024, 2, 2),
+            EndDate = new(2026, 5, 24),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 50U),
@@ -2549,28 +2796,32 @@ public static class ScratchcardService
                 KeyValuePair.Create(10_000U, 40_000U),
                 KeyValuePair.Create(4_000U, 720_000U),
                 KeyValuePair.Create(2_000U, 600_000U),
-            ])),
-        new(
-            "Nyereményözön",
-            1_000,
-            new(2024, 3, 8),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nyereményözön",
+            Price = 1_000,
+            ReleaseDate = new(2024, 3, 8),
+            EndDate = new(2026, 6, 28),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000U, 4_000U),
                 KeyValuePair.Create(10_000U, 40_000U),
                 KeyValuePair.Create(5_000U, 100_000U),
                 KeyValuePair.Create(3_000U, 150_000U),
                 KeyValuePair.Create(2_000U, 500_000U),
                 KeyValuePair.Create(1_000U, 700_000U),
-            ])),
-        new(
-            "Kaszinó 171",
-            2_000,
-            new(2024, 3, 14),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kaszinó 171",
+            Price = 2_000,
+            ReleaseDate = new(2024, 3, 14),
+            EndDate = null,
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 21U),
@@ -2587,14 +2838,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 120_000U),
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Buksza 170",
-            1_000,
-            new(2024, 3, 27),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Buksza 170",
+            Price = 1_000,
+            ReleaseDate = new(2024, 3, 27),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 50U),
@@ -2611,14 +2864,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 100_000U),
                 KeyValuePair.Create(2_000U, 500_000U),
                 KeyValuePair.Create(1_000U, 700_000U),
-            ])),
-        new(
-            "Ajándék",
-            2_000,
-            new(2024, 4, 12),
-            null,
-            8_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Ajándék",
+            Price = 2_000,
+            ReleaseDate = new(2024, 4, 12),
+            EndDate = null,
+            TotalSupply = 8_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 2U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 45U),
@@ -2628,14 +2883,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(7_500U, 160_000U),
                 KeyValuePair.Create(5_000U, 1_200_000U),
                 KeyValuePair.Create(2_500U, 1_200_000U),
-            ])),
-        new(
-            "Biliárd",
-            1_500,
-            new(2024, 5, 10),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Biliárd",
+            Price = 1_500,
+            ReleaseDate = new(2024, 5, 10),
+            EndDate = new(2026, 5, 24),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
@@ -2647,14 +2904,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 90_000U),
                 KeyValuePair.Create(2_500U, 330_000U),
                 KeyValuePair.Create(1_500U, 420_000U),
-            ])),
-        new(
-            "Darts",
-            1_500,
-            new(2024, 5, 10),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Darts",
+            Price = 1_500,
+            ReleaseDate = new(2024, 5, 10),
+            EndDate = new(2026, 5, 24),
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 10U),
@@ -2666,14 +2925,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 90_000U),
                 KeyValuePair.Create(2_500U, 330_000U),
                 KeyValuePair.Create(1_500U, 420_000U),
-            ])),
-        new(
-            "Szalon",
-            3_000,
-            new(2024, 5, 10),
-            null,
-            4_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szalon",
+            Price = 3_000,
+            ReleaseDate = new(2024, 5, 10),
+            EndDate = null,
+            TotalSupply = 4_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(150_000_000U, 1U),
                 KeyValuePair.Create(25_000_000U, 10U),
                 KeyValuePair.Create(5_000_000U, 15U),
@@ -2687,14 +2948,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(6_000U, 270_000U),
                 KeyValuePair.Create(5_000U, 540_000U),
                 KeyValuePair.Create(3_000U, 720_000U),
-            ])),
-        new(
-            "Puskás 500",
-            500,
-            new(2024, 6, 14),
-            null,
-            7_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Puskás 500",
+            Price = 500,
+            ReleaseDate = new(2024, 6, 14),
+            EndDate = null,
+            TotalSupply = 7_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 4U),
                 KeyValuePair.Create(100_000U, 10U),
@@ -2703,14 +2966,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(2_000U, 280_000U),
                 KeyValuePair.Create(1_000U, 980_000U),
                 KeyValuePair.Create(500U, 980_000U),
-            ])),
-        new(
-            "Puskás 1000",
-            1_000,
-            new(2024, 6, 14),
-            null,
-            7_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Puskás 1000",
+            Price = 1_000,
+            ReleaseDate = new(2024, 6, 14),
+            EndDate = null,
+            TotalSupply = 7_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 2U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(100_000U, 200U),
@@ -2720,14 +2985,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 100_000U),
                 KeyValuePair.Create(2_000U, 1_300_000U),
                 KeyValuePair.Create(1_000U, 1_000_000U),
-            ])),
-        new(
-            "Sorsjegymánia",
-            5_000,
-            new(2024, 8, 2),
-            null,
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sorsjegymánia",
+            Price = 5_000,
+            ReleaseDate = new(2024, 8, 2),
+            EndDate = new(2025, 5, 25),
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(250_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 20U),
                 KeyValuePair.Create(1_000_000U, 330U),
@@ -2740,14 +3007,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(8_000U, 150_000U),
                 KeyValuePair.Create(6_000U, 200_000U),
                 KeyValuePair.Create(5_000U, 400_000U),
-            ])),
-        new(
-            "Kalózok Kincse",
-            1_000,
-            new(2024, 9, 6),
-            null,
-            7_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kalózok Kincse",
+            Price = 1_000,
+            ReleaseDate = new(2024, 9, 6),
+            EndDate = null,
+            TotalSupply = 7_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 16U),
                 KeyValuePair.Create(100_000U, 100U),
@@ -2762,14 +3031,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 375_000U),
                 KeyValuePair.Create(2_000U, 525_000U),
                 KeyValuePair.Create(1_000U, 1_200_000U),
-            ])),
-        new(
-            "Kalózok Kincse Plusz",
-            2_000,
-            new(2024, 9, 6),
-            null,
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kalózok Kincse Plusz",
+            Price = 2_000,
+            ReleaseDate = new(2024, 9, 6),
+            EndDate = null,
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -2784,14 +3055,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 240_000U),
                 KeyValuePair.Create(3_000U, 480_000U),
                 KeyValuePair.Create(2_000U, 960_000U),
-            ])),
-        new(
-            "Kalózok Kincse Extra",
-            3_000,
-            new(2024, 9, 6),
-            null,
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kalózok Kincse Extra",
+            Price = 3_000,
+            ReleaseDate = new(2024, 9, 6),
+            EndDate = null,
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(150_000_000U, 1U),
                 KeyValuePair.Create(15_000_000U, 10U),
                 KeyValuePair.Create(3_000_000U, 30U),
@@ -2806,14 +3079,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 240_000U),
                 KeyValuePair.Create(4_000U, 480_000U),
                 KeyValuePair.Create(3_000U, 640_000U),
-            ])),
-        new(
-            "Kiskarácsony 2024",
-            1_000,
-            new(2024, 10, 28),
-            null,
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2024",
+            Price = 1_000,
+            ReleaseDate = new(2024, 10, 28),
+            EndDate = new(2025, 3, 23),
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 144U),
@@ -2825,14 +3100,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 120_000U),
                 KeyValuePair.Create(2_000U, 960_000U),
                 KeyValuePair.Create(1_000U, 840_000U),
-            ])),
-        new(
-            "Nagykarácsony 2024",
-            3_500,
-            new(2024, 10, 28),
-            null,
-            3_200_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2024",
+            Price = 3_500,
+            ReleaseDate = new(2024, 10, 28),
+            EndDate = new(2025, 3, 23),
+            TotalSupply = 3_200_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(175_000_000U, 2U),
                 KeyValuePair.Create(50_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 90U),
@@ -2843,14 +3120,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 512_000U),
                 KeyValuePair.Create(4_000U, 128_000U),
                 KeyValuePair.Create(3_500U, 384_000U),
-            ])),
-        new(
-            "Sok szerencsét! 2025",
-            2_000,
-            new(2024, 12, 27),
-            null,
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sok szerencsét! 2025",
+            Price = 2_000,
+            ReleaseDate = new(2024, 12, 27),
+            EndDate = new(2025, 12, 28),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 2U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 50U),
@@ -2866,14 +3145,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 160_000U),
                 KeyValuePair.Create(3_000U, 480_000U),
                 KeyValuePair.Create(2_000U, 560_000U),
-            ])),
-        new(
-            "7",
-            1_000,
-            new(2025, 2, 7),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "7",
+            Price = 1_000,
+            ReleaseDate = new(2025, 2, 7),
+            EndDate = new(2025, 10, 26),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 25U),
                 KeyValuePair.Create(100_000U, 500U),
@@ -2885,14 +3166,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 200_000U),
                 KeyValuePair.Create(2_000U, 500_000U),
                 KeyValuePair.Create(1_000U, 800_000U),
-            ])),
-        new(
-            "77",
-            2_000,
-            new(2025, 2, 7),
-            null,
-            3_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "77",
+            Price = 2_000,
+            ReleaseDate = new(2025, 2, 7),
+            EndDate = null,
+            TotalSupply = 3_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 160U),
@@ -2910,14 +3193,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 140_000U),
                 KeyValuePair.Create(3_000U, 280_000U),
                 KeyValuePair.Create(2_000U, 560_000U),
-            ])),
-        new(
-            "777",
-            3_000,
-            new(2025, 2, 7),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "777",
+            Price = 3_000,
+            ReleaseDate = new(2025, 2, 7),
+            EndDate = null,
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(150_000_000U, 1U),
                 KeyValuePair.Create(7_000_000U, 21U),
                 KeyValuePair.Create(1_000_000U, 150U),
@@ -2939,14 +3224,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 240_000U),
                 KeyValuePair.Create(4_000U, 240_000U),
                 KeyValuePair.Create(3_000U, 360_000U),
-            ])),
-        new(
-            "Milliomos Klub Újratöltve",
-            3_500,
-            new(2025, 3, 7),
-            null,
-            3_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Milliomos Klub Újratöltve",
+            Price = 3_500,
+            ReleaseDate = new(2025, 3, 7),
+            EndDate = null,
+            TotalSupply = 3_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(175_000_000U, 2U),
                 KeyValuePair.Create(5_000_000U, 75U),
                 KeyValuePair.Create(1_000_000U, 380U),
@@ -2961,14 +3248,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(7_000U, 140_000U),
                 KeyValuePair.Create(4_000U, 560_000U),
                 KeyValuePair.Create(3_500U, 420_000U),
-            ])),
-        new(
-            "Fáraók Kincse 500",
-            500,
-            new(2025, 4, 3),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Fáraók Kincse 500",
+            Price = 500,
+            ReleaseDate = new(2025, 4, 3),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_500U, 5U),
                 KeyValuePair.Create(1_000_000U, 15U),
                 KeyValuePair.Create(100_000U, 500U),
@@ -2988,14 +3277,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_300U, 250_000U),
                 KeyValuePair.Create(800U, 400_000U),
                 KeyValuePair.Create(500U, 900_000U),
-            ])),
-        new(
-            "Jókívánság",
-            1_000,
-            new(2025, 4, 4),
-            null,
-            5_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Jókívánság",
+            Price = 1_000,
+            ReleaseDate = new(2025, 4, 4),
+            EndDate = null,
+            TotalSupply = 5_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(75_000U, 250U),
@@ -3008,14 +3299,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_500U, 27_500U),
                 KeyValuePair.Create(3_000U, 330_000U),
                 KeyValuePair.Create(1_500U, 1_320_000U),
-            ])),
-        new(
-            "Jókívánság Extra",
-            2_000,
-            new(2025, 4, 4),
-            null,
-            3_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Jókívánság Extra",
+            Price = 2_000,
+            ReleaseDate = new(2025, 4, 4),
+            EndDate = null,
+            TotalSupply = 3_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 3U),
                 KeyValuePair.Create(1_000_000U, 30U),
@@ -3028,14 +3321,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(6_000U, 70_000U),
                 KeyValuePair.Create(5_000U, 280_000U),
                 KeyValuePair.Create(2_500U, 700_000U),
-            ])),
-        new(
-            "Kutyák",
-            1_500,
-            new(2025, 5, 9),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kutyák",
+            Price = 1_500,
+            ReleaseDate = new(2025, 5, 9),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 2U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 75U),
@@ -3048,14 +3343,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 250_000U),
                 KeyValuePair.Create(2_500U, 500_000U),
                 KeyValuePair.Create(1_500U, 700_000U),
-            ])),
-        new(
-            "Macskák",
-            1_500,
-            new(2025, 5, 9),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Macskák",
+            Price = 1_500,
+            ReleaseDate = new(2025, 5, 9),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 2U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 75U),
@@ -3068,14 +3365,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 250_000U),
                 KeyValuePair.Create(2_500U, 500_000U),
                 KeyValuePair.Create(1_500U, 700_000U),
-            ])),
-        new(
-            "Kutyák & Macskák",
-            3_000,
-            new(2025, 5, 9),
-            null,
-            3_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kutyák & Macskák",
+            Price = 3_000,
+            ReleaseDate = new(2025, 5, 9),
+            EndDate = null,
+            TotalSupply = 3_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(150_000_000U, 1U),
                 KeyValuePair.Create(25_000_000U, 10U),
                 KeyValuePair.Create(5_000_000U, 15U),
@@ -3092,14 +3391,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 210_000U),
                 KeyValuePair.Create(4_000U, 280_000U),
                 KeyValuePair.Create(3_000U, 420_000U),
-            ])),
-        new(
-            "Aranyhal",
-            2_000,
-            new(2025, 7, 4),
-            null,
-            5_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Aranyhal",
+            Price = 2_000,
+            ReleaseDate = new(2025, 7, 4),
+            EndDate = null,
+            TotalSupply = 5_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -3114,14 +3415,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 220_000U),
                 KeyValuePair.Create(3_000U, 550_000U),
                 KeyValuePair.Create(2_000U, 770_000U),
-            ])),
-        new(
-            "10X",
-            1_000,
-            new(2025, 9, 5),
-            null,
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "10X",
+            Price = 1_000,
+            ReleaseDate = new(2025, 9, 5),
+            EndDate = null,
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 16U),
                 KeyValuePair.Create(100_000U, 120U),
@@ -3136,14 +3439,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 540_000U),
                 KeyValuePair.Create(1_000U, 960_000U),
-            ])),
-        new(
-            "20X",
-            2_000,
-            new(2025, 9, 5),
-            null,
-            4_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "20X",
+            Price = 2_000,
+            ReleaseDate = new(2025, 9, 5),
+            EndDate = null,
+            TotalSupply = 4_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -3158,14 +3463,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 135_000U),
                 KeyValuePair.Create(3_000U, 360_000U),
                 KeyValuePair.Create(2_000U, 720_000U),
-            ])),
-        new(
-            "50X",
-            3_000,
-            new(2025, 9, 5),
-            null,
-            3_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "50X",
+            Price = 3_000,
+            ReleaseDate = new(2025, 9, 5),
+            EndDate = null,
+            TotalSupply = 3_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(150_000_000U, 1U),
                 KeyValuePair.Create(50_000_000U, 5U),
                 KeyValuePair.Create(2_500_000U, 30U),
@@ -3180,14 +3487,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 140_000U),
                 KeyValuePair.Create(4_000U, 350_000U),
                 KeyValuePair.Create(3_000U, 630_000U),
-            ])),
-        new(
-            "Kiskarácsony 2025",
-            1_500,
-            new(2025, 10, 31),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2025",
+            Price = 1_500,
+            ReleaseDate = new(2025, 10, 31),
+            EndDate = new(2026, 3, 29),
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 100U),
                 KeyValuePair.Create(100_000U, 300U),
@@ -3201,14 +3510,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 200_000U),
                 KeyValuePair.Create(2_000U, 400_000U),
                 KeyValuePair.Create(1_000U, 700_000U),
-            ])),
-        new(
-            "Nagykarácsony 2025",
-            3_500,
-            new(2025, 10, 31),
-            null,
-            3_200_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2025",
+            Price = 3_500,
+            ReleaseDate = new(2025, 10, 31),
+            EndDate = new(2026, 3, 29),
+            TotalSupply = 3_200_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(175_000_000U, 2U),
                 KeyValuePair.Create(50_000_000U, 5U),
                 KeyValuePair.Create(5_000_000U, 10U),
@@ -3225,14 +3536,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(6_000U, 128_000U),
                 KeyValuePair.Create(5_000U, 512_000U),
                 KeyValuePair.Create(3_500U, 384_000U),
-            ])),
-        new(
-            "Sok szerencsét! 2026",
-            1_000,
-            new(2025, 12, 29),
-            null,
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sok szerencsét! 2026",
+            Price = 1_000,
+            ReleaseDate = new(2025, 12, 29),
+            EndDate = new(2026, 6, 28),
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 10U),
                 KeyValuePair.Create(50_000U, 150U),
@@ -3247,14 +3560,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 160_000U),
                 KeyValuePair.Create(2_000U, 320_000U),
                 KeyValuePair.Create(1_000U, 640_000U),
-            ])),
-        new(
-            "Varázskamra",
-            500,
-            new(2026, 2, 6),
-            null,
-            6_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Varázskamra",
+            Price = 500,
+            ReleaseDate = new(2026, 2, 6),
+            EndDate = null,
+            TotalSupply = 6_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 3U),
                 KeyValuePair.Create(100_000U, 24U),
@@ -3270,14 +3585,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(1_000U, 260_000U),
                 KeyValuePair.Create(800U, 520_000U),
                 KeyValuePair.Create(500U, 910_000U),
-            ])),
-        new(
-            "Varázsrengeteg",
-            1_000,
-            new(2026, 2, 6),
-            null,
-            4_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Varázsrengeteg",
+            Price = 1_000,
+            ReleaseDate = new(2026, 2, 6),
+            EndDate = null,
+            TotalSupply = 4_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 20U),
                 KeyValuePair.Create(100_000U, 200U),
@@ -3293,14 +3610,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 180_000U),
                 KeyValuePair.Create(2_000U, 450_000U),
                 KeyValuePair.Create(1_000U, 720_000U),
-            ])),
-        new(
-            "Varázsvilág",
-            2_000,
-            new(2026, 2, 6),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Varázsvilág",
+            Price = 2_000,
+            ReleaseDate = new(2026, 2, 6),
+            EndDate = null,
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 8U),
                 KeyValuePair.Create(1_000_000U, 118U),
@@ -3316,14 +3635,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 180_000U),
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 540_000U),
-            ])),
-        new(
-            "Sorsjegymánia Újratöltve",
-            4_990,
-            new(2026, 3, 6),
-            null,
-            1_750_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Sorsjegymánia Újratöltve",
+            Price = 4_990,
+            ReleaseDate = new(2026, 3, 6),
+            EndDate = null,
+            TotalSupply = 1_750_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(250_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 9U),
                 KeyValuePair.Create(1_000_000U, 200U),
@@ -3336,14 +3657,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(8_000U, 105_000U),
                 KeyValuePair.Create(6_000U, 140_000U),
                 KeyValuePair.Create(5_000U, 280_000U),
-            ])),
-        new(
-            "Szókincs",
-            990,
-            new(2026, 4, 10),
-            null,
-            5_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szókincs",
+            Price = 990,
+            ReleaseDate = new(2026, 4, 10),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 50U),
                 KeyValuePair.Create(100_000U, 46U),
@@ -3356,14 +3679,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 8_000U),
                 KeyValuePair.Create(3_000U, 35_800U),
                 KeyValuePair.Create(2_000U, 1_450_000U),
-            ])),
-        new(
-            "Szókincs Extra",
-            1_990,
-            new(2026, 4, 10),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Szókincs Extra",
+            Price = 1_990,
+            ReleaseDate = new(2026, 4, 10),
+            EndDate = null,
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -3377,14 +3702,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 65_000U),
                 KeyValuePair.Create(4_000U, 110_000U),
                 KeyValuePair.Create(3_000U, 675_000U),
-            ])),
-        new(
-            "Süti",
-            1_500,
-            new(2026, 5, 8),
-            null,
-            3_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Süti",
+            Price = 1_500,
+            ReleaseDate = new(2026, 5, 8),
+            EndDate = null,
+            TotalSupply = 3_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -3402,14 +3729,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 140_000U),
                 KeyValuePair.Create(2_500U, 210_000U),
                 KeyValuePair.Create(1_500U, 560_000U),
-            ])),
-        new(
-            "Kávé",
-            1_500,
-            new(2026, 5, 8),
-            null,
-            3_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kávé",
+            Price = 1_500,
+            ReleaseDate = new(2026, 5, 8),
+            EndDate = null,
+            TotalSupply = 3_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(75_000_000U, 1U),
                 KeyValuePair.Create(5_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -3427,14 +3756,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 140_000U),
                 KeyValuePair.Create(2_500U, 210_000U),
                 KeyValuePair.Create(1_500U, 560_000U),
-            ])),
-        new(
-            "Kávézó",
-            3_000,
-            new(2026, 5, 8),
-            null,
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Kávézó",
+            Price = 3_000,
+            ReleaseDate = new(2026, 5, 8),
+            EndDate = null,
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(150_000_000U, 1U),
                 KeyValuePair.Create(25_000_000U, 5U),
                 KeyValuePair.Create(5_000_000U, 10U),
@@ -3451,14 +3782,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 100_000U),
                 KeyValuePair.Create(4_000U, 150_000U),
                 KeyValuePair.Create(3_000U, 400_000U),
-            ])),
-        new(
-            "Retró 500",
-            500,
-            new(2026, 7, 10),
-            null,
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Retró 500",
+            Price = 500,
+            ReleaseDate = new(2026, 7, 10),
+            EndDate = null,
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(25_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(100_000U, 90U),
@@ -3472,14 +3805,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(2_000U, 120_000U),
                 KeyValuePair.Create(1_000U, 720_000U),
                 KeyValuePair.Create(500U, 960_000U),
-            ])),
-        new(
-            "Retró 1000",
-            1_000,
-            new(2026, 7, 10),
-            null,
-            4_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Retró 1000",
+            Price = 1_000,
+            ReleaseDate = new(2026, 7, 10),
+            EndDate = null,
+            TotalSupply = 4_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 5U),
                 KeyValuePair.Create(25_000U, 140U),
@@ -3491,14 +3826,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 560_000U),
                 KeyValuePair.Create(1_000U, 400_000U),
-            ])),
-        new(
-            "Retró 2000",
-            2_000,
-            new(2026, 7, 10),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Retró 2000",
+            Price = 2_000,
+            ReleaseDate = new(2026, 7, 10),
+            EndDate = null,
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 5U),
                 KeyValuePair.Create(1_000_000U, 12U),
@@ -3515,27 +3852,31 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 90_000U),
                 KeyValuePair.Create(3_000U, 300_000U),
                 KeyValuePair.Create(2_000U, 480_000U),
-            ])),
-        new(
-            "Budapest",
-            1_000,
-            new(2026, 8, 14),
-            null,
-            3_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Budapest",
+            Price = 1_000,
+            ReleaseDate = new(2026, 8, 14),
+            EndDate = null,
+            TotalSupply = 3_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(500_000U, 500U),
                 KeyValuePair.Create(10_000U, 11_000U),
                 KeyValuePair.Create(5_000U, 22_000U),
                 KeyValuePair.Create(2_000U, 70_000U),
                 KeyValuePair.Create(1_000U, 1_400_000U),
-            ])),
-        new(
-            "Bronz 218",
-            1_000,
-            new(2026, 9, 4),
-            null,
-            6_000_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Bronz 218",
+            Price = 1_000,
+            ReleaseDate = new(2026, 9, 4),
+            EndDate = null,
+            TotalSupply = 6_000_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(50_000_000U, 1U),
                 KeyValuePair.Create(1_000_000U, 20U),
                 KeyValuePair.Create(100_000U, 140U),
@@ -3550,14 +3891,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(3_000U, 240_000U),
                 KeyValuePair.Create(2_000U, 540_000U),
                 KeyValuePair.Create(1_000U, 960_000U),
-            ])),
-        new(
-            "Ezüst 219",
-            2_000,
-            new(2026, 9, 4),
-            null,
-            3_200_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Ezüst 219",
+            Price = 2_000,
+            ReleaseDate = new(2026, 9, 4),
+            EndDate = null,
+            TotalSupply = 3_200_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(100_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 80U),
@@ -3572,14 +3915,16 @@ public static class ScratchcardService
                 KeyValuePair.Create(4_000U, 192_000U),
                 KeyValuePair.Create(3_000U, 256_000U),
                 KeyValuePair.Create(2_000U, 512_000U),
-            ])),
-        new(
-            "Arany 220",
-            3_000,
-            new(2026, 9, 4),
-            null,
-            2_500_000,
-            FrozenDictionary.Create([
+            ]),
+        },
+        new()
+        {
+            Name = "Arany 220",
+            Price = 3_000,
+            ReleaseDate = new(2026, 9, 4),
+            EndDate = null,
+            TotalSupply = 2_500_000,
+            PrizeStructure = FrozenDictionary.Create([
                 KeyValuePair.Create(150_000_000U, 1U),
                 KeyValuePair.Create(10_000_000U, 10U),
                 KeyValuePair.Create(1_000_000U, 100U),
@@ -3594,6 +3939,56 @@ public static class ScratchcardService
                 KeyValuePair.Create(5_000U, 150_000U),
                 KeyValuePair.Create(4_000U, 300_000U),
                 KeyValuePair.Create(3_000U, 400_000U),
-            ])),
+            ]),
+        },
+        new()
+        {
+            Name = "Kiskarácsony 2026",
+            Price = 1_500,
+            ReleaseDate = new(2026, 10, 30),
+            EndDate = null,
+            TotalSupply = 5_000_000,
+            PrizeStructure = FrozenDictionary.Create([
+                KeyValuePair.Create(75_000_000U, 1U),
+                KeyValuePair.Create(1_000_000U, 100U),
+                KeyValuePair.Create(100_000U, 300U),
+                KeyValuePair.Create(75_000U, 600U),
+                KeyValuePair.Create(50_000U, 1_500U),
+                KeyValuePair.Create(25_000U, 10_000U),
+                KeyValuePair.Create(10_000U, 59_700U),
+                KeyValuePair.Create(6_000U, 63_000U),
+                KeyValuePair.Create(5_000U, 100_000U),
+                KeyValuePair.Create(4_000U, 100_000U),
+                KeyValuePair.Create(3_000U, 400_000U),
+                KeyValuePair.Create(2_000U, 200_000U),
+                KeyValuePair.Create(1_500U, 700_000U),
+            ]),
+        },
+        new()
+        {
+            Name = "Nagykarácsony 2026",
+            Price = 3_500,
+            ReleaseDate = new(2026, 10, 30),
+            EndDate = null,
+            TotalSupply = 3_200_000,
+            PrizeStructure = FrozenDictionary.Create([
+                KeyValuePair.Create(175_000_000U, 2U),
+                KeyValuePair.Create(50_000_000U, 5U),
+                KeyValuePair.Create(5_000_000U, 10U),
+                KeyValuePair.Create(1_000_000U, 150U),
+                KeyValuePair.Create(100_000U, 600U),
+                KeyValuePair.Create(50_000U, 5_000U),
+                KeyValuePair.Create(30_000U, 4_000U),
+                KeyValuePair.Create(25_000U, 10_000U),
+                KeyValuePair.Create(20_000U, 12_000U),
+                KeyValuePair.Create(15_000U, 10_000U),
+                KeyValuePair.Create(12_000U, 20_000U),
+                KeyValuePair.Create(10_000U, 61_000U),
+                KeyValuePair.Create(7_000U, 64_000U),
+                KeyValuePair.Create(6_000U, 128_000U),
+                KeyValuePair.Create(5_000U, 512_000U),
+                KeyValuePair.Create(3_500U, 384_000U),
+            ]),
+        },
     ];
 }

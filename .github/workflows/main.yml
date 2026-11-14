@@ -4,29 +4,23 @@ on:
   push:
     branches: [master]
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   deploy-to-github-pages:
     runs-on: ubuntu-slim
     environment: github-pages
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
       - name: Checkout branch
         uses: actions/checkout@v7.0.1
-        with:
-          fetch-depth: 0
 
       - name: Setup .NET SDK
-        uses: actions/setup-dotnet@v6.0.0
-
-      - name: Install workloads
-        run: dotnet workload restore src/ScratchcardStatistics/ScratchcardStatistics.csproj
+        uses: actions/setup-dotnet@v6.1.0
 
       - name: Publish Blazor project
-        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj --output release --property Version=$(git rev-list --count HEAD) -warnaserror
+        run: dotnet publish src/ScratchcardStatistics/ScratchcardStatistics.csproj --output release -warnaserror
 
       - name: Change base tag in index.html from '/' to '/ScratchcardStatistics/'
         run: sed -i 's/<base href="\/" \/>/<base href="\/ScratchcardStatistics\/" \/>/' release/wwwroot/index.html

@@ -2,19 +2,20 @@ using System.Collections.Frozen;
 
 namespace ScratchcardStatistics.Models;
 
-public readonly record struct Scratchcard(
-    string Name,
-    ushort Price,
-    DateOnly ReleaseDate,
-    DateOnly? EndDate,
-    uint TotalSupply,
-    FrozenDictionary<uint, uint> PrizeStructure)
+public sealed class Scratchcard
 {
+    public required string Name { get; init; }
+    public required ushort Price { get; init; }
+    public required DateOnly ReleaseDate { get; init; }
+    public required DateOnly? EndDate { get; init; }
+    public required uint TotalSupply { get; init; }
+    public required FrozenDictionary<uint, uint> PrizeStructure { get; init; }
+
     public bool IsAvailable => !EndDate.HasValue || EndDate.Value > DateOnly.FromDateTime(DateTime.Now);
     public uint Jackpot => PrizeStructure.Max(ps => ps.Key);
-    public decimal ChanceOfWinningToOne => 1 / ChanceOfWinningPercent;
-    public decimal ChanceOfWinningPercent => (decimal)PrizeStructure.Sum(ps => ps.Value) / TotalSupply;
-    public decimal ExpectedValue => PrizeStructure.Sum(ps => ps.Key * ps.Value) / TotalSupply;
-    public decimal ExpectedValuePercent => ExpectedValue / Price;
+    public decimal ChanceOfWinningToOne => 1 / ChanceOfWinningRatio;
+    public decimal ChanceOfWinningRatio => (decimal)PrizeStructure.Sum(ps => ps.Value) / TotalSupply;
+    public decimal ExpectedValue => PrizeStructure.Sum(ps => (decimal)ps.Key * ps.Value) / TotalSupply;
+    public decimal ExpectedValueRatio => ExpectedValue / Price;
     public string PathName => Name.Replace(' ', '_');
 }

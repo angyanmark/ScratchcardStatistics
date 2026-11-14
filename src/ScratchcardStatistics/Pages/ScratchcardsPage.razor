@@ -18,9 +18,9 @@
             <PropertyColumn Property="@(s => s.ReleaseDate)" InitialSortDirection="SortDirection.Descending" IsDefaultSortColumn="true" Title="Megjelenés" Align="Align.Center" Sortable="true" />
             <PropertyColumn Property="@(s => s.Price)" Format="C0" Title="Ár" Align="Align.End" Sortable="true" />
             <PropertyColumn Property="@(s => s.ExpectedValue)" Format="C0" Title="Várható érték" Align="Align.End" Sortable="true" />
-            <PropertyColumn Property="@(s => s.ExpectedValuePercent)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
+            <PropertyColumn Property="@(s => s.ExpectedValueRatio)" Format="P0" Title="Várható érték %" Align="Align.Center" Sortable="true" />
             <TemplateColumn Title="Nyerési esély" Align="Align.Center" Sortable="true" SortBy="_chanceOfWinningToOneSort">1:@(context.ChanceOfWinningToOne.ToString("N2"))</TemplateColumn>
-            <PropertyColumn Property="@(s => s.ChanceOfWinningPercent)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
+            <PropertyColumn Property="@(s => s.ChanceOfWinningRatio)" Format="P2" Title="Nyerési esély %" Align="Align.Center" Sortable="true" />
             <TemplateColumn Title="Elérhető" Align="Align.Center" Sortable="true" SortBy="_isAvailableSort" Filtered="_filterIsAvailable is not null" Style="display: flex; justify-content: center;">
                 <ColumnOptions>
                     <FluentCheckbox ThreeState="true" CheckState="_filterIsAvailable" CheckStateChanged="IsAvailableChanged" Label="Elérhető" />

@@ -1,27 +1,27 @@
 @page "/scratchcards/{PathName}"
 
-@if (_scratchcard.HasValue)
+@if (_scratchcard is not null)
 {
-    <PageTitle>@_scratchcard.Value.Name</PageTitle>
+    <PageTitle>@_scratchcard.Name</PageTitle>
 
-    <FluentLabel Typo="Typography.H3" Style="margin-bottom: 16px;">@_scratchcard.Value.Name</FluentLabel>
+    <FluentLabel Typo="Typography.H3" Style="margin-bottom: 16px;">@_scratchcard.Name</FluentLabel>
 
-    <FluentLabel>Ár: <b>@_scratchcard.Value.Price.ToString("C0")</b></FluentLabel>
-    <FluentLabel>Várható érték: <b>@_scratchcard.Value.ExpectedValue.ToString("C0")</b> (@_scratchcard.Value.ExpectedValuePercent.ToString("P0"))</FluentLabel>
-    <FluentLabel>Főnyeremény: <b>@_scratchcard.Value.Jackpot.ToString("C0")</b></FluentLabel>
-    <FluentLabel>Megjelenés: <b>@_scratchcard.Value.ReleaseDate.ToShortDateString()</b></FluentLabel>
-    @if (_scratchcard.Value.EndDate.HasValue)
+    <FluentLabel>Ár: <b>@_scratchcard.Price.ToString("C0")</b></FluentLabel>
+    <FluentLabel>Várható érték: <b>@_scratchcard.ExpectedValue.ToString("C0")</b> (@_scratchcard.ExpectedValueRatio.ToString("P0"))</FluentLabel>
+    <FluentLabel>Főnyeremény: <b>@_scratchcard.Jackpot.ToString("C0")</b></FluentLabel>
+    <FluentLabel>Megjelenés: <b>@_scratchcard.ReleaseDate.ToShortDateString()</b></FluentLabel>
+    @if (_scratchcard.EndDate.HasValue)
     {
-        <FluentLabel>Utolsó értékesítés: <b>@_scratchcard.Value.EndDate.Value.ToShortDateString()</b></FluentLabel>
+        <FluentLabel>Utolsó értékesítés: <b>@_scratchcard.EndDate.Value.ToShortDateString()</b></FluentLabel>
     }
-    <FluentLabel>Nyerési esély: <b>1:@_scratchcard.Value.ChanceOfWinningToOne.ToString("N2")</b> (@_scratchcard.Value.ChanceOfWinningPercent.ToString("P2"))</FluentLabel>
-    <FluentLabel>Kibocsátott darabszám sorozatonként: <b>@_scratchcard.Value.TotalSupply.ToString("N0") db</b></FluentLabel>
+    <FluentLabel>Nyerési esély: <b>1:@_scratchcard.ChanceOfWinningToOne.ToString("N2")</b> (@_scratchcard.ChanceOfWinningRatio.ToString("P2"))</FluentLabel>
+    <FluentLabel>Kibocsátott darabszám sorozatonként: <b>@_scratchcard.TotalSupply.ToString("N0") db</b></FluentLabel>
 
     <FluentLabel Typo="Typography.H4" Style="margin-top: 12px;">Nyereménystruktúra:</FluentLabel>
 
-    <FluentDataGrid Items="_scratchcard.Value.PrizeStructure.OrderByDescending(ps => ps.Key).AsQueryable()" Style="max-width: 420px;">
+    <FluentDataGrid Items="_scratchcard.PrizeStructure.OrderByDescending(ps => ps.Key).AsQueryable()" Style="max-width: 420px;">
         <TemplateColumn Title="Darab" Align="Align.End">@context.Value.ToString("N0") db</TemplateColumn>
         <PropertyColumn Property="@(ps => ps.Key)" Format="C0" Title="Nyeremény" Align="Align.End" />
-        <TemplateColumn Title="Esély" Align="Align.Center">1:@((1 / ((decimal)context.Value / _scratchcard.Value.TotalSupply)).ToString("#,##0.##"))</TemplateColumn>
+        <TemplateColumn Title="Esély" Align="Align.Center">1:@((1 / ((decimal)context.Value / _scratchcard.TotalSupply)).ToString("#,##0.##"))</TemplateColumn>
     </FluentDataGrid>
 }
